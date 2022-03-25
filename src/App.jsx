@@ -1,12 +1,13 @@
-import { Example, LocomotiveScrollComponent } from './components/index';
+import { LocomotiveScrollComponent, FirstComponent } from './components/index';
+import "./global.css";
 
 function App() {
 
   return (
     <>
       <LocomotiveScrollComponent>
-        <Example someText="Test 1" />
-        <Example someText="Test 2" />
+        <FirstComponent text="C3, H2" textWidth="100px"/>
+        <FirstComponent />
       </LocomotiveScrollComponent>
     </>
   )

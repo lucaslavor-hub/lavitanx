@@ -1,2 +1,2 @@
-export { Example } from './Example/Example';
 export { LocomotiveScrollComponent } from './LocomotiveScrollComponent/LocomotiveScrollComponent';
+export { FirstComponent } from './FirstComponent/FirstComponent';
