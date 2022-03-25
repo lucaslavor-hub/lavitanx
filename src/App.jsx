@@ -1,4 +1,4 @@
-import { LocomotiveScrollComponent, FirstComponent } from './components/index';
+import { LocomotiveScrollComponent, Orbit } from './components/index';
 import "./global.css";
 
 function App() {
@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       <LocomotiveScrollComponent>
-        <FirstComponent text="C3, H2" textWidth="100px"/>
-        <FirstComponent />
+        <Orbit text="C3, H2" textWidth="100px"/>
+        <Orbit />
       </LocomotiveScrollComponent>
     </>
   )

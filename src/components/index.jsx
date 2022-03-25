@@ -1,2 +1,2 @@
 export { LocomotiveScrollComponent } from './LocomotiveScrollComponent/LocomotiveScrollComponent';
-export { FirstComponent } from './FirstComponent/FirstComponent';
+export { Orbit } from './Orbit/Orbit';

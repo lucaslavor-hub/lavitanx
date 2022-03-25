@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import "./styles.css";
 import orbit from "../../assets/Orbit.svg";
 
-export function FirstComponent({ position, text, textWidth }) {
+export function Orbit({ position, text, textWidth }) {
   const boxRef = useRef(null);
   const textRef = useRef(null);
 
