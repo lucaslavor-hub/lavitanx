@@ -1,0 +1,36 @@
+.text-in-orbit {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 0.8vw;
+  padding-top: 1vw;
+  letter-spacing: 0.15em;
+}
+
+.orbit-image {
+  width: 15vw;
+  height :15vw;
+  z-index: 2;
+  transform: rotate(-80deg);
+  opacity: 0;
+}
+
+.spin-text {
+  width: 25.5vw;
+  height: 25.5vw;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+}
+
+.external-orbit {
+  width: "100%";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 15vw;
+  bottom: -22vw;
+}
