@@ -5,6 +5,7 @@
   font-size: 0.8vw;
   padding-top: 1vw;
   letter-spacing: 0.15em;
+  text-align: center;
 }
 
 .orbit-image {
@@ -16,8 +17,6 @@
 }
 
 .spin-text {
-  width: 25.5vw;
-  height: 25.5vw;
   display: flex;
   align-items: center;
   position: absolute;
@@ -25,12 +24,11 @@
   opacity: 0;
 }
 
-.external-orbit {
+.external-orbit-container {
   width: "100%";
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 15vw;
-  bottom: -22vw;
+  bottom: -27vw;
 }

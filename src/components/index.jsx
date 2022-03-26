@@ -1,3 +1,3 @@
 export { LocomotiveScrollComponent } from './LocomotiveScrollComponent/LocomotiveScrollComponent';
-export { RightOrbit } from './FirstSection/RightOrbit/RightOrbit';
+export { Orbit } from './FirstSection/Orbit/Orbit';
 export { FirstSection } from './FirstSection/FirstSection';
