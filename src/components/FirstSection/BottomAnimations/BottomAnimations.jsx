@@ -47,7 +47,7 @@ export function BottomAnimations({ startAnimation }) {
         <img className="earth" src={earth} ref={earthRef} />
         <div className="orbit-container" ref={orbitsRef}>
           <Orbit orbitsRef={orbitsRef} rotationSpeed="12" text={"7 MINERAIS"} styles ={rightOrbitStyles}/>
-          <Orbit orbitsRef={orbitsRef} rotationSpeed="20" text={"C, B3, B5, A, B2, B1, B6, D, B12, E, B7, B9, K"} textWidth="11.5vw" styles ={leftOrbitStyles}/>
+          <Orbit orbitsRef={orbitsRef} rotationSpeed="20" text={"C, B3, B5, A, B2, B1, B6, D, B12, E, B7, B9, K"} textWidth="12vw" styles ={leftOrbitStyles}/>
         </div>
       </div>
     <div className="space" />

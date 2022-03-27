@@ -16,7 +16,7 @@ export function FirstSection({ someText }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setStartAnimation(true);
-    }, 3000);
+    }, 0);
     return () => clearTimeout(timer);
   }, []);
 
