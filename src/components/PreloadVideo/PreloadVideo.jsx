@@ -5,9 +5,9 @@ import "./styles.css";
 
 export function PreloadVideo() {
   const [videoPlaying, setVideoPlaying] = useState(false);
-  const videoElem = document.getElementById("video");
 
   const pressPlay = () => {
+    const videoElem = document.getElementById("video");
     setVideoPlaying(!videoPlaying);
     if (!videoPlaying) { 
       videoElem.play() 
@@ -15,11 +15,12 @@ export function PreloadVideo() {
       videoElem.pause()
     };
   }
+  
   return(
   <>
     <div style={{ width: "100vw", height: "100vh", zIndex:1}}>
-      <button className="video-play" onClick={() => {pressPlay()}}>{videoPlaying? "Pausar": "Play"}</button>
-      <video id="video" preload="auto">
+      <button className="video-play" onClick={() => pressPlay()}>{videoPlaying? "Pausar": "Play"}</button>
+      <video id="video" preload="metadata">
         <source src={video} type="video/mp4"/>
     </video>
    </div>
