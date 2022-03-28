@@ -5,7 +5,7 @@ import spheres from "../../assets/spheres.svg";
 import logo from "../../assets/logo.png";
 import "./styles.css";
 import { BottomAnimations } from "./BottomAnimations/BottomAnimations";
-
+import { Stars } from "..";
 
 export function FirstSection({ someText }) {
   const backgroundBlurRef = useRef(null);
@@ -30,6 +30,7 @@ export function FirstSection({ someText }) {
 
   return(
   <>
+    <Stars />
     <div className="images-container">
       <div ref={backgroundBlurRef} className="background-blur"/>
       <img src={video} className="video" />

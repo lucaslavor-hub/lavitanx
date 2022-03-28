@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { LocomotiveScrollComponent, FirstSection, PreloadVideo } from './components/index';
+import { LocomotiveScrollComponent, FirstSection, PreloadVideo, Stars } from './components/index';
 import "./global.css";
 
 function App() {
@@ -8,14 +8,21 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 10000);
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div>
       {/* <LocomotiveScrollComponent> */}
-        { loading ? <PreloadVideo/> : <FirstSection/>}
+        { loading ? 
+          <PreloadVideo/> 
+          : 
+          <>
+            <FirstSection/>
+            {/* <Stars height="100vh" width="100vw"/> */}
+          </>
+          }
       {/* </LocomotiveScrollComponent> */}
     </div>
   )

@@ -1,0 +1,16 @@
+#banner {
+  position:absolute;
+  background:black;
+  z-index: 3;
+}
+
+.star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background:white;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 40;
+    border-radius: 50%;
+}
