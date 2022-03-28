@@ -43,8 +43,8 @@ export function BottomAnimations({ startAnimation }) {
   <>
     <div className="space" />
       <div className="earth-meteor-container">
-        <img className="meteor-medicine" src={medicine} ref={medicineRef} />
-        <img className="earth" src={earth} ref={earthRef} />
+        <img className="meteor-medicine" src={medicine} ref={medicineRef} alt="caixa de remedio lavintax" />
+        <img className="earth" src={earth} ref={earthRef} alt="planeta terra" />
         <div className="orbit-container" ref={orbitsRef}>
           <Orbit orbitsRef={orbitsRef} rotationSpeed="12" text={"7 MINERAIS"} styles ={rightOrbitStyles}/>
           <Orbit orbitsRef={orbitsRef} rotationSpeed="20" text={"C, B3, B5, A, B2, B1, B6, D, B12, E, B7, B9, K"} textWidth="12vw" styles ={leftOrbitStyles}/>

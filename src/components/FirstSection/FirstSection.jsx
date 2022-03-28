@@ -29,16 +29,17 @@ export function FirstSection({ someText }) {
   }, [startAnimation]);
 
   return(
-  <>
+  <div style={{width:"100vw", height: "100vh", position:"relative"}}>
     <Stars />
     <div className="images-container">
       <div ref={backgroundBlurRef} className="background-blur"/>
       <img src={video} className="video" />
-      <img src={logo} ref={logoRef} className="first-section-logo" />
-      <img src={spheres} ref={spheresRef} className="first-section-spheres" />
+      <img src={logo} ref={logoRef} className="first-section-logo" alt="logotipo lavitanx" />
+      <img src={spheres} ref={spheresRef} className="first-section-spheres" alt="ilustracao de esferas" />
     </div>
     <BottomAnimations startAnimation={startAnimation} />
-  </>
+  </div>
     
   )
 }
+// background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 2.08%, #030D29 36.98%);

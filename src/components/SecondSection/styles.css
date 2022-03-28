@@ -1,0 +1,8 @@
+.try {
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 13vw, #030D29 36.98%);
+  position: absolute;
+  opacity: 0;
+}
