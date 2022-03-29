@@ -1,3 +1,9 @@
+.first-section-container{
+  width:100vw;
+  height: 100vh;
+  position:relative
+}
+
 .background-blur {
   background-color: rgba(2, 13, 41, 0.9);
   backdrop-filter: blur(16px); 
@@ -36,4 +42,10 @@
   top: -12vw;
   opacity: 0;
   width: 24vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .first-section-container{
+    height: 90vh;
+  }
 }

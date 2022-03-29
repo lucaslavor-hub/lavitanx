@@ -32,3 +32,9 @@
   width: 10px;
   height: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .orbit-container {
+    display: none;
+  }
+}

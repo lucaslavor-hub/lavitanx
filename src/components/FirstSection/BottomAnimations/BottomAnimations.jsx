@@ -3,15 +3,15 @@ import { gsap } from "gsap";
 import "./styles.css";
 import medicine from "../../../assets/Medicine.png";
 import earth from "../../../assets/Earth.png";
-import { Orbit } from "../..";
+import { OrbitText } from "../..";
 
 const rightOrbitStyles = {
   externalOrbitContainer: { 
     right: "10vw",
   },
   spinText: {
-    width: "25.5vw",
-    height: "25.5vw"
+    width: "28vw",
+    height: "28vw"
   }
 }
 
@@ -20,8 +20,8 @@ const leftOrbitStyles = {
     left: "10vw",
   },
   spinText: {
-    width: "30vw",
-    height: "30vw"
+    width: "35vw",
+    height: "35vw"
   }
 }
 
@@ -31,11 +31,13 @@ export function BottomAnimations({ startAnimation }) {
   const orbitsRef = useRef(null);
 
   useEffect(() => {
-    if (startAnimation) {
+    if (startAnimation && window.innerWidth >= 600) {
       gsap.to(medicineRef.current, { y: "-47vw", opacity: 1, duration: 3});
-      gsap.to(earthRef.current, { y: "-40vw", opacity: 1, duration: 3});
+      gsap.to(earthRef.current, { y: "-50vw", opacity: 1, duration: 3});
       gsap.to(".orbit-image",  { y: "-40vw", opacity: 1, duration: 3});
       gsap.to(".spin-text",  { y: "-40vw", opacity: 1, duration: 3});
+    } else if (startAnimation && window.innerWidth < 600) {
+      gsap.to(earthRef.current, { y: "-80vw", opacity: 1, duration: 3});
     }
   }, [startAnimation]);
 
@@ -43,11 +45,11 @@ export function BottomAnimations({ startAnimation }) {
   <>
     <div className="space" />
       <div className="earth-meteor-container">
-        <img className="meteor-medicine" src={medicine} ref={medicineRef} alt="caixa de remedio lavintax" />
+        {/* <img className="meteor-medicine" src={medicine} ref={medicineRef} alt="caixa de remedio lavintax" /> */}
         <img className="earth" src={earth} ref={earthRef} alt="planeta terra" />
         <div className="orbit-container" ref={orbitsRef}>
-          <Orbit orbitsRef={orbitsRef} rotationSpeed="12" text={"7 MINERAIS"} styles ={rightOrbitStyles}/>
-          <Orbit orbitsRef={orbitsRef} rotationSpeed="20" text={"C, B3, B5, A, B2, B1, B6, D, B12, E, B7, B9, K"} textWidth="12vw" styles ={leftOrbitStyles}/>
+          <OrbitText orbitsRef={orbitsRef} rotationSpeed="12" text={"7 MINERAIS"} styles ={rightOrbitStyles}/>
+          <OrbitText orbitsRef={orbitsRef} rotationSpeed="20" text={"C, B3, B5, A, B2, B1, B6, D, B12, E, B7, B9, K"} textWidth="12vw" styles ={leftOrbitStyles}/>
         </div>
       </div>
     <div className="space" />

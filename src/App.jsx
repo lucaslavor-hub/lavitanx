@@ -5,24 +5,24 @@ import "./global.css";
 function App() {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 1000);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <div>
       {/* <LocomotiveScrollComponent> */}
-        { loading ? 
-          <PreloadVideo/> 
+        {/* { loading ? 
+          <PreloadVideo setLoading={setLoading}/> 
           : 
-          <>
+          <> */}
             <FirstSection/>
             <SecondSection/>
-          </>
-          }
+          {/* </>
+          } */}
       {/* </LocomotiveScrollComponent> */}
     </div>
   )

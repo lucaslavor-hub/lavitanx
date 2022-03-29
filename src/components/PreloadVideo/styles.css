@@ -23,3 +23,15 @@
 .video-play:hover {
   background-color: rgb(224, 223, 223);
 }
+
+.unmute-button {
+  position: absolute;
+  width: 4.8vw;
+  height: 4.8vw;
+  top: 4.8vw;
+  border: none;
+  outline: none;
+  left: 4.8vw;
+  cursor: pointer;
+  z-index: 2;
+}
