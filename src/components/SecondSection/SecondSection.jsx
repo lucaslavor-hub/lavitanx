@@ -13,6 +13,7 @@ export function SecondSection({ someText }) {
     gsap.to(backgroundRef.current, { y: "-24vw", opacity: 1, duration: 3});
 
   }, []);
+  
   return(
   <div ref={backgroundRef} className="background-second-section">
       <div className="orbit-container">
