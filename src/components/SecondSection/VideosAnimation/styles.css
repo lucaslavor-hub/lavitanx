@@ -99,15 +99,26 @@
   }
 
   .videos-animations-container video{
-    width: 40vw;
-    height: 26vw;
+    width: 55vw;
+    height: 34vw;
   }
 
   .video-animations-two{
-    margin-right: 60vw;
+    margin-right: 67vw;
+    margin-top: 40vw;
+
   }
   
   .video-animations-three{
-    margin-left: 67vw;
+    margin-left: 74vw;
   }
+
+  .videos-animations-container > .middle-text, .videos-animations-container > .bottom-text {
+    font-size: 3vw;
+  }
+
+  .videos-animations-container .bottom-text {
+    margin-top: 85vw;
+  }
+
 }
