@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div>
-      {/* <LocomotiveScrollComponent> */}
+      <LocomotiveScrollComponent>
         {/* { loading ? 
           <PreloadVideo setLoading={setLoading}/> 
           : 
@@ -23,7 +23,7 @@ function App() {
             <SecondSection/>
           {/* </>
           } */}
-      {/* </LocomotiveScrollComponent> */}
+      </LocomotiveScrollComponent>
     </div>
   )
 }

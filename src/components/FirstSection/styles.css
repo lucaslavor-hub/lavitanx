@@ -16,7 +16,7 @@
   opacity: 0;
 }
 
-.video {
+.background-video {
   z-index: 1;
   position: absolute;
   height: 100vh;
@@ -48,6 +48,17 @@
 
 @media only screen and (max-width: 600px) {
   .first-section-container{
-    height: 90vh;
+    height: 80vh;
+  }
+
+  .background-blur {
+    display: none;
+  }
+  .first-section-spheres {
+    display: none;
+  }
+
+  .background-video {
+    object-fit: cover;
   }
 }

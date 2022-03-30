@@ -72,3 +72,13 @@
 }
 
 
+@media only screen and (max-width: 600px) {
+  .shadow-right, .shadow-left{
+    display: none;
+  }
+
+  .longevity-title {
+    font-size: 6.7vw;
+    margin-top: 55vw;
+  }
+}
