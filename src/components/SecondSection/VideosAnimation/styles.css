@@ -4,7 +4,6 @@
   height: 18vw;
   object-fit: cover;
   overflow: hidden;
-  z-index: 11;
 }
 
 .video-animations-one{
@@ -18,6 +17,9 @@
   transform: rotate(7.03deg);
   margin-right: 52vw;
   margin-top: 19vw;
+
+  z-index: 15;
+
 }
 
 .video-animations-three{

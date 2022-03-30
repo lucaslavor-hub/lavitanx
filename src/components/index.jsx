@@ -5,3 +5,4 @@ export { FirstSection } from './FirstSection/FirstSection';
 export { PreloadVideo } from './PreloadVideo/PreloadVideo';
 export { Stars } from './Stars/Stars';
 export { SecondSection } from './SecondSection/SecondSection';
+export { ThirdSection } from './ThirdSection/ThirdSection';

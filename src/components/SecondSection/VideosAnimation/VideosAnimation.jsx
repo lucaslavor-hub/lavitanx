@@ -58,14 +58,13 @@ export function VideosAnimation({ someText }) {
     gsap.to(divVideoTwoRef.current, { 
       scrollTrigger:  {
         trigger: divVideoThreeRef.current,
-        start: "top center",
-        end: "top+=80% center",
-        markers: true,
+        start: "+=70% center",
+        end: "top+=200% center",
         scrub: true,
       },
       y: "-34vw",
       x:"-13vw",
-      rotation: -30,
+      rotation: -40,
     }); 
 
     gsap.from(videoThreeRef.current, { 
@@ -84,12 +83,12 @@ export function VideosAnimation({ someText }) {
       scrollTrigger:  {
         trigger: divVideoThreeRef.current,
         start: "top center",
-        end: "top+=80% center",
-        markers: true,
+        end: "top+=150% center",
         scrub: true,
       },
-      y: "-14vw",
-      rotation: 70,
+      y: "-24vw",
+      x:"4vw",
+      rotation: 80,
     }); 
   }, []);
 

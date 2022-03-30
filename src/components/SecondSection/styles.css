@@ -3,12 +3,13 @@
   height: 200vw;
   z-index: 10;
   background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 15vw, #030D29 36.98%);
-  position: absolute;
+  position:relative;
   opacity: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 
 .longevity-title {
   /* position: absolute; */
