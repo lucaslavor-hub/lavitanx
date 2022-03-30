@@ -31,7 +31,7 @@ export function PreloadVideo({setLoading}) {
   useEffect(() => {
       const timer = setTimeout(() => {
         setButtonPass(true);
-      }, 20000);
+      }, 1000);
       return () => clearTimeout(timer);
     }, []);
 

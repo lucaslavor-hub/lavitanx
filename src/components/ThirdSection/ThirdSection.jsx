@@ -44,7 +44,7 @@ export function ThirdSection() {
   //   });
   // }, []);
   useEffect(() => {
-    gsap.to(".third-section", { y: "-24vw", opacity: 1, duration: 3});
+    gsap.to(".third-section", { y: "-70vw", opacity: 1, duration: 3});
   }, []);
 
 

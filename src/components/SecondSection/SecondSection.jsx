@@ -4,6 +4,7 @@ import "./styles.css";
 import shadowRight from "../../assets/ShadowRight2.svg";
 import shadowLeft from "../../assets/ShadowLeft2.svg";
 import { Orbit } from "../";
+import { StarsSecond } from "../StarsSecond/StarsSecond";
 import { VideosAnimation } from "./VideosAnimation/VideosAnimation";
 
 export function SecondSection({ someText }) {
@@ -19,6 +20,8 @@ export function SecondSection({ someText }) {
       <div className="orbit-container">
         <Orbit size="14vw" rotationSpeed="10" />
       </div>
+      <StarsSecond/>
+
       <h2 className="longevity-title">LONGEVIDADE</h2>
       <p className="longevity-subtitle">CUIDAR DO FUTURO <br></br> COMEÇA <p className="longevity-subtitle-bold">AGORA</p></p>
       <img className="shadow-right" src={shadowRight}></img>
