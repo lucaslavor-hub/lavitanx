@@ -35,3 +35,15 @@
   cursor: pointer;
   z-index: 2;
 }
+
+.button-pass {
+  position: absolute;
+  width: 4.8vw;
+  height: 4.8vw;
+  top: 4.8vw;
+  border: none;
+  outline: none;
+  right: 4.8vw;
+  cursor: pointer;
+  z-index: 2;
+}

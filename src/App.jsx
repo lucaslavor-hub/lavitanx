@@ -18,15 +18,15 @@ function App() {
   return (
     <div>
       {/* <LocomotiveScrollComponent> */}
-        {/* { loading ? 
+        { loading ? 
           <PreloadVideo setLoading={setLoading}/> 
           : 
-          <> */}
+          <>
             <FirstSection/>
             <SecondSection/>
             <ThirdSection/>
-          {/* </>
-          } */}
+          </>
+          }
       {/* </LocomotiveScrollComponent> */}
     </div>
   )
