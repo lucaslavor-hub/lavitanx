@@ -1,20 +1,20 @@
 .background-fourth-section {
   width: 100vw;
-  height: 220vw;
   background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 15vw, #030D29 36.98%);
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 20vh;
 }
 
 .fourth-section-title {
   font-family: 'Krona One';
   font-style: normal;
   font-weight: 400;
-  font-size: 2.6vw;
+  font-size: calc(28px + 0.5vw);
   text-align: center;
   letter-spacing: 0.28em;
-  width: 40vw;
+  width: 60vw;
   color: #FFC425;
 }
 
@@ -23,7 +23,7 @@
   font-family: 'Audiowide';
   font-style: normal;
   font-weight: 400;
-  font-size: 2.6vw;
+  font-size: calc(28px + 0.5vw);
   margin-top: 1vh;
   text-align: center;
   letter-spacing: 0.28em;
@@ -35,25 +35,16 @@
 .pill-bottle-fourth {
   width: 265px;
   height: 478px;
+  z-index: 10000;
 }
 
 .fourth-bold-text {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 1.8vw;
+  font-size: calc(20px + 0.5vw);
   text-align: right;
-  letter-spacing: 0.28em;
-  color: #FFFFFF;
-}
-
-.fourth-number-one {
-  font-family: 'Audiowide';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2.2vw;
-  text-align: center;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.14em;
   color: #FFFFFF;
 }
 
@@ -61,18 +52,31 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 1.2vw;
+  font-size: calc(12px + 0.5vw);
   text-align: right;
+  color: #FFFFFF;
+  letter-spacing: 0.14em;
+  max-width: 600px;
+}
+
+.fourth-number-one {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(20px + 0.5vw);
+  text-align: center;
   letter-spacing: 0.28em;
   color: #FFFFFF;
 }
+
 
 .fourth-side-div {
   display: flex;
   flex-direction: column;
   width: 30vw;
   justify-content: center;
-  gap: 3vh;
+  gap: 2.5vh;
+  align-items: flex-start;
 }
 
 .fourth-content {
@@ -80,36 +84,33 @@
   padding-top: 10vh;
 }
 
-/* .shadow-right {
-  position: absolute;
-  right: 0;
-  margin-top: 14.5vw;
-  width: 35vw;
+
+
+.fourth-scroll-content {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 25vh;
 }
 
-.shadow-left {
-  position: absolute;
-  left: 0;
-  margin-top: 56vw;
-  width: 30vw;
+.fourth-section-image-gallery {
+  display: grid;
+  grid-template-columns: repeat(50, 2%);
+  grid-template-rows: repeat(50, 2%);
+  width: 100vw;
+  position: relative;
+  align-items: center;
+  overflow: auto;
 }
 
+.fourth-scroll-content>::-webkit-scrollbar {
+  height: 9px;
+  background-color: grey;
+}
 
-@media only screen and (max-width: 600px) {
-
-  .shadow-right,
-  .shadow-left,
-  .longevity-subtitle {
-    display: none;
-  }
-
-  .longevity-title {
-    font-size: 6.7vw;
-    margin-top: 42vw;
-  }
-
-  .background-fourth-section {
-    background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 20vw, #030D29 36.98%);
-  }
-
-} */
+.fourth-scroll-content>::-webkit-scrollbar-thumb {
+  background: #082575;
+  border-radius: 20px;
+}
