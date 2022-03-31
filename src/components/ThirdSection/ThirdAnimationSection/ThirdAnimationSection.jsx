@@ -21,109 +21,160 @@ export function ThirdAnimationSection() {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    // gsap.from(DNALeftTop.current, { 
-    //   scrollTrigger:  {
-    //     trigger: ".fourth-animation-pag",
-    //     toggleActions: "restart none reverse none",
-    //     start: "start+=400% start",
-    //     scrub: true,
-    //     end: "500% start",
-    //   },
-    //   rotation: -10,
-    //   opacity: 0.5,
-    //   width: "0vw",
-    //   left: "10vw",
-    //   x: "-5vw",
-    //   y:"-2vw",
-    //   immediateRender: false,
+    gsap.to(cellLeftTop.current, { 
+      scrollTrigger:  {
+        trigger: containerRef.current,
+        toggleActions: "restart none reverse none",
+        start: "start+=400% start",
+        scrub: true,
+        end: "490% start",
+      },
+      opacity: 0.5,
+      top: "10vw",
+      width: "27vw",
+      left:"5vw",
+      rotation: 20,
+      immediateRender: false,
+    }); 
 
-    // }); 
+    gsap.to(cellLeftTop.current, { 
+      scrollTrigger:  {
+        trigger: containerRef.current,
+        toggleActions: "restart none reverse none",
+        start: "start+=491% start",
+        scrub: true,
+        end: "560% start",
+      },
+      rotation: 50,
+      width:"20vw",
+      opacity: 0.1,
+      immediateRender: false,
+    });  
 
-    // gsap.to(DNALeftTop.current, { 
-    //   scrollTrigger:  {
-    //     trigger: ".fourth-animation-pag",
-    //     toggleActions: "restart none reverse none",
-    //     start: "start+=510% start",
-    //     scrub: true,
-    //     end: "610% start",
-    //   },
-    //   rotation: -10,
-    //   opacity: 0,
-    //   width: "10vw",
-    //   left: "10vw",
-    //   x: "-5vw",
-    //   y:"-2vw",
-    //   immediateRender: false,
-    // });  
+    gsap.to(cellCenterTop.current, { 
+      scrollTrigger:  {
+        trigger: containerRef.current,
+        toggleActions: "restart none reverse none",
+        start: "start+=491% start",
+        scrub: true,
+        end: "530% start",
+      },
+      immediateRender: false,
+      opacity:0.9,
+      y: "5vw",
+      rotation: 10,
+      width: "32vw",
+      left:"35vw",
+    }); 
 
-    // gsap.from(DNALeftBottom.current, { 
-    //   scrollTrigger:  {
-    //     trigger: ".fourth-animation-pag",
-    //     toggleActions: "restart none reverse none",
-    //     start: "start+=410% start",
-    //     scrub: true,
-    //     end: "start+=520% start",
-    //   },
-    //   rotation: -10,
-    //   opacity: 0.5,
-    //   width: "0vw",
-    //   left: "10vw",
-    //   x: "-15vw",
-    //   y:"45vw",
-    //   immediateRender: false,
+    gsap.to(cellCenterTop.current, { 
+      scrollTrigger:  {
+        trigger: containerRef.current,
+        toggleActions: "restart none reverse none",
+        start: "start+=531% start",
+        scrub: true,
+        end: "640% start",
+      },
+      rotation: -10,
+      width:"20vw",
+      opacity: 0.1,
+      immediateRender: false,
+    });  
 
-    // }); 
 
-    // gsap.to(DNALeftBottom.current, { 
-    //   scrollTrigger:  {
-    //     trigger: ".fourth-animation-pag",
-    //     toggleActions: "restart none reverse none",
-    //     start: "start+=530% start",
-    //     scrub: true,
-    //     end: "start+=610% start",
-    //   },
-    //   rotation: -10,
-    //   opacity: 0,
-    //   width: "100vw",
-    //   x: "15vw",
-    //   y:"-2vw",
-    //   immediateRender: false,
-    // });  
+    gsap.to(cellRightTop.current, { 
+      scrollTrigger:  {
+        trigger: containerRef.current,
+        toggleActions: "restart none reverse none",
+        start: "start+=480% start",
+        scrub: true,
+        end: "530% start",
+      },
+      width:"20vw",
+      rotation: "-40",
+      opacity: 1,
+      x: "-10vw",
+      y: "-2vw",
+      immediateRender: false,
+    }); 
 
-    // gsap.from(DNARight.current, { 
-    //   scrollTrigger:  {
-    //     trigger: ".fourth-animation-pag",
-    //     toggleActions: "restart none reverse none",
-    //     start: "start+=420% start",
-    //     scrub: true,
-    //     end: "start+=510% start",
-    //   },
-    //   rotation: -10,
-    //   opacity: 0.5,
-    //   width: "0vw",
-    //   right: "10vw",
-    //   x: "-5vw",
-    //   y:"-2vw",
-    //   immediateRender: false,
+    gsap.to(cellRightTop.current, { 
+      scrollTrigger:  {
+        trigger: containerRef.current,
+        toggleActions: "restart none reverse none",
+        start: "start+=531% start",
+        scrub: true,
+        end: "620% start",
+      },
+      rotation: "-80",
+      width:"10vw",
+      opacity: 0.1,
+      immediateRender: false,
+    });  
 
-    // }); 
+    gsap.to(cellLeftBottom.current, { 
+      scrollTrigger:  {
+        trigger: containerRef.current,
+        toggleActions: "restart none reverse none",
+        start: "start+=470% start",
+        scrub: true,
+        end: "510% start",
+      },
+      width:"40vw",
+      rotation: 100,
+      opacity: 0.4,
+      immediateRender: false,
+      x: "5vw",
+      y: "7vw",
+    }); 
 
-    // gsap.to(DNARight.current, { 
-    //   scrollTrigger:  {
-    //     trigger: ".fourth-animation-pag",
-    //     toggleActions: "restart none reverse none",
-    //     start: "start+=520% start",
-    //     scrub: true,
-    //     end: "start+=610% start",
-    //   },
-    //   rotation: -10,
-    //   opacity: 0,
-    //   width: "10vw",
-    //   right: "10vw",
-    //   x: "-5vw",
-    //   y:"-2vw",
-    //   immediateRender: false,
-    // });  
+    gsap.to(cellLeftBottom.current, { 
+      scrollTrigger:  {
+        trigger: containerRef.current,
+        toggleActions: "restart none reverse none",
+        start: "start+=511% start",
+        scrub: true,
+        end: "600% start",
+      },
+      rotation: -10,
+      width:"20vw",
+      opacity: 0.1,
+      immediateRender: false,
+    });  
+
+    gsap.to(cellRightBottom.current, { 
+      scrollTrigger:  {
+        trigger: containerRef.current,
+        toggleActions: "restart none reverse none",
+        start: "start+=420% start",
+        scrub: true,
+        end: "520% start",
+      },
+      width:"10vw",
+      rotation: 10,
+      opacity: 0,
+      immediateRender: false,
+      width: "44vw",
+      opacity: 1,
+      rotation: 50,
+      y:"-20vw",
+      x:"-2vw",
+    }); 
+
+    gsap.to(cellRightBottom.current, { 
+      scrollTrigger:  {
+        trigger: containerRef.current,
+        toggleActions: "restart none reverse none",
+        start: "start+=521% start",
+        scrub: true,
+        end: "600% start",
+      },
+      rotation: 50,
+      width:"20vw",
+      opacity: 0.1,
+      immediateRender: false,
+    });  
+
 
   }, []);
 

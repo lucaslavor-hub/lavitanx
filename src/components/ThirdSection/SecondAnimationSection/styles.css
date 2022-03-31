@@ -24,7 +24,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 2.5vw;
-  line-height: 39px;
+  line-height: 3vw;
   text-align: center;
   letter-spacing: 0.35em;
   text-transform: uppercase;
@@ -44,14 +44,6 @@
   transform: rotate(134.23deg);
 }
 
-.DNA-left-top-container{
-  width: 90vw;
-  left:-50vw;
-  position: absolute;
-  z-index: 11;
-  margin-top: -30vw;
-  opacity: 0.13;
-}
 
 .DNA-left-bottom{
   left:-110vw;
