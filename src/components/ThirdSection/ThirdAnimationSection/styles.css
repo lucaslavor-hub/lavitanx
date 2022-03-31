@@ -1,0 +1,85 @@
+.third-animation-pag {
+  background-color: #E7EBF6;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.first-animation-titles-container3 {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-second-section-3 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5vw;
+  line-height: 3vw;
+  text-align: center;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+
+  color: #030F2F;
+
+}
+
+.cell-left-top {
+  position: absolute;
+  z-index: 11;
+  width:10vw;
+  transform: rotate(-50deg);
+  opacity: 0;
+  top:5vw;
+}
+
+
+.cell-left-bottom {
+  opacity: 0;
+  width: 32vw;
+  left:-10vw;
+  position: absolute;
+  z-index: 11;
+  margin-top: 30vw;
+  transform: rotate(10deg);
+}
+
+.cell-center-top {
+  position: absolute;
+  z-index: 11;
+  opacity: 0;
+  width:10vw;
+  margin-top:-65vw;
+  width: 10vw;
+  left: 50vw;
+}
+
+.cell-right-top {
+  width: 10vw;
+  right:-10vw;
+  position: absolute;
+  z-index: 11;
+  opacity: 0;
+  margin-top: -15vw;
+  transform: rotate(10deg);
+}
+
+.cell-right-bottom {
+  width: 44vw;
+  right:-15vw;
+  position: absolute;
+  z-index: 16;
+  opacity: 0.9;
+  opacity: 0;
+  bottom: -35vw;
+  transform: rotate(10deg);
+}
