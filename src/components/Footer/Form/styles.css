@@ -54,6 +54,7 @@
     /* identical to box height, or 20px */
     letter-spacing: 0.085em;
     color: #FFFFFF;
+    border: none;
     padding-left: 10px;
   }
   
@@ -83,6 +84,7 @@
     /* identical to box height, or 20px */
     letter-spacing: 0.085em;
     color: #FFFFFF;
+    border: none;
     padding-left: 10px;
   }
   
@@ -108,6 +110,7 @@
     font-weight: 400;
     font-size: 2vh;
     line-height: 124.52%;
+    border: none;
     /* identical to box height, or 20px */
     letter-spacing: 0.085em;
     color: #030F2F;
