@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import "./styles.css";
 import { ScrollTrigger } from "gsap/all";
-import DNA from "../../../assets/DNA.png";
+import DNA from "../../../assets/DNA_section2.png";
 import DNA2 from "../../../assets/DNA2.png";
 
 export function FourthAnimationSection() {
@@ -17,20 +17,19 @@ export function FourthAnimationSection() {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    gsap.from(DNALeftTop.current, { 
+    gsap.to(DNALeftTop.current, { 
       scrollTrigger:  {
         trigger: ".fourth-animation-pag",
         toggleActions: "restart none reverse none",
-        start: "start+=600% start",
+        start: "start+=650% start",
         scrub: true,
-        end: "700% start",
+        end: "740% start",
       },
-      rotation: -10,
+      rotation:105,
       opacity: 0.5,
-      width: "0vw",
-      left: "10vw",
-      x: "-5vw",
-      y:"-2vw",
+      width: "90vw",
+      x: "-27vw",
+      y:"0vw",
       immediateRender: false,
 
     }); 
@@ -39,33 +38,31 @@ export function FourthAnimationSection() {
       scrollTrigger:  {
         trigger: ".fourth-animation-pag",
         toggleActions: "restart none reverse none",
-        start: "start+=701% start",
+        start: "start+=741% start",
         scrub: true,
-        end: "810% start",
+        end: "770% start",
       },
-      rotation: -10,
+      rotation: 145,
       opacity: 0,
-      width: "10vw",
-      left: "10vw",
+      width: "40vw",
       x: "-5vw",
       y:"-2vw",
       immediateRender: false,
     });  
 
-    gsap.from(DNALeftBottom.current, { 
+    gsap.to(DNALeftBottom.current, { 
       scrollTrigger:  {
         trigger: ".fourth-animation-pag",
         toggleActions: "restart none reverse none",
-        start: "start+=610% start",
+        start: "start+=600% start",
         scrub: true,
-        end: "start+=720% start",
+        end: "start+=680% start",
       },
-      rotation: -10,
+      rotation: "30",
       opacity: 0.5,
-      width: "0vw",
-      left: "10vw",
+      width: "100vw",
       x: "-15vw",
-      y:"45vw",
+      y:"-15vw",
       immediateRender: false,
 
     }); 
@@ -74,32 +71,32 @@ export function FourthAnimationSection() {
       scrollTrigger:  {
         trigger: ".fourth-animation-pag",
         toggleActions: "restart none reverse none",
-        start: "start+=721% start",
+        start: "start+=681% start",
         scrub: true,
-        end: "start+=810% start",
+        end: "start+=760% start",
       },
-      rotation: -10,
+      rotation: "80",
       opacity: 0,
-      width: "100vw",
-      x: "15vw",
-      y:"-2vw",
+      width: "50vw",
+      x: "-15vw",
+      y:"-15vw",
       immediateRender: false,
     });  
 
-    gsap.from(DNARight.current, { 
+    gsap.to(DNARight.current, { 
       scrollTrigger:  {
         trigger: ".fourth-animation-pag",
         toggleActions: "restart none reverse none",
-        start: "start+=620% start",
+        start: "start+=670% start",
         scrub: true,
-        end: "start+=710% start",
+        end: "start+=750% start",
+
       },
-      rotation: -10,
-      opacity: 0.5,
-      width: "0vw",
-      right: "10vw",
-      x: "-5vw",
-      y:"-2vw",
+      rotation: 20,
+      opacity: 1,
+      width: "142vw",
+      x: "15vw",
+      y:"18vw",
       immediateRender: false,
 
     }); 
@@ -108,16 +105,15 @@ export function FourthAnimationSection() {
       scrollTrigger:  {
         trigger: ".fourth-animation-pag",
         toggleActions: "restart none reverse none",
-        start: "start+=711% start",
+        start: "start+=751% start",
         scrub: true,
         end: "start+=810% start",
       },
-      rotation: -10,
+      rotation: 23,
       opacity: 0,
-      width: "10vw",
-      right: "10vw",
-      x: "-5vw",
-      y:"-2vw",
+      width: "52vw",
+      x: "0vw",
+      y:"-6vw",
       immediateRender: false,
     });  
 
@@ -127,7 +123,7 @@ export function FourthAnimationSection() {
   <section ref={containerRef} className="fourth-animation-pag">
     <img ref={DNALeftTop} className="DNA-left-top4"  src={DNA} />
     <img ref={DNALeftBottom} className="DNA-left-bottom4"  src={DNA} />
-    <img ref={DNARight} className="DNA-right4"  src={DNA2} />
+    <img ref={DNARight} className="DNA-right4"  src={DNA} />
     <div className="first-animation-titles-container4">
       <p className="title-second-section-4">Auxilia no<br/>rejuvenescimento</p>
     </div> 
