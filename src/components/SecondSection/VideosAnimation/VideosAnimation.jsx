@@ -1,7 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import "./styles.css";
-import video from "../../../assets/video.mp4";
+import video1 from "../../../assets/1.mp4";
+import video2 from "../../../assets/2.mp4";
+import video3 from "../../../assets/3.mp4";
 import B12Bubble from "../../../assets/B12Left.svg";
 import CBubble from "../../../assets/CRight.svg";
 import Moon from "../../../assets/moon2section.svg";
@@ -96,7 +98,7 @@ export function VideosAnimation({ someText }) {
   <div ref={videosRef} className="videos-animations-container">
       <div ref={divVideoOneRef}>
         <video ref={videoOneRef} className="video-animations-one" preload="metadata" muted autoPlay loop> 
-          <source src={video} type="video/mp4"/>
+          <source src={video1} type="video/mp4"/>
         </video>
       </div>
 
@@ -105,12 +107,12 @@ export function VideosAnimation({ someText }) {
       <div className="bottom-videos-container">
         <div ref={divVideoTwoRef} className="video-animations-two">
           <video ref={videoTwoRef} preload="metadata" muted autoPlay loop>
-            <source src={video} type="video/mp4"/>
+            <source src={video2} type="video/mp4"/>
           </video>
         </div>
         <div ref={divVideoThreeRef} className="video-animations-three" >
           <video ref={videoThreeRef} preload="metadata" muted autoPlay loop>
-            <source src={video} type="video/mp4"/>
+            <source src={video3} type="video/mp4"/>
           </video>
         </div>
       </div>

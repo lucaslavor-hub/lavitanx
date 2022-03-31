@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import video from "../../assets/lavitanx.mp4";
+import video from "../../assets/video.mp4";
 import "./styles.css";
 
 

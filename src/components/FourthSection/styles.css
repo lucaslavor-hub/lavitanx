@@ -1,0 +1,115 @@
+.background-fourth-section {
+  width: 100vw;
+  height: 220vw;
+  background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 15vw, #030D29 36.98%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fourth-section-title {
+  font-family: 'Krona One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.6vw;
+  text-align: center;
+  letter-spacing: 0.28em;
+  width: 40vw;
+  color: #FFC425;
+}
+
+
+.fourth-section-subtitle {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.6vw;
+  margin-top: 1vh;
+  text-align: center;
+  letter-spacing: 0.28em;
+  width: 40vw;
+
+  color: #FFFFFF;
+}
+
+.pill-bottle-fourth {
+  width: 265px;
+  height: 478px;
+}
+
+.fourth-bold-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8vw;
+  text-align: right;
+  letter-spacing: 0.28em;
+  color: #FFFFFF;
+}
+
+.fourth-number-one {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2vw;
+  text-align: center;
+  letter-spacing: 0.28em;
+  color: #FFFFFF;
+}
+
+.fourth-normal-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2vw;
+  text-align: right;
+  letter-spacing: 0.28em;
+  color: #FFFFFF;
+}
+
+.fourth-side-div {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  justify-content: center;
+  gap: 3vh;
+}
+
+.fourth-content {
+  display: flex;
+  padding-top: 10vh;
+}
+
+/* .shadow-right {
+  position: absolute;
+  right: 0;
+  margin-top: 14.5vw;
+  width: 35vw;
+}
+
+.shadow-left {
+  position: absolute;
+  left: 0;
+  margin-top: 56vw;
+  width: 30vw;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .shadow-right,
+  .shadow-left,
+  .longevity-subtitle {
+    display: none;
+  }
+
+  .longevity-title {
+    font-size: 6.7vw;
+    margin-top: 42vw;
+  }
+
+  .background-fourth-section {
+    background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 20vw, #030D29 36.98%);
+  }
+
+} */
