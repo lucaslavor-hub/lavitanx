@@ -1,0 +1,134 @@
+
+#back1{
+    
+    background: linear-gradient(180deg, rgba(4, 17, 54, 0) 42.19%, rgba(255, 196, 37, 0.29) 100%);
+    opacity: 0.8;
+    filter: blur(91px);
+    border-radius: 1050px;
+    }
+    
+    .logo_f{
+        text-align: center;
+    
+    }
+    
+    .coluna2{
+        text-align: center;
+    }
+    
+    .wrapper{
+        align-content: center;
+        vertical-align: center;
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imagem22{
+        width: 25vh;
+    }
+    
+    .button {
+        width: 130px;
+        height: 47px;
+        box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(13px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 10px;
+        cursor: pointer;
+        text-align: center;
+      }
+      
+      .button1 {   width: 120px;
+        height: 50px;
+        background: #FFC425;
+        box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(13px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 10px;
+        font-family: 'Audiowide';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vh;
+        line-height: 124.52%;
+        /* identical to box height, or 20px */
+        letter-spacing: 0.085em;
+        color: #030F2F;
+        margin-left: 18px;
+        } 
+    
+        .button2 {
+            width: 162px;
+            height: 50px;
+    
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(13px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 10px;
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vh;
+    line-height: 124.52%;
+    /* identical to box height, or 20px */
+    
+    letter-spacing: 0.085em;
+    
+    color: #FFC425;
+    margin: 3%;
+            } 
+    
+    
+    .button3 {
+        width: 162px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(13px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 10px;
+        font-family: 'Audiowide';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vh;
+        line-height: 124.52%;
+        /* identical to box height, or 20px */
+        letter-spacing: 0.085em;
+        color: #FFC425;
+                } 
+                @media (min-width: 600px) {
+                    .button1 {
+                        font-size: 12px;
+                      }
+                      .button2 {
+                        font-size: 12px;
+                      }
+                      .button3 {
+                        font-size: 12px;
+                      }
+                  }
+                
+      .s11{
+        display: flex;
+        text-align: center;
+        align-content: center;
+        vertical-align: center;
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      #iconsv{
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      #coluna1{
+          margin-bottom: -100px;
+      }

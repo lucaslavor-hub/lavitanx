@@ -1,10 +1,21 @@
 import "./styles.css";
 
 export function Form (){
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const answer = window.confirm("are you sure?");
+    if (answer) {
+      // Save it!
+      console.log("Thing was saved to the database.");
+    } else {
+      // Do nothing!
+      console.log("Thing was not saved to the database.");
+    }
+  };
     return(
+
 <div style={{textAlign: 'center'}}>
-  <form method="POST" action="https://ecommercecimed.activehosted.com/proc.php" id="_form7" className="_form _form_7 _inline-form _inline-style _dark" noValidate>
+  <form method="POST" onSubmit={handleSubmit} action="https://ecommercecimed.activehosted.com/proc.php" id="_form7" className="_form _form_7 _inline-form _inline-style _dark" noValidate>
     <input type="hidden" name="u" defaultValue={7} />
     <input type="hidden" name="f" defaultValue={7} />
     <input type="hidden" name="s" />
