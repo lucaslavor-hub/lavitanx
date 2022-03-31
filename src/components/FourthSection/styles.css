@@ -35,6 +35,7 @@
 .pill-bottle-fourth {
   width: 265px;
   height: 478px;
+  z-index: 10000;
 }
 
 .fourth-bold-text {
@@ -42,7 +43,6 @@
   font-style: normal;
   font-weight: 600;
   font-size: calc(20px + 0.5vw);
-  ;
   text-align: right;
   letter-spacing: 0.14em;
   color: #FFFFFF;
@@ -84,36 +84,24 @@
   padding-top: 10vh;
 }
 
-/* .shadow-right {
-  position: absolute;
-  right: 0;
-  margin-top: 14.5vw;
-  width: 35vw;
+
+
+.fourth-scroll-content {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 25vh;
+
 }
 
-.shadow-left {
-  position: absolute;
-  left: 0;
-  margin-top: 56vw;
-  width: 30vw;
+.fourth-section-image-gallery {
+  display: grid;
+  grid-template-columns: repeat(50, 2%);
+  grid-template-rows: repeat(50, 2%);
+  width: 100vw;
+  position: relative;
+  align-items: center;
+  overflow: auto;
 }
-
-
-@media only screen and (max-width: 600px) {
-
-  .shadow-right,
-  .shadow-left,
-  .longevity-subtitle {
-    display: none;
-  }
-
-  .longevity-title {
-    font-size: 6.7vw;
-    margin-top: 42vw;
-  }
-
-  .background-fourth-section {
-    background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 20vw, #030D29 36.98%);
-  }
-
-} */
