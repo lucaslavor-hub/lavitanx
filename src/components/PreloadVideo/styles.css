@@ -7,43 +7,77 @@
 
 .video-play {
   position: absolute;
-  width: 4.8vw;
-  height: 4.8vw;
+  width: 5.0vw;
+  height: 5.0vw;
   border-radius: 50%;
-  border: none;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1.5px;
   outline: none;
-  background-color: #E9E8E4;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #E9E8E400;
   bottom: 2.7vw;
   left: 4.8vw;
-  cursor: pointer;
   z-index: 2;
+  text-align: center;
 }
 
 .video-play:hover {
-  background-color: rgb(224, 223, 223);
+  background-color: #f9f9f966;
 }
 
 .unmute-button {
   position: absolute;
-  width: 4.8vw;
-  height: 4.8vw;
+  border-radius: 16px;
+  width: 3.5vw;
+  height: 3.5vw;
+  border-style: solid;
+  border-color: #ffffff;
+  background-color: #E9E8E400;
+  border-radius: 50%;
+  border-width: 1.5px;
   top: 4.8vw;
-  border: none;
   outline: none;
   left: 4.8vw;
-  cursor: pointer;
   z-index: 2;
+}
+
+.unmute-button:hover {
+  background-color: #f9f9f966;
 }
 
 .button-pass {
   position: absolute;
-  width: 4.8vw;
-  height: 4.8vw;
-  top: 4.8vw;
-  border: none;
+  width: 3.5vw;
+  height: 3.5vw;
+  bottom: 2.7vw;
+  background-color: #E9E8E400;
+  border:none;
+  border-radius: 50%;
   outline: none;
   right: 4.8vw;
-  cursor: pointer;
   z-index: 2;
+}
+
+.button-pass:hover {
+  background-color: #f9f9f966;
+}
+
+.pauseButton {
+  fill: #ffffff;
+}
+
+.playButton {
+  fill: #ffffff;
+}
+
+.soundOn {
+  fill: #ffffff;
+}
+
+.soundOff {
+  fill: #ffffff;
+}
+
+.goToWebsite {
+  fill: #ffffff;
 }
