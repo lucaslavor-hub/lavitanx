@@ -50,7 +50,7 @@ export function Footer (){
           </div>
 
           <div className="n">
-    <div className="s111"><p><a id="a1" href="https://cimedremedios.com.br/politica-de-privacidade/"><u>Política de Privacidade e Termos de Uso</u></a></p></div>
+    <div className="s111"><p><a id="a1" href="https://cimedremedios.com.br/politica-de-privacidade/"  target="_blank" ><u>Política de Privacidade e Termos de Uso</u></a></p></div>
 </div>
           <div>
             <h3 className="direito">© 2022 Todos os Direitos Reservados </h3>

@@ -78,7 +78,7 @@ padding-left: 0.1%;
     padding: 0% 8% 0% 8%;
 }
 
-@media (min-width: 728px) {
+@media (min-width: 600px) {
   .row2 {
     padding: 0% 8% 0% 8%;
   }
@@ -96,11 +96,12 @@ padding-left: 0.1%;
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 1%;
-  padding-top: 2%;
   width: 100%;
   margin-right: -4%;
-  *zoom: 1;
-  *display: inline;
+
+  vertical-align: middle;
+ 
+
 }
   /* tres colunas */
   @media (min-width: 600px) {
