@@ -1,7 +1,7 @@
 .third-section {
   position:relative;
   z-index: 14;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .white-wave-top, .white-wave-bottom {

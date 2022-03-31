@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   margin-top: -1.5vw;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 section:not(.first) {
