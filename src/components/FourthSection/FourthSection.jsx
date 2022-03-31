@@ -6,6 +6,9 @@ import pillBottle from "../../assets/pillBottle.svg";
 import { gallery, gridValues } from './galleryData'
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/src/locomotive-scroll.scss";
+import shadowCenter from '../../assets/shadowCenter.svg'
+import { StarsFourth } from "../StarsFourth/StarsFourth";
+import { Orbit2 } from "../Orbit2/Orbit2";
 
 
 
@@ -63,8 +66,22 @@ export function FourthSection() {
 
   return (
     <div className="background-fourth-section">
+
+
       <h2 className="fourth-section-title">Lavitan X</h2>
       <h3 className="fourth-section-subtitle">BIO COMPLEX</h3>
+
+      {/* <StarsFourth /> */}
+
+      <div className="small-fourth-orbit">
+        <Orbit2 size="14vw" rotationSpeed="10" text="D" />
+      </div>
+
+      <div className="filled-fourth-orbit">
+        <Orbit2 size="14vw" rotationSpeed="10" text="K" filled />
+      </div>
+
+      <img className="fourth-shadow-center" src={shadowCenter} alt=""></img>
 
       <div className="fourth-content">
 

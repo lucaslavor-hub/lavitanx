@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   margin-bottom: 20vh;
+  position: relative;
 }
 
 .fourth-section-title {
@@ -106,11 +107,41 @@
 }
 
 .fourth-scroll-content>::-webkit-scrollbar {
-  height: 9px;
-  background-color: grey;
+  height: 12px;
+  background-color: transparent;
 }
 
 .fourth-scroll-content>::-webkit-scrollbar-thumb {
   background: #082575;
   border-radius: 20px;
+}
+
+.fourth-shadow-center {
+  position: absolute;
+  z-index: 3;
+  width: 45vw;
+  margin-top: 75vh;
+}
+
+
+.small-fourth-orbit {
+  right: -3vw;
+  position: absolute;
+}
+
+.filled-fourth-orbit {
+  left: -6vw;
+  margin-top: 20vh;
+  position: absolute;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .small-fourth-orbit,
+  .filled-fourth-orbit {
+    display: none;
+  }
+
 }

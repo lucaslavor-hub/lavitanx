@@ -1,0 +1,16 @@
+.orbit-image-no-text {
+  z-index: 11;
+  opacity: 1;
+  /* position: absolute */
+}
+
+.orbit2-text {
+  font-size: 70px;
+  font-family: 'Inter';
+  color: #FFFFFF;
+  opacity: 0.05;
+  font-weight: 700;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
