@@ -88,12 +88,11 @@
 
 .fourth-scroll-content {
   display: flex;
-  height: 50vh;
+  height: 80vh;
   justify-content: center;
   align-items: center;
   position: relative;
   margin-top: 25vh;
-
 }
 
 .fourth-section-image-gallery {

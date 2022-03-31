@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import "./styles.css";
@@ -12,6 +12,9 @@ import "locomotive-scroll/src/locomotive-scroll.scss";
 export function FourthSection() {
   const bottleRef = useRef(null);
   const scrollRef = useRef(null);
+  const galleryRef = useRef(null);
+
+  const [animationHappening, setAnimationHappening] = useState(false);
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -32,23 +35,30 @@ export function FourthSection() {
       scrollTrigger: {
         trigger: bottleRef.current,
         start: "top top",
-        endTrigger: ".fourth-number-one",
+        end: "center center-=100",
+        endTrigger: galleryRef.current,
         toggleActions: "restart none none none",
         pin: true,
         scrub: 1,
         pinSpacing: false,
+        pinType: 'fixed',
       },
     });
+
   }, []);
 
+  const skewImages = () => {
+    if (!animationHappening) {
+      setAnimationHappening(true);
+      gsap.utils.toArray('.fourth-image').forEach((image, index) => {
+        const evenIndex = index % 2 === 0;
+        const xAmount = evenIndex ? '-=25' : '+=10';
 
-
-
-  const getScrollSpeed = (index) => {
-    if (index === 1 || index === 4) return -1;
-    if (index === 0 || index === 3) return 0;
-    return 1
-
+        gsap.to(image, { duration: 0.25, x: xAmount, skewX: '-=5deg' })
+        gsap.to(image, { duration: 2, x: 0, skewX: 0, delay: 0.5 })
+      })
+      setTimeout(() => setAnimationHappening(false), 2250)
+    }
   }
 
   return (
@@ -107,7 +117,7 @@ export function FourthSection() {
 
       <div data-scroll-container ref={scrollRef}  >
         <div className="fourth-scroll-content">
-          <div className="fourth-section-image-gallery">
+          <div className="fourth-section-image-gallery" onScroll={skewImages} ref={galleryRef}>
             {gallery.map((image, index) => {
               const values = gridValues[index % 2];
               if (!values) return null;
@@ -120,7 +130,7 @@ export function FourthSection() {
                   draggable={false}
                   style={{ gridArea: `${row} / ${column + (index * 14)} / span ${spanRow} / span ${spanColumn}` }}
                   data-scroll
-                  data-scroll-onSuspendCapture={getScrollSpeed}
+                  className="fourth-image"
                 />
               )
             })}
