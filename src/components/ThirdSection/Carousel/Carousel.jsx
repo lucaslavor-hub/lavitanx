@@ -18,11 +18,11 @@ export function Carousel() {
     sections.forEach((section, i) => {
       ScrollTrigger.create({
         trigger: section,
-        start: '+='+(i*100)+'%',
+        start: '+='+(i*200)+'%',
         end: '+=200%',
         onToggle: self => self.isActive && setSection(section),
         toggleActions: "restart none reverse none",
-
+        // markers: true
       });
     });
 
