@@ -1,5 +1,6 @@
 {
   "name": "lavintan_x",
+  "homepage": "http://cimed.revelatio.studio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
