@@ -145,7 +145,7 @@ export function FourthSection() {
                   src={image}
                   alt="Galéria de imagens"
                   draggable={false}
-                  style={{ gridArea: `${row} / ${column + (index * 14)} / span ${spanRow} / span ${spanColumn}` }}
+                  style={{ gridArea: `${row} / ${column + (index * 10)} / span ${spanRow} / span ${spanColumn}` }}
                   data-scroll
                   className="fourth-image"
                 />

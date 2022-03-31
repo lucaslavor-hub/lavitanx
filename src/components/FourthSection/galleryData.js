@@ -4,11 +4,11 @@ const gallery = [...images, ...images];
 
 // row, RowSize, col, colSize
 const gridValues = [
-  [9, 2, 12, 2],
-  [18, 2, 7, 1],
+  [9, 2, 12, 5],
+  [18, 2, 7, 8],
   [29, 5, 12, 3],
-  [16, 10, 13, 3],
-  [30, 14, 5, 2]
+  [16, 10, 13, 4],
+  [30, 14, 5, 6]
 ]
 
 export { gallery, gridValues }
