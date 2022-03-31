@@ -1,0 +1,91 @@
+.background-second-section {
+  width: 100vw;
+  height: 220vw;
+  z-index: 10;
+  background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 15vw, #030D29 36.98%);
+  position:relative;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.longevity-title {
+  /* position: absolute; */
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+  text-align: center;
+  letter-spacing: 0.335em;
+
+  background: linear-gradient(92.12deg, #FFFFFF 18.52%, rgba(255, 255, 255, 0.51) 26.1%, #FFFFFF 39.08%, #FFFFFF 62.07%, rgba(255, 255, 255, 0.47) 71.78%, #FFFFFF 85.73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-top: 30vw;
+
+}
+
+.longevity-subtitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8vw;
+  margin-top: 5vw;
+  text-align: center;
+  letter-spacing: 0.28em;
+  width: 40vw ;
+
+  color: #FFFFFF;
+}
+
+.longevity-subtitle-bold {
+  font-weight: 600;
+  display: inline
+}
+
+.shadow-right{
+  position: absolute;
+  right: 0;
+  margin-top: 14.5vw;
+  width: 35vw;
+}
+
+.shadow-left{
+  position: absolute;
+  left: 0;
+  margin-top: 56vw;
+  width: 30vw;
+}
+
+.background-second-section > .orbit-container {
+  position: absolute;
+  right: 6vw;
+  margin-top: 35vw;
+}
+
+.top-container-second-section {
+  height: 100vh;
+  position: relative;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .shadow-right, .shadow-left, .longevity-subtitle{
+    display: none;
+  }
+
+  .longevity-title {
+    font-size: 6.7vw;
+    margin-top: 42vw;
+  }
+
+  .background-second-section {
+    background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 20vw, #030D29 36.98%);
+
+  }
+  
+}

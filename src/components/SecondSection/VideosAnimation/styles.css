@@ -1,0 +1,126 @@
+.videos-animations-container video{
+  box-shadow: 7px 57px 30px rgba(0, 0, 0, 0.25);
+  width: 32vw;
+  height: 18vw;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.video-animations-one{
+  transform: rotate(4.06deg);
+  margin-right: 10vw;
+  margin-top: 10vw;
+}
+
+.video-animations-two{
+  position: absolute;
+  transform: rotate(7.03deg);
+  margin-right: 52vw;
+  margin-top: 19vw;
+
+  z-index: 15;
+
+}
+
+.video-animations-three{
+  position: absolute;
+  transform: rotate(-15.3deg);
+  margin-left: 57vw;
+  margin-top: 7vw;
+}
+
+.moon-second-section{
+  position: absolute;
+  margin-left: 28vw ;
+  width: 37vw;
+  z-index: 10;
+}
+
+.videos-animations-container {
+  margin-top: 15vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.videos-animations-container > .middle-text, .videos-animations-container > .bottom-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8vw;
+  line-height: 125.9%;
+
+  text-align: center;
+  letter-spacing: 0.14em;
+  margin-top: 18vw;
+
+  color: #FFFFFF;
+}
+
+.b12-left-bubble{
+  position: absolute;
+  width: 26vw;
+  margin-top: 4vw;
+  margin-right: 12vw;
+}
+
+.b12-orbit-container{
+  position: absolute;
+  left: -11.5vw;
+  margin-top: 60vw;
+}
+
+.c-right-bubble{
+  position: absolute;
+  width: 16vw;
+  margin-bottom: 3vw;
+  margin-left: 2vw;
+}
+
+.c-orbit-container{
+  position: absolute;
+  right: -7vw;
+  margin-top: 50vw;
+
+}
+
+.videos-animations-container .bottom-text {
+  margin-top: 52vw;
+}
+
+
+.bottom-videos-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .b12-orbit-container, .c-orbit-container, .moon-second-section{
+    display: none;
+  }
+
+  .videos-animations-container video{
+    width: 55vw;
+    height: 34vw;
+  }
+
+  .video-animations-two{
+    margin-right: 67vw;
+    margin-top: 40vw;
+
+  }
+  
+  .video-animations-three{
+    margin-left: 74vw;
+  }
+
+  .videos-animations-container > .middle-text, .videos-animations-container > .bottom-text {
+    font-size: 3vw;
+  }
+
+  .videos-animations-container .bottom-text {
+    margin-top: 85vw;
+  }
+
+}

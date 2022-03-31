@@ -1,0 +1,19 @@
+
+
+#banner2 {
+  position:absolute;
+  z-index: 14;
+  width: 100vw;
+  height: 200vw;
+}
+
+.star2 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background:white;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 40;
+    border-radius: 50%;
+}

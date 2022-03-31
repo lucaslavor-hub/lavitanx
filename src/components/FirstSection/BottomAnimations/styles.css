@@ -1,0 +1,44 @@
+.background-video {
+  width: 100%;
+  height: 100%;
+}
+
+.meteor-medicine {
+  opacity: 0;
+  z-index: 4;
+  position: absolute;
+  width: 40vw;
+
+}
+
+.earth {
+  opacity: 0;
+  z-index: 3;
+  width: 100%;
+  position: absolute;
+}
+
+.space {
+  z-index:2;
+}
+
+.earth-meteor-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.orbit-container {
+  width: 10px;
+  height: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .orbit-container {
+    display: none;
+  }
+
+  .earth {
+    margin-top: -27vw;
+  }
+}
