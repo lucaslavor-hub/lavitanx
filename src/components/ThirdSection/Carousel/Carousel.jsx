@@ -21,6 +21,8 @@ export function Carousel() {
         start: '+='+(i*100)+'%',
         end: '+=200%',
         onToggle: self => self.isActive && setSection(section),
+        toggleActions: "restart none reverse none",
+
       });
     });
 
@@ -34,6 +36,7 @@ export function Carousel() {
 
     ScrollTrigger.create({
     trigger: '#animations-container',
+    toggleActions: "restart none reverse none",
     start: 'star start',
     end: '+=' + sections.length*2 + '00%',
     pin: true,

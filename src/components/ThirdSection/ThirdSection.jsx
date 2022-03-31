@@ -10,39 +10,6 @@ import { Carousel } from "./Carousel/Carousel";
 export function ThirdSection() {
   gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
-  // useEffect(() => {
-
-  //   let sections = gsap.utils.toArray("section"),
-  //   currentSection = sections[0];
-
-  //   gsap.defaults({overwrite: 'auto', duration: 0.3});
-
-  //   sections.forEach((section, i) => {
-  //     ScrollTrigger.create({
-  //       trigger: section,
-  //       start: '+='+(i*100)+'%',
-  //       end: '+=100vh',
-  //       onToggle: self => self.isActive && setSection(section),
-  //     });
-  //   });
-
-  //   function setSection(newSection) {
-  //     if (newSection !== currentSection) {
-  //       gsap.to(currentSection, {autoAlpha: 0})
-  //       gsap.to(newSection, { autoAlpha: 1});
-  //       currentSection = newSection;
-  //     }
-  //   }
-
-  //   ScrollTrigger.create({
-  //   trigger: '#animations-container',
-  //   start: 'bottom top',
-  //   end: '+=' + sections.length + '00%',
-  //   pin: true,
-  //   markers: true
-  //   });
-  // }, []);
-
     
   return(
   <div className="third-section">
