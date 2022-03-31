@@ -23,7 +23,6 @@ export function FourthSection() {
         pin: true,
         scrub: 1,
         pinSpacing: false,
-        pinType: 'fixed',
       },
     });
   }, []);
@@ -35,7 +34,7 @@ export function FourthSection() {
 
       <div className="fourth-content">
 
-        <div className="fourth-side-div">
+        <div className="fourth-side-div" style={{ alignItems: 'flex-end' }}>
           <h4 className="fourth-bold-text">O multivitamínico <br /> antioxidante</h4>
           <h4 className="fourth-normal-text">A combinação de vitaminas e minerais antioxidantes que o seu corpo precisa.</h4>
         </div>
@@ -49,9 +48,9 @@ export function FourthSection() {
 
       </div>
 
-      <div className="fourth-content">
-        <div className="fourth-side-div">
-          <h4 className="fourth-number-one" style={{ fontSize: '1.8vw' }}>
+      <div className="fourth-content" style={{ marginTop: '50px' }}>
+        <div className="fourth-side-div" style={{ alignItems: 'flex-end' }}>
+          <h4 className="fourth-number-one">
             DE <b style={{ color: '#FFC425' }}>Nº1</b>
             <br />
             DO BRASIL
@@ -59,7 +58,7 @@ export function FourthSection() {
         </div>
         <img src={pillBottle} style={{ opacity: 0 }} alt="" className="pill-bottle-fourth" />
         <div className="fourth-side-div">
-          <h4 className="fourth-number-one" style={{ fontSize: '1.8vw' }}>
+          <h4 className="fourth-number-one">
             PARA <b style={{ color: '#FFC425' }}>Nº1</b>
             <br />
             DO ESPAÇO
