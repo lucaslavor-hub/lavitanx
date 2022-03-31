@@ -54,10 +54,10 @@ export function FourthSection() {
         const evenIndex = index % 2 === 0;
         const xAmount = evenIndex ? '-=25' : '+=10';
 
-        gsap.to(image, { duration: 0.25, x: xAmount, skewX: '-=5deg' })
+        gsap.to(image, { duration: 0.25, x: xAmount, skewX: '-=7deg' })
         gsap.to(image, { duration: 2, x: 0, skewX: 0, delay: 0.5 })
       })
-      setTimeout(() => setAnimationHappening(false), 2250)
+      setTimeout(() => setAnimationHappening(false), 2000)
     }
   }
 

@@ -104,3 +104,13 @@
   align-items: center;
   overflow: auto;
 }
+
+.fourth-scroll-content>::-webkit-scrollbar {
+  height: 9px;
+  background-color: grey;
+}
+
+.fourth-scroll-content>::-webkit-scrollbar-thumb {
+  background: #082575;
+  border-radius: 20px;
+}
