@@ -5,6 +5,7 @@ import { ScrollTrigger, MotionPathPlugin } from "gsap/all";
 
 import { FirstAnimationSection } from "../FirstAnimationSection/FirstAnimationSection";
 import { SecondAnimationSection } from "../SecondAnimationSection/SecondAnimationSection";
+import { ThirdAnimationSection } from "../ThirdAnimationSection/ThirdAnimationSection";
 import { FourthAnimationSection } from "../FourthAnimationSection/FourthAnimationSection";
 
 export function Carousel() {
@@ -52,6 +53,7 @@ export function Carousel() {
     <div id="animations-container">
       <FirstAnimationSection />
       <SecondAnimationSection />
+      <ThirdAnimationSection />
       <FourthAnimationSection />
     </div>
 

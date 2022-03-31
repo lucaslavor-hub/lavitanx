@@ -10,7 +10,6 @@ import { Carousel } from "./Carousel/Carousel";
 export function ThirdSection() {
   gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
-    
   return(
   <div className="third-section">
 
