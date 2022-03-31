@@ -10,23 +10,8 @@ export function FirstAnimationSection() {
   gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
 
-  // gsap.utils.toArray(".panel").forEach((panel, i) => {
-  //   ScrollTrigger.create({
-  //     trigger: panel,
-  //     start: "top top", 
-  //     pin: true, 
-  //     pinSpacing: false 
-  //   });
-  // });
-  
-  
-  // ScrollTrigger.create({
-  //   snap: 1 / 4 // snap whole page to the closest section!
-  // });
-
-
   return(
-  <section className="first-animation-page">
+  <section className="first-animation-page first">
     <img className="yellow-sphere-left"  src={yellowSphereLeft} />
     <img className="yellow-sphere-right"  src={yellowSphereRight} />
     <div className="first-animation-titles-container">

@@ -8,8 +8,7 @@
   z-index: 10;
 }
 
-.animations-container{
-  position: relative;
-  /* min-height: 100vh; */
-  
+.white-wave-top {
+  height: 47vw;
 }
+
