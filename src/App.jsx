@@ -7,11 +7,12 @@ import Footer from "./components/Footer/index";
 
 
 function App() {
-
+  
   const [loading, setLoading] = useState(true);
   ScrollTrigger.defaults({
     scroller: "#root"
   });
+
   // useEffect(() => {
   //   const timer = setTimeout(() => {
   //     setLoading(false);
@@ -28,7 +29,7 @@ function App() {
         <>
           <FirstSection />
           <SecondSection />
-          {/* <ThirdSection /> */}
+          <ThirdSection />
           <FourthSection />
           <Cursor />
           <Footer> </Footer>

@@ -33,7 +33,7 @@ export function FirstSection({ someText }) {
     <Stars />
     <div className="images-container">
       <div ref={backgroundBlurRef} className="background-blur"/>
-      <img src={video} className="video" />
+      <img src={video} className="background-video" />
       {/* <img src={logo} ref={logoRef} className="first-section-logo" alt="logotipo lavitanx" /> */}
       <img src={spheres} ref={spheresRef} className="first-section-spheres" alt="ilustracao de esferas" />
     </div>

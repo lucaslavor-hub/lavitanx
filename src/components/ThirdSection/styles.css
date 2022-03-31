@@ -1,64 +1,20 @@
 .third-section {
-  position: relative;
+  position:relative;
   z-index: 14;
-  margin: 0;
-  height: 50vw;
+  overflow-y: hidden;
 }
 
-.line {
+.white-wave-top, .white-wave-bottom {
   width: 100vw;
-}
-
-.white-wave-background {
-  width: 100vw;
-  position: absolute;
   z-index: 10;
 }
 
-.yellow-sphere-left {
-  left: -15vw;
-  position: absolute;
-  z-index: 11;
-  width: 35vw;
-  margin-top: 40vw;
-
+.white-wave-top {
+  height: 47vw;
 }
 
-
-.yellow-sphere-right {
-  right: -15vw;
-  position: absolute;
-  z-index: 11;
-  width: 38vw;
-  margin-top: 90vw;
-
+.white-wave-bottom {
+  height: 34.5vw;
+  margin-top: -1vw;
 }
 
-.heart-description {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.6vw;
-  line-height: 29px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-
-  color: #1757A7;
-}
-
-.heart-container {
-  position: absolute;
-  width: 100%;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 75vw;
-}
-
-.yellow-heart {
-  width: 14vw;
-  margin-bottom: 3vw;
-}
