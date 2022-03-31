@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { LocomotiveScrollComponent, FirstSection, PreloadVideo, SecondSection, ThirdSection } from './components/index';
+import { FirstSection, PreloadVideo, SecondSection, ThirdSection } from './components/index';
 import "./global.css";
 import { ScrollTrigger } from "gsap/all";
 import Cursor from "./components/CustomCursor/index"
-
 
 function App() {
   
@@ -11,12 +10,6 @@ function App() {
   ScrollTrigger.defaults({
     scroller: "#root"
   });
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setLoading(false);
-  //   }, 1000);
-  //   return () => clearTimeout(timer);
-  // }, []);
 
   return (
     <div>

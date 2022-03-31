@@ -1,0 +1,32 @@
+.second-animation-pag {
+  background-color: #E7EBF6;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+}
+
+.first-animation-titles-container2 {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-second-section-3 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5vw;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+
+  color: #030F2F;
+
+}
