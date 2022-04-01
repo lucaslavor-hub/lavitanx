@@ -35,32 +35,33 @@
 
 .DNA-left-top4 {
   /* filter: blur(7px); */
-  width: 90vw;
-  left:-50vw;
+  width: 30vw;
+  left:-10vw;
   position: absolute;
   z-index: 11;
-  margin-top: -30vw;
-  opacity: 0.13;
-  transform: rotate(134.23deg);
+  margin-top: 40vw;
+  opacity: 0;
+  transform: rotate(74.23deg);
 }
 
 
 .DNA-left-bottom4{
-  left:-110vw;
+  filter: blur(7px);
+  left:0vw;
   position: absolute;
   z-index: 11;
-  width: 170vw;
-  margin-top: 5vw;
-
+  width: 10vw;
+  margin-top: -15vw;
+  transform: rotate(18.23deg);
+  opacity: 0;
 }
 
 .DNA-right4 {
-  right:-100vw;
+  right:0vw;
   position: absolute;
   z-index: 11;
-  width: 150vw;
-  margin-top: 20vw;
-  opacity: 0.56;
-  filter: blur(21px);
+  width: 20vw;
+  margin-top: 60vw;
+  opacity: 0;
 
 }
