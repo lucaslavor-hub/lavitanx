@@ -7,3 +7,4 @@ export { Stars } from './Stars/Stars';
 export { SecondSection } from './SecondSection/SecondSection';
 export { ThirdSection } from './ThirdSection/ThirdSection';
 export { FourthSection } from './FourthSection/FourthSection';
+export { AstronautInBottle } from './AstronautInBottle/AstronautInBottle'
