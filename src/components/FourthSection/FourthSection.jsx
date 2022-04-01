@@ -60,17 +60,19 @@ export function FourthSection() {
     gsap.utils.toArray('.fourth-image').forEach((image) => {
       const x = (window.innerWidth / 2) - (image.x + (image.width / 2));
 
+      const trigger = isMobile ? '.pill-bottle-fourth' : '.fourth-number-one';
+
       if (image) {
         gsap.from(image, {
           duration: 3,
           x: `+=${x}`,
           y: `+=${-600}`,
           scale: 0.3,
-          opacity: 0,
+          opacity: isMobile ? 1 : 0,
           imageRendering: false,
           lazy: true,
           scrollTrigger: {
-            trigger: '.fourth-number-one',
+            trigger: trigger,
             start: "center center",
             toggleActions: "play none none none",
             onLeave: () => setTimeout(moveImages, 3400)
@@ -79,7 +81,7 @@ export function FourthSection() {
 
       }
     })
-  }, []);
+  }, [isMobile]);
 
 
   const moveImages = () => {
@@ -233,9 +235,9 @@ export function FourthSection() {
                   onScroll={skewImages} style={{ width: '100vw' }}
                   className="drag-to-scroll"
                 >
-                  {gallery.slice(5).map((image, index) => {
+                  {gallery.slice(0, 8).map((image, index) => {
                     const values = gridValues[index % 2];
-                    if (!values) return null;
+                    if (!values || index % 5 === 0) return null;
 
                     const [row, column, spanRow, spanColumn] = values;
                     return (
