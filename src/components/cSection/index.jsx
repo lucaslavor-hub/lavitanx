@@ -29,9 +29,9 @@ export function Csection (){
 
     {isOpen && <Popup
       content={<>
-              <video id="video_popup" preload="metadata"  autoPlay>
-        <source src={video} type="video/mp4"/>
-    </video>
+<iframe id="video_popup" width="715" height="400"
+src="https://www.youtube.com/embed/563aZcYpg0s">
+</iframe>
       </>}
       handleClose={togglePopup}
     />}
