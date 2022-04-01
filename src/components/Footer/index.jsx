@@ -10,8 +10,8 @@ export function Footer (){
             <div className="col2 col-2">
 
                   <div className="text-newsletter">
-                    <h2 className="text1">SE INSCREVA À NOSSA <span className="news">NEWSLETTER</span></h2>
-                    <span className="text2">Acompanhe Lorem ipsum dolor amet arbeit verheihadefed</span>
+                    <h2 className="text1">INSCREVA-SE EM NOSSA <span className="news">NEWSLETTER</span></h2>
+                    <span className="text2">Fique por dentro das novidades da CIMED</span>
                   </div>
                   </div>
                   <div className="col2 col-2">
