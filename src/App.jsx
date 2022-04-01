@@ -4,6 +4,7 @@ import "./global.css";
 import { ScrollTrigger } from "gsap/all";
 import Cursor from "./components/CustomCursor/index"
 import Footer from "./components/Footer/index";
+import Csection from "./components/cSection/index";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <ThirdSection />
           <FourthSection />
           <Cursor />
+          <Csection></Csection>
           <Footer> </Footer>
         </>
       }

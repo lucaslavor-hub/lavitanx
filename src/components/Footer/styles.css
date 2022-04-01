@@ -34,6 +34,21 @@ body {
 
 /* CSS ESTRUTURA 2 COLUNAS */
 /* container */
+a { font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5vh;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.14em;
+  color: #E7EBF6;
+  opacity: 0.5; } 
+
+#a1{
+padding-left: 0.1%;
+}
+
 
 
 /* linha */
@@ -43,6 +58,7 @@ body {
   margin-left: 0px;
   margin-right: 0px;
   padding: 0% 18% 0% 15%;
+  margin-bottom: 2%;
 }
   .row2:before,
   .row2:after {
@@ -62,7 +78,7 @@ body {
     padding: 0% 8% 0% 8%;
 }
 
-@media (min-width: 728px) {
+@media (min-width: 600px) {
   .row2 {
     padding: 0% 8% 0% 8%;
   }
@@ -80,11 +96,12 @@ body {
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 1%;
-  padding-top: 2%;
   width: 100%;
   margin-right: -4%;
-  *zoom: 1;
-  *display: inline;
+
+  vertical-align: middle;
+ 
+
 }
   /* tres colunas */
   @media (min-width: 600px) {
@@ -226,3 +243,12 @@ body {
   opacity: 0.7;
 }
 
+.s111{
+  text-align: center;
+  align-content: center;
+  vertical-align: center;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
