@@ -23,7 +23,6 @@ function App() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".background-second-section",
-        markers: true,
         start: "top 10%"
       }
     });
