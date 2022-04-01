@@ -46,6 +46,11 @@
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
+
+  width: 250px;
+  height: 400px;
+  object-fit: contain;
+  z-index: 10;
 }
 
 
@@ -95,15 +100,19 @@
   padding-top: 10vh;
 }
 
+.drag-to-scroll {
+  width: 100vw;
+  padding: 30vh 0 20vh 0;
+}
+
 
 
 .fourth-scroll-content {
   display: flex;
-  height: 80vh;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 25vh;
+  margin-top: 55vh;
 }
 
 .fourth-section-image-gallery {

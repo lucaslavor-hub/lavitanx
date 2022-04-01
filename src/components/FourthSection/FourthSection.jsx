@@ -42,7 +42,7 @@ export function FourthSection() {
         scrollTrigger: {
           trigger: bottleRef.current,
           start: "top top",
-          end: "center +=500",
+          end: "center +=600",
           endTrigger: galleryRef.current,
           toggleActions: "restart none none none",
           pin: true,
@@ -52,9 +52,22 @@ export function FourthSection() {
         },
       });
     }
-    moveImages();
-  }, []);
+  }, [isMobile]);
 
+
+
+  useEffect(() => {
+    gsap.utils.toArray('.fourth-image').forEach((image) => {
+      const x = (window.innerWidth / 2) - (image.x + (image.width / 2));
+      const y = (window.innerHeight / 2) - (image.y + (image.height / 2));
+      // console.log(y);
+
+      if (image) {
+        gsap.from(image, { duration: 10, x: `+=${x}`, y: `+=${-400}`, scale: 0.3, imageRendering: false, delay: 8 })
+      }
+    })
+    setTimeout(moveImages, 20000)
+  }, []);
 
 
   const moveImages = () => {
@@ -63,13 +76,13 @@ export function FourthSection() {
 
       if (!isMobile) {
         const xAmount = evenIndex ? '-=70' : '+=70';
-        gsap.to(image, { duration: 60, x: xAmount, skewX: 0 })
+        gsap.to(image, { duration: 60, x: xAmount, skewX: 0, imageRendering: false })
       } else {
         const xAmount = evenIndex ? '-=40' : '+=40';
-        gsap.to(image, { duration: 60, x: xAmount, skewX: 0 })
+        gsap.to(image, { duration: 60, x: xAmount, skewX: 0, imageRendering: false })
       }
 
-      gsap.to(image, { duration: 3, skewX: 0 })
+      gsap.to(image, { duration: 3, skewX: 0, imageRendering: false })
     })
   }
 
@@ -81,8 +94,7 @@ export function FourthSection() {
         const xAmount = evenIndex ? '+=13' : '-=12';
         const skewAmount = evenIndex ? '-1deg' : '1deg';
 
-        gsap.to(image, { duration: 2, x: xAmount, skewX: skewAmount })
-        // gsap.to(image, { duration: 2, x: 0, skewX: 0, delay: 0.5 })
+        gsap.to(image, { duration: 2, x: xAmount, skewX: skewAmount, imageRendering: false })
       })
       setTimeout(() => setAnimationHappening(false), 2000)
     }
@@ -107,7 +119,7 @@ export function FourthSection() {
         <Orbit2 size="14vw" rotationSpeed="14" text="K" filled />
       </div>
 
-      <img className="fourth-shadow-center" src={shadowCenter} alt=""></img>
+      <img className="fourth-shadow-center" src={shadowCenter} alt="" draggable={false}></img>
 
       <div className="fourth-content">
 
@@ -160,11 +172,11 @@ export function FourthSection() {
             </div>
           </div>
 
-          <div data-scroll-container ref={scrollRef}  >
+          <div data-scroll-container ref={scrollRef} >
             <div className="fourth-scroll-content">
               <div className="fourth-section-image-gallery" ref={galleryRef}>
                 <ScrollContainer vertical={false} onEndScroll={moveImages}
-                  onScroll={skewImages} style={{ width: '100vw', height: '80vh', maxHeight: '600px' }}
+                  onScroll={skewImages}
                   className="drag-to-scroll"
                   hideScrollbars={false}
                 >
@@ -178,7 +190,7 @@ export function FourthSection() {
                         src={image}
                         alt="Galéria de imagens"
                         draggable={false}
-                        style={{ gridArea: `${row} / ${column + (index * 10)} / span ${spanRow} / span ${spanColumn}` }}
+                        style={{ gridArea: `${row} / ${column + (index * 14)} / span ${spanRow} / span ${spanColumn}` }}
                         data-scroll
                         className="fourth-image"
                       />
