@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import "./styles.css";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger, Power4 } from "gsap/all";
 import lavitanCell from "../../../assets/lavitan_cell.png";
 import cell from "../../../assets/cell.png";
 import cellBlur from "../../../assets/cell_blur.png";
@@ -248,7 +248,31 @@ export function ThirdAnimationSection() {
       immediateRender: false,
     });  
 
+    gsap.from(".text-animation-2", { 
+      scrollTrigger:  {
+        trigger: containerRef.current,
+        toggleActions: "restart none reverse none",
+        start: "start+=400% start",
+        end: "start+=400% start",
+      },
+      y: 100,
+      opacity: 0,
+      duration: 3,
+      ease: Power4.easeOut,
+      immediateRender: false,
+    }); 
 
+    gsap.from(".first-animation-titles-container3", { 
+      scrollTrigger:  {
+        trigger: containerRef.current,
+        toggleActions: "restart none reverse none",
+        start: "start+=400% start",
+        end: "start+=400% start",
+      },
+      duration: 1.5,
+      height: 0,
+      immediateRender: false,
+    }); 
   }, []);
 
   return(
@@ -259,7 +283,7 @@ export function ThirdAnimationSection() {
     <img ref={cellRightTop} className="cell-right-top"  src={lavitanCell} />
     <img ref={cellRightBottom} className="cell-right-bottom"  src={cell} />
     <div className="first-animation-titles-container3">
-    <p className="title-second-section-3">Combate os danos<br/> causados pelos <br/>radicais livreS</p>
+    <p className="title-second-section-3 text-animation-2">Combate os danos<br/> causados pelos <br/>radicais livreS</p>
     </div> 
   </section>
     

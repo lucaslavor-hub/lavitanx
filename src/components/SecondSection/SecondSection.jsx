@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
+import { Power4, ScrollTrigger } from "gsap/all";
 import "./styles.css";
 import shadowRight from "../../assets/ShadowRight2.svg";
 import shadowLeft from "../../assets/ShadowLeft2.svg";
@@ -18,6 +19,21 @@ export function SecondSection({ someText }) {
       gsap.to(backgroundRef.current, { y: "-30vw", opacity: 1, duration: 1});
     }
 
+    gsap.from(".text-animation", { 
+      scrollTrigger:  {
+        trigger: ".text-animation",
+        toggleActions: "restart none reverse none",
+        start: "top+=4% bottom",
+        end: "top+=4% bottom",
+      },
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      ease: Power4.easeOut,
+    }); 
+
+
+
   }, []);
   
   return(
@@ -27,8 +43,8 @@ export function SecondSection({ someText }) {
       </div>
       <StarsSecond/>
 
-      <h2 className="longevity-title">LONGEVIDADE</h2>
-      <p className="longevity-subtitle">CUIDAR DO FUTURO <br></br> COMEÇA <p className="longevity-subtitle-bold">AGORA</p></p>
+      <h2 className="longevity-title text-animation">LONGEVIDADE</h2>
+      <p className="longevity-subtitle text-animation">CUIDAR DO FUTURO <br></br> COMEÇA <p className="longevity-subtitle-bold">AGORA</p></p>
       <img className="shadow-right" src={shadowRight}></img>
       <img className="shadow-left" src={shadowLeft}></img>
     <VideosAnimation />

@@ -12,11 +12,13 @@
 .first-animation-titles-container2 {
   position: absolute;
   width: 100%;
+  height: 9vw;
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .title-second-section-3 {
@@ -42,6 +44,21 @@
   margin-top: -30vw;
   opacity: 0;
   transform: rotate(144.23deg);
+}
+
+.text-animation-1 {
+  overflow: hidden;
+}
+
+.text-animation-1 > div {
+  position: relative;
+  margin: 0;
+}
+.split-parent {
+  overflow: hidden;
+}
+.split-child {
+  display: inline-block;
 }
 
 
@@ -96,5 +113,8 @@
     filter: blur(10px);
     opacity: 0;
   }
-  
+
+  .first-animation-titles-container2 {
+    height: 17vw;
+  }
 }

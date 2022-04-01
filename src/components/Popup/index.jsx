@@ -6,8 +6,8 @@ const Popup = props => {
     <div className="popup-box">
       <div className="box">
         {props.content}
-        <span className="close-icon" onClick={props.handleClose}><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-<path d="M7.71875 6.28125L6.28125 7.71875L23.5625 25L6.28125 42.2812L7.71875 43.7188L25 26.4375L42.2812 43.7188L43.7188 42.2812L26.4375 25L43.7188 7.71875L42.2812 6.28125L25 23.5625L7.71875 6.28125Z" fill="white"/>
+        <span className="close-icon" onClick={props.handleClose}><svg id="icon-x" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+<path d="M3.85938 3.14062L3.14062 3.85938L11.7812 12.5L3.14062 21.1406L3.85938 21.8594L12.5 13.2188L21.1406 21.8594L21.8594 21.1406L13.2188 12.5L21.8594 3.85938L21.1406 3.14062L12.5 11.7812L3.85938 3.14062Z" fill="white"/>
 </svg></span>
       </div>
     </div>

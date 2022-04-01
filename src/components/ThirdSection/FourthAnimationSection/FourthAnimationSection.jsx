@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import "./styles.css";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger, Power4 } from "gsap/all";
 import DNA from "../../../assets/DNA_section2.png";
 import DNA2 from "../../../assets/DNA2.png";
 
@@ -155,6 +155,36 @@ export function FourthAnimationSection() {
       immediateRender: false,
     });  
 
+    gsap.from(".text-animation-4", { 
+      scrollTrigger:  {
+        trigger: ".fourth-animation-pag",
+        toggleActions: "restart none reverse none",
+        start: "start+=600% start",
+        end: "start+=600% start",
+      },
+      y: 100,
+      opacity: 0,
+      duration: 3,
+      ease: Power4.easeOut,
+      // skewY: 7,
+      // stagger: {
+      //   amount: 0.3
+      // },
+      immediateRender: false,
+    }); 
+
+    gsap.from(".first-animation-titles-container4", { 
+      scrollTrigger:  {
+        trigger: ".fourth-animation-pag",
+        toggleActions: "restart none reverse none",
+        start: "start+=600% start",
+        end: "start+=600% start",
+      },
+      height:0,
+      duration: 1.5,
+      immediateRender: false,
+    }); 
+
   }, []);
 
   return(
@@ -163,7 +193,7 @@ export function FourthAnimationSection() {
     <img ref={DNALeftBottom} className="DNA-left-bottom4"  src={DNA} />
     <img ref={DNARight} className="DNA-right4"  src={DNA} />
     <div className="first-animation-titles-container4">
-      <p className="title-second-section-4">Auxilia no<br/>rejuvenescimento</p>
+      <p className="title-second-section-4 text-animation-4">Auxilia no<br/>rejuvenescimento</p>
     </div> 
   </section>
     

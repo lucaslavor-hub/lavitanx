@@ -11,7 +11,7 @@ import B12Bubble from "../../../assets/B12Left.svg";
 import CBubble from "../../../assets/CRight.svg";
 import Moon from "../../../assets/moon2section.svg";
 import { Orbit } from "../../index";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger, Power4 } from "gsap/all";
 
 export function VideosAnimation({ someText }) {
   const videoOneRef = useRef(null);
@@ -24,6 +24,7 @@ export function VideosAnimation({ someText }) {
   const isMobile = window.innerWidth <= 900;
 
   gsap.registerPlugin(ScrollTrigger);
+
 
   useEffect(() => {
     gsap.from(videoOneRef.current, { 
@@ -96,11 +97,40 @@ export function VideosAnimation({ someText }) {
       x:"4vw",
       rotation: 100,
     }); 
+
+
+    gsap.from(".middle-text", { 
+      scrollTrigger:  {
+        trigger: ".middle-text",
+        toggleActions: "restart none reverse none",
+        start: "top-=210% bottom",
+        end: "top-1px bottom",
+      },
+      y: 100,
+      opacity: 0,
+      duration: 1.3,
+      ease: Power4.easeInOut,
+
+    });
+
+    gsap.from(".bottom-text", { 
+      scrollTrigger:  {
+        trigger: ".bottom-text",
+        toggleActions: "restart none reverse none",
+        start: "top-=200% bottom",
+        end: "top-=210% bottom",
+      },
+      y: 100,
+      opacity: 0,
+      duration: 1.3,
+      ease: Power4.easeOut,
+    });
+
   }, []);
 
   return(
   <div ref={videosRef} className="videos-animations-container">
-      <div ref={divVideoOneRef}>
+      <div ref={divVideoOneRef}  className="video-animations-one-div">
       {isMobile ? 
             <img className="mobile-video video-animations-one" ref={videoOneRef} src={image1} />
          :

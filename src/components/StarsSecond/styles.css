@@ -3,8 +3,8 @@
 #banner2 {
   position:absolute;
   z-index: 14;
-  width: 100vw;
-  height: 200vw;
+  width: 0;
+  height: 0;
 }
 
 .star2 {

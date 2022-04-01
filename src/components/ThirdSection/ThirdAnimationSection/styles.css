@@ -13,10 +13,13 @@
   position: absolute;
   width: 100%;
   z-index: 10;
+  height: 9vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
+
 }
 
 .title-second-section-3 {
@@ -89,6 +92,10 @@
     font-size: 4vw !important;
     line-height: 6vw !important;
 
+  }
+
+  .first-animation-titles-container3 {
+    height: 17vw;
   }
   
 }
