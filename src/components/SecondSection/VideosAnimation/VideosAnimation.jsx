@@ -117,7 +117,7 @@ export function VideosAnimation({ someText }) {
       scrollTrigger:  {
         trigger: ".bottom-text",
         toggleActions: "restart none reverse none",
-        start: "top-=180% bottom",
+        start: "top-=200% bottom",
         end: "top-=210% bottom",
       },
       y: 100,
