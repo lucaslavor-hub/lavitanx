@@ -29,8 +29,13 @@
     .imagem22{
         width: 27vh;
         padding-bottom: 20px;
+        margin-left: 5%;
     }
-    
+    @media screen and (max-width: 600px) {
+      .imagem22{
+        margin-left: 5%;
+    }
+    }
     .button {
         width: 130px;
         height: 47px;
@@ -61,7 +66,7 @@
         } 
     
         .button2 {
-            width: 162px;
+          width: 200px;
             height: 50px;
     
     background: rgba(255, 255, 255, 0.2);
@@ -85,7 +90,7 @@
     
     
     .button3 {
-        width: 162px;
+      width: 200px;
         height: 50px;
         background: rgba(255, 255, 255, 0.2);
         box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
@@ -102,10 +107,11 @@
         color: #FFC425;
 
                 } 
-        @media (min-width: 600px) {
+
+
+        @media screen and (max-width: 600px) {
                     .button1 {
                         font-size: 12px;
-
                         margin-left: 0px;
                       }
                       .button2 {
@@ -117,7 +123,7 @@
                         font-size: 12px;
                       }
                       .s11{
-                        display: none;
+                        display: inline-block;
                       }
                   }
 
@@ -150,4 +156,14 @@
         align-items: center;
     }
 
-  
+    @media screen and (max-width: 600px) {
+      #video_popup {
+          display: none;
+        }
+    }
+    @media (min-width: 600px) {
+      #video_popup2 {
+          display: none;
+          
+        }
+    }

@@ -5,7 +5,7 @@ export function Form (){
     return(
 
 <div style={{textAlign: 'center'}}>
-  <form method="POST" onclick="func(0)"  action="https://ecommercecimed.activehosted.com/proc.php" id="_form7" className="_form _form_7 _inline-form _inline-style _dark" noValidate>
+  <form method="POST"  action="https://ecommercecimed.activehosted.com/proc.php" id="_form7" className="_form _form_7 _inline-form _inline-style _dark" noValidate>
     <input type="hidden" name="u" defaultValue={7} />
     <input type="hidden" name="f" defaultValue={7} />
     <input type="hidden" name="s" />

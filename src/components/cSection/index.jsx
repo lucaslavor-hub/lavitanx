@@ -22,14 +22,17 @@ export function Csection (){
                   <div className="col2 col-2" id="coluna1">
                   <div className="wrapper">
                     <div><img className="imagem22" src={logo22} alt="Logo"/></div>
-                    <div className="s11"><button class="button button1">Comprar</button><button class="button button2">FlyNowClub</button></div>
+                    <div className="s11"><button class="button button1">Comprar</button><button class="button button2">FlyNowSpaceClub</button></div>
                     <div><button onClick={togglePopup} class="button button3">Vídeo Informativo</button></div>
               </div>
               <div>
 
     {isOpen && <Popup
       content={<>
-<iframe id="video_popup" width="715" height="auto"
+<iframe id="video_popup2" width="715" height="auto"
+src="https://www.youtube.com/embed/563aZcYpg0s">
+</iframe>
+<iframe id="video_popup" width="700" height="auto"
 src="https://www.youtube.com/embed/563aZcYpg0s">
 </iframe>
       </>}
