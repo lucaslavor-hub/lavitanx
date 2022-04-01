@@ -4,6 +4,9 @@ import "./styles.css";
 import video1 from "../../../assets/1.mp4";
 import video2 from "../../../assets/2.mp4";
 import video3 from "../../../assets/3.mp4";
+import image1 from "../../../assets/1.png";
+import image2 from "../../../assets/2.png";
+import image3 from "../../../assets/3.png";
 import B12Bubble from "../../../assets/B12Left.svg";
 import CBubble from "../../../assets/CRight.svg";
 import Moon from "../../../assets/moon2section.svg";
@@ -18,6 +21,7 @@ export function VideosAnimation({ someText }) {
   const videoThreeRef = useRef(null);
   const divVideoThreeRef = useRef(null);
   const videosRef = useRef(null);
+  const isMobile = window.innerWidth <= 900;
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -97,23 +101,36 @@ export function VideosAnimation({ someText }) {
   return(
   <div ref={videosRef} className="videos-animations-container">
       <div ref={divVideoOneRef}>
+      {isMobile ? 
+            <img className="mobile-video video-animations-one" ref={videoOneRef} src={image1} />
+         :
         <video ref={videoOneRef} className="video-animations-one" preload="metadata" muted autoPlay loop> 
           <source src={video1} type="video/mp4"/>
         </video>
+        }     
       </div>
 
       <img src={Moon} className="moon-second-section"/>
       <p className="middle-text">Para viver mais e melhor <br/> são necessários cuidados preventivos<br/> com o nosso corpo </p>
-      <div className="bottom-videos-container">
-        <div ref={divVideoTwoRef} className="video-animations-two">
-          <video ref={videoTwoRef} preload="metadata" muted autoPlay loop>
-            <source src={video2} type="video/mp4"/>
-          </video>
-        </div>
+       <div className="bottom-videos-container">
+       <div ref={divVideoTwoRef} className="video-animations-two">
+
+         {isMobile ? 
+            <img className="mobile-video" ref={videoTwoRef} src={image2} />
+            :
+            <video ref={videoTwoRef} preload="metadata" muted autoPlay loop>
+              <source src={video2} type="video/mp4"/>
+            </video>
+          }
+          </div>
         <div ref={divVideoThreeRef} className="video-animations-three" >
+        {isMobile ? 
+            <img className="mobile-video" ref={videoThreeRef} src={image3} />
+            :
           <video ref={videoThreeRef} preload="metadata" muted autoPlay loop>
             <source src={video3} type="video/mp4"/>
           </video>
+        } 
         </div>
       </div>
       <p className="bottom-text">e tudo começa de dentro para fora</p>
