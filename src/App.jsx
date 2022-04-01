@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { LocomotiveScrollComponent, FirstSection, PreloadVideo, SecondSection, ThirdSection, FourthSection } from './components/index';
+import { LocomotiveScrollComponent, FirstSection, PreloadVideo, SecondSection, ThirdSection, FourthSection, AstronautInBottle } from './components/index';
 import "./global.css";
 import { ScrollTrigger, scrollerProxy } from "gsap/all";
 import Cursor from "./components/CustomCursor/index"
@@ -15,7 +15,7 @@ function App() {
     scroller: "#root"
   });
 
-  
+
 
   useEffect(() => {
     //timeline
@@ -26,11 +26,11 @@ function App() {
         start: "top 10%"
       }
     });
-    tl.from(".background-second-section h2", { y: 300, duration: 1.8, ease: "power4.out", delay: 0.9, skewY:7, opacity:0});
+    tl.from(".background-second-section h2", { y: 300, duration: 1.8, ease: "power4.out", delay: 0.9, skewY: 7, opacity: 0 });
 
   }, []);
 
-  ScrollTrigger.scrollerProxy("#root", {	pinType: "fixed" });
+  ScrollTrigger.scrollerProxy("#root", { pinType: "fixed" });
 
   // useEffect(() => {
   //   const timer = setTimeout(() => {
@@ -49,11 +49,12 @@ function App() {
           <FirstSection />
           <SecondSection />
           <ThirdSection />
+          <AstronautInBottle />
           <FourthSection />
           <Cursor />
           <div className="group1">
-          <Csection></Csection>
-          <Footer> </Footer>
+            <Csection></Csection>
+            <Footer> </Footer>
           </div>
         </>
       }
