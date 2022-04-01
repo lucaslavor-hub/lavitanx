@@ -21,6 +21,44 @@ export function ThirdAnimationSection() {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
+    const innerWidth = window.innerWidth;
+
+    if (innerWidth > 900) {
+      gsap.to(cellLeftBottom.current, { 
+        scrollTrigger:  {
+          trigger: containerRef.current,
+          toggleActions: "restart none reverse none",
+          start: "start+=470% start",
+          scrub: true,
+          end: "510% start",
+        },
+        width:"40vw",
+        rotation: 100,
+        opacity: 0.4,
+        immediateRender: false,
+        x: "5vw",
+        y: "7vw",
+      }); 
+      
+      gsap.to(cellRightBottom.current, { 
+        scrollTrigger:  {
+          trigger: containerRef.current,
+          toggleActions: "restart none reverse none",
+          start: "start+=420% start",
+          scrub: true,
+          end: "520% start",
+        },
+        width:"10vw",
+        rotation: 10,
+        opacity: 0,
+        immediateRender: false,
+        width: "44vw",
+        opacity: 1,
+        rotation: 50,
+        y:"-20vw",
+        x:"-2vw",
+      }); 
+
     gsap.to(cellLeftTop.current, { 
       scrollTrigger:  {
         trigger: containerRef.current,
@@ -36,6 +74,91 @@ export function ThirdAnimationSection() {
       rotation: 20,
       immediateRender: false,
     }); 
+
+    gsap.to(cellRightTop.current, { 
+      scrollTrigger:  {
+        trigger: containerRef.current,
+        toggleActions: "restart none reverse none",
+        start: "start+=480% start",
+        scrub: true,
+        end: "530% start",
+      },
+      width:"20vw",
+      rotation: "-40",
+      opacity: 1,
+      x: "-10vw",
+      y: "-2vw",
+      immediateRender: false,
+    }); 
+
+    } else {
+
+      gsap.to(cellRightBottom.current, { 
+        scrollTrigger:  {
+          trigger: containerRef.current,
+          toggleActions: "restart none reverse none",
+          start: "start+=420% start",
+          scrub: true,
+          end: "520% start",
+        },
+        width:"100vw",
+        rotation: 10,
+        opacity: 0,
+        immediateRender: false,
+        opacity: 1,
+        rotation: 100,
+        y:"-20vw",
+        x:"-2vw",
+      }); 
+
+      gsap.to(cellLeftBottom.current, { 
+        scrollTrigger:  {
+          trigger: containerRef.current,
+          toggleActions: "restart none reverse none",
+          start: "start+=470% start",
+          scrub: true,
+          end: "510% start",
+        },
+        width:"40vw",
+        rotation: 100,
+        opacity: 0.4,
+        immediateRender: false,
+        x: "5vw",
+        y: "7vw",
+      }); 
+
+    gsap.to(cellLeftTop.current, { 
+      scrollTrigger:  {
+        trigger: containerRef.current,
+        toggleActions: "restart none reverse none",
+        start: "start+=400% start",
+        scrub: true,
+        end: "490% start",
+      },
+      opacity: 0.5,
+      top: "5vw",
+      width: "37vw",
+      left:"5vw",
+      rotation: 60,
+      immediateRender: false,
+    }); 
+    gsap.to(cellRightTop.current, { 
+      scrollTrigger:  {
+        trigger: containerRef.current,
+        toggleActions: "restart none reverse none",
+        start: "start+=480% start",
+        scrub: true,
+        end: "530% start",
+      },
+      width:"40vw",
+      rotation: "-40",
+      opacity: 1,
+      x: "-10vw",
+      y: "-60vw",
+      immediateRender: false,
+    }); 
+
+    }
 
     gsap.to(cellLeftTop.current, { 
       scrollTrigger:  {
@@ -86,22 +209,6 @@ export function ThirdAnimationSection() {
       scrollTrigger:  {
         trigger: containerRef.current,
         toggleActions: "restart none reverse none",
-        start: "start+=480% start",
-        scrub: true,
-        end: "530% start",
-      },
-      width:"20vw",
-      rotation: "-40",
-      opacity: 1,
-      x: "-10vw",
-      y: "-2vw",
-      immediateRender: false,
-    }); 
-
-    gsap.to(cellRightTop.current, { 
-      scrollTrigger:  {
-        trigger: containerRef.current,
-        toggleActions: "restart none reverse none",
         start: "start+=531% start",
         scrub: true,
         end: "620% start",
@@ -112,21 +219,6 @@ export function ThirdAnimationSection() {
       immediateRender: false,
     });  
 
-    gsap.to(cellLeftBottom.current, { 
-      scrollTrigger:  {
-        trigger: containerRef.current,
-        toggleActions: "restart none reverse none",
-        start: "start+=470% start",
-        scrub: true,
-        end: "510% start",
-      },
-      width:"40vw",
-      rotation: 100,
-      opacity: 0.4,
-      immediateRender: false,
-      x: "5vw",
-      y: "7vw",
-    }); 
 
     gsap.to(cellLeftBottom.current, { 
       scrollTrigger:  {
@@ -141,25 +233,6 @@ export function ThirdAnimationSection() {
       opacity: 0.1,
       immediateRender: false,
     });  
-
-    gsap.to(cellRightBottom.current, { 
-      scrollTrigger:  {
-        trigger: containerRef.current,
-        toggleActions: "restart none reverse none",
-        start: "start+=420% start",
-        scrub: true,
-        end: "520% start",
-      },
-      width:"10vw",
-      rotation: 10,
-      opacity: 0,
-      immediateRender: false,
-      width: "44vw",
-      opacity: 1,
-      rotation: 50,
-      y:"-20vw",
-      x:"-2vw",
-    }); 
 
     gsap.to(cellRightBottom.current, { 
       scrollTrigger:  {

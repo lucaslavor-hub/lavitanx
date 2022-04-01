@@ -17,6 +17,79 @@ export function FourthAnimationSection() {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
+    const innerWidth = window.innerWidth;
+
+    if (innerWidth > 900) {
+      gsap.to(DNARight.current, { 
+        scrollTrigger:  {
+          trigger: ".fourth-animation-pag",
+          toggleActions: "restart none reverse none",
+          start: "start+=670% start",
+          scrub: true,
+          end: "start+=750% start",
+  
+        },
+        rotation: 20,
+        opacity: 1,
+        width: "142vw",
+        x: "15vw",
+        y:"18vw",
+        immediateRender: false,
+  
+      }); 
+
+      gsap.to(DNALeftBottom.current, { 
+        scrollTrigger:  {
+          trigger: ".fourth-animation-pag",
+          toggleActions: "restart none reverse none",
+          start: "start+=600% start",
+          scrub: true,
+          end: "start+=680% start",
+        },
+        rotation: "30",
+        opacity: 0.5,
+        width: "100vw",
+        x: "-15vw",
+        y:"-15vw",
+        immediateRender: false,
+  
+      }); 
+    } else {
+      gsap.to(DNARight.current, { 
+        scrollTrigger:  {
+          trigger: ".fourth-animation-pag",
+          toggleActions: "restart none reverse none",
+          start: "start+=670% start",
+          scrub: true,
+          end: "start+=750% start",
+  
+        },
+        rotation: 20,
+        opacity: 1,
+        width: "142vw",
+        x: "15vw",
+        y:"38vw",
+        immediateRender: false,
+  
+      }); 
+
+      gsap.to(DNALeftBottom.current, { 
+        scrollTrigger:  {
+          trigger: ".fourth-animation-pag",
+          toggleActions: "restart none reverse none",
+          start: "start+=600% start",
+          scrub: true,
+          end: "start+=680% start",
+        },
+        rotation: 10,
+        opacity: 0.5,
+        width: "100vw",
+        x: "-15vw",
+        y:"-65vw",
+        immediateRender: false,
+  
+      }); 
+    }
     gsap.to(DNALeftTop.current, { 
       scrollTrigger:  {
         trigger: ".fourth-animation-pag",
@@ -54,23 +127,6 @@ export function FourthAnimationSection() {
       scrollTrigger:  {
         trigger: ".fourth-animation-pag",
         toggleActions: "restart none reverse none",
-        start: "start+=600% start",
-        scrub: true,
-        end: "start+=680% start",
-      },
-      rotation: "30",
-      opacity: 0.5,
-      width: "100vw",
-      x: "-15vw",
-      y:"-15vw",
-      immediateRender: false,
-
-    }); 
-
-    gsap.to(DNALeftBottom.current, { 
-      scrollTrigger:  {
-        trigger: ".fourth-animation-pag",
-        toggleActions: "restart none reverse none",
         start: "start+=681% start",
         scrub: true,
         end: "start+=760% start",
@@ -82,24 +138,6 @@ export function FourthAnimationSection() {
       y:"-15vw",
       immediateRender: false,
     });  
-
-    gsap.to(DNARight.current, { 
-      scrollTrigger:  {
-        trigger: ".fourth-animation-pag",
-        toggleActions: "restart none reverse none",
-        start: "start+=670% start",
-        scrub: true,
-        end: "start+=750% start",
-
-      },
-      rotation: 20,
-      opacity: 1,
-      width: "142vw",
-      x: "15vw",
-      y:"18vw",
-      immediateRender: false,
-
-    }); 
 
     gsap.to(DNARight.current, { 
       scrollTrigger:  {
