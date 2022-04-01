@@ -65,12 +65,12 @@ export function VideosAnimation({ someText }) {
       scrollTrigger:  {
         trigger: divVideoThreeRef.current,
         start: "top-=50% center",
-        end: "top+=270% center",
+        end: "top+=400% center",
         scrub: true,
       },
       y: "-34vw",
       x:"-13vw",
-      rotation: -60,
+      rotation: -90,
     }); 
 
     gsap.from(videoThreeRef.current, { 
@@ -89,12 +89,12 @@ export function VideosAnimation({ someText }) {
       scrollTrigger:  {
         trigger: divVideoThreeRef.current,
         start: "top-=80% center",
-        end: "top+=200% center",
+        end: "top+=300% center",
         scrub: true,
       },
       y: "-24vw",
       x:"4vw",
-      rotation: 80,
+      rotation: 100,
     }); 
   }, []);
 
