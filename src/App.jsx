@@ -46,10 +46,10 @@ function App() {
         <PreloadVideo setLoading={setLoading} />
         :
         <>
-          <FirstSection />
-          <SecondSection />
+          {/* <FirstSection />
+          <SecondSection /> */}
           <ThirdSection />
-          <FourthSection />
+          {/* <FourthSection /> */}
           <Cursor />
           <div className="group1">
           <Csection></Csection>
