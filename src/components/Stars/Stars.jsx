@@ -9,12 +9,9 @@ export function Stars() {
   let baseStar;
 
   useEffect(() => {
-    // const timer = setTimeout(() => {
       banner = document.querySelector("#banner");
       baseStar = document.querySelector(".star");
       onLoad()
-    // }, 100);
-    // return () => clearTimeout(timer);
   }, []);
 
   const frag = document.createDocumentFragment();

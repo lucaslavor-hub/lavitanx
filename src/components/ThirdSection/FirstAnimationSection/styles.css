@@ -69,21 +69,42 @@
 
 @media only screen and (max-width: 900px) {
 
-.yellow-sphere-right {
-  right:-15vw;
-  position: absolute;
-  z-index: 11;
-  width: 78vw;
-  bottom: -20vw;
+  .yellow-sphere-right {
+    right:-15vw;
+    position: absolute;
+    z-index: 11;
+    width: 78vw;
+    bottom: -20vw;
 
+  }
+
+  .yellow-sphere-left {
+    left:-25vw;
+    top: -15vw;
+    width: 95vw;
+    margin-top: -29vw;
+    transform: rotate(-40deg);
+  }
+
+  .title-section-3 {
+    font-size: 5.4vw;
+    line-height: 5.5vw;
+  }
+
+  .pre-title-section-3 {
+    font-size: 3.4vw;
+  }
+
+  .first-animation-titles-container{
+    margin-top: -2vw;
+  }
 }
 
-.yellow-sphere-left {
-  left:-25vw;
-  top: -15vw;
-  width: 95vw;
-  margin-top: -29vw;
-  transform: rotate(-40deg);
-}
+@media (min-width: 2000px) {
 
+  .title-section-3 {
+    font-size: 9vh;
+    line-height: 8vh;
+  }
+  
 }
