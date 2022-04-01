@@ -64,3 +64,42 @@
   filter: blur(21px);
 
 }
+
+@media only screen and (max-width: 900px) {
+  .title-second-section-3 {
+    font-size: 4vw !important;
+    line-height: 6vw !important;
+
+  }
+
+  .DNA-left-top {
+    width: 190vw;
+    left:-50vw;
+    margin-top: -150vw;
+    opacity: 0.43;
+    transform: rotate(134.23deg);
+  }
+  
+  
+  .DNA-left-bottom{
+    left:-60vw;
+    position: absolute;
+    z-index: 11;
+    width: 130vw;
+    margin-top: 105vw;
+    transform: rotate(-170deg);
+  
+  }
+  
+  /* .DNA-right {
+    right:-100vw;
+    position: absolute;
+    z-index: 11;
+    width: 150vw;
+    margin-top: 20vw;
+    opacity: 0.56;
+    filter: blur(21px);
+  
+  } */
+  
+}

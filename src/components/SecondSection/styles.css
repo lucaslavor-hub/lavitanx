@@ -73,7 +73,7 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .shadow-right, .shadow-left, .longevity-subtitle{
     display: none;
   }
@@ -85,7 +85,7 @@
 
   .background-second-section {
     background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 20vw, #030D29 36.98%);
-
+    height: 220vw;
   }
   
 }

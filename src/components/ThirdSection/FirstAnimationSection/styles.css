@@ -65,3 +65,25 @@
   color: #1757A7;
 
 }
+
+
+@media only screen and (max-width: 900px) {
+
+.yellow-sphere-right {
+  right:-15vw;
+  position: absolute;
+  z-index: 11;
+  width: 78vw;
+  bottom: -20vw;
+
+}
+
+.yellow-sphere-left {
+  left:-25vw;
+  top: -15vw;
+  width: 95vw;
+  margin-top: -29vw;
+  transform: rotate(-40deg);
+}
+
+}
