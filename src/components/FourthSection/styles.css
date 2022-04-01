@@ -15,8 +15,8 @@
   font-size: calc(28px + 0.5vw);
   text-align: center;
   letter-spacing: 0.28em;
-  width: 60vw;
   color: #FFC425;
+  white-space: nowrap;
 }
 
 
@@ -28,7 +28,7 @@
   margin-top: 1vh;
   text-align: center;
   letter-spacing: 0.28em;
-  width: 40vw;
+  white-space: nowrap;
 
   color: #FFFFFF;
 }
@@ -147,11 +147,50 @@
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 
   .small-fourth-orbit,
-  .filled-fourth-orbit {
+  .filled-fourth-orbit,
+  .fourth-shadow-center {
     display: none;
   }
+
+  .fourth-content {
+    flex-direction: column;
+    padding-top: 5vh;
+    align-items: center;
+  }
+
+  .fourth-side-div {
+    width: 90vw;
+    align-items: center !important;
+    justify-content: center;
+  }
+
+  .fourth-bold-text,
+  .fourth-normal-text {
+    text-align: center !important;
+  }
+
+  .pill-bottle-fourth {
+    order: 2;
+  }
+
+  .fourth-scroll-content {
+    margin: 0;
+  }
+
+  .background-fourth-section {
+    padding-bottom: 5vh;
+  }
+
+  .fourth-section-image-gallery {
+    white-space: nowrap;
+  }
+
+  .fourth-scroll-content {
+    height: 60vh;
+  }
+
 
 }
