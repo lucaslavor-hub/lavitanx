@@ -26,3 +26,12 @@
     border-style: solid;
     border-color: #ffffff;
 }
+
+@media screen and (max-width: 600px) {
+    .cursor-dot{
+            display: none;
+    }
+    .cursor-dot-outline{
+            display: none;
+    }
+}

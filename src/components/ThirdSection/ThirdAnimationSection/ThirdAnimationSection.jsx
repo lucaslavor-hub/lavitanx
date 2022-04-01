@@ -254,16 +254,11 @@ export function ThirdAnimationSection() {
         toggleActions: "restart none reverse none",
         start: "start+=400% start",
         end: "start+=400% start",
-        markers: true,
       },
       y: 100,
       opacity: 0,
       duration: 3,
       ease: Power4.easeOut,
-      // skewY: 7,
-      // stagger: {
-      //   amount: 0.3
-      // },
       immediateRender: false,
     }); 
 
@@ -273,7 +268,6 @@ export function ThirdAnimationSection() {
         toggleActions: "restart none reverse none",
         start: "start+=400% start",
         end: "start+=400% start",
-        markers: true,
       },
       duration: 1.5,
       height: 0,
