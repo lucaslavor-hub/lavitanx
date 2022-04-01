@@ -49,9 +49,9 @@ export function Footer (){
           </span>
           </div>
 
-          <div>
-          <p><a href="https://lavitanx.com.br/#politica">Política de Privacidade</a></p>
-          </div>
+          <div className="n">
+    <div className="s111"><p><a id="a1" href="https://cimedremedios.com.br/politica-de-privacidade/"  target="_blank" ><u>Política de Privacidade e Termos de Uso</u></a></p></div>
+</div>
           <div>
             <h3 className="direito">© 2022 Todos os Direitos Reservados </h3>
           </div>
@@ -62,3 +62,4 @@ export function Footer (){
     };
     
     export default Footer;
+
