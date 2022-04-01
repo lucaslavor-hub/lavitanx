@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { LocomotiveScrollComponent, FirstSection, PreloadVideo, SecondSection, ThirdSection, FourthSection } from './components/index';
 import "./global.css";
 import { ScrollTrigger, scrollerProxy } from "gsap/all";
 import Cursor from "./components/CustomCursor/index"
 import Footer from "./components/Footer/index";
 import Csection from "./components/cSection/index";
+import gsap from "gsap";
 
 
 function App() {
@@ -14,8 +15,22 @@ function App() {
     scroller: "#root"
   });
 
-  ScrollTrigger.scrollerProxy("#root", {	pinType: "fixed" });
+  
 
+  useEffect(() => {
+    //timeline
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".background-second-section",
+        start: "top 10%"
+      }
+    });
+    tl.from(".background-second-section h2", { y: 300, duration: 1.8, ease: "power4.out", delay: 0.9, skewY:7, opacity:0});
+
+  }, []);
+
+  ScrollTrigger.scrollerProxy("#root", {	pinType: "fixed" });
 
   // useEffect(() => {
   //   const timer = setTimeout(() => {

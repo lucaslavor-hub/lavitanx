@@ -18,6 +18,8 @@ export function FourthSection() {
   const scrollRef = useRef(null);
   const galleryRef = useRef(null);
 
+  const isMobile = window.innerWidth < 900;
+
   const [animationHappening, setAnimationHappening] = useState(false);
 
   gsap.registerPlugin(ScrollTrigger);
@@ -35,19 +37,21 @@ export function FourthSection() {
 
 
   useEffect(() => {
-    gsap.to(bottleRef.current, {
-      scrollTrigger: {
-        trigger: bottleRef.current,
-        start: "top top",
-        end: "center +=500",
-        endTrigger: galleryRef.current,
-        toggleActions: "restart none none none",
-        pin: true,
-        scrub: 1,
-        pinSpacing: false,
-        pinType: 'fixed',
-      },
-    });
+    if (!isMobile) {
+      gsap.to(bottleRef.current, {
+        scrollTrigger: {
+          trigger: bottleRef.current,
+          start: "top top",
+          end: "center +=500",
+          endTrigger: galleryRef.current,
+          toggleActions: "restart none none none",
+          pin: true,
+          scrub: 1,
+          pinSpacing: false,
+          pinType: 'fixed',
+        },
+      });
+    }
     moveImages();
   }, []);
 
@@ -56,9 +60,15 @@ export function FourthSection() {
   const moveImages = () => {
     gsap.utils.toArray('.fourth-image').forEach((image, index) => {
       const evenIndex = index % 2 === 0;
-      const xAmount = evenIndex ? '-=70' : '+=70';
 
-      gsap.to(image, { duration: 60, x: xAmount, skewX: 0 })
+      if (!isMobile) {
+        const xAmount = evenIndex ? '-=70' : '+=70';
+        gsap.to(image, { duration: 60, x: xAmount, skewX: 0 })
+      } else {
+        const xAmount = evenIndex ? '-=40' : '+=40';
+        gsap.to(image, { duration: 60, x: xAmount, skewX: 0 })
+      }
+
       gsap.to(image, { duration: 3, skewX: 0 })
     })
   }
@@ -85,7 +95,9 @@ export function FourthSection() {
       <h2 className="fourth-section-title">Lavitan X</h2>
       <h3 className="fourth-section-subtitle">BIO COMPLEX</h3>
 
-      <StarsFourth />
+      {!isMobile && (
+        <StarsFourth />
+      )}
 
       <div className="small-fourth-orbit">
         <Orbit2 size="14vw" rotationSpeed="10" text="D" />
@@ -121,62 +133,113 @@ export function FourthSection() {
 
       </div>
 
-      <div className="fourth-content" style={{ marginTop: '50px' }}>
-        <div className="fourth-side-div" style={{ alignItems: 'flex-end' }}>
-          <h4 className="fourth-number-one">
-            DE <b style={{ color: '#FFC425' }}>Nº1</b>
-            <br />
-            DO BRASIL
-          </h4>
-        </div>
+      {!isMobile && (
+        <>
+          <div className="fourth-content" style={{ marginTop: '50px' }}>
+            <div className="fourth-side-div" style={{ alignItems: 'flex-end' }}>
+              <h4 className="fourth-number-one">
+                DE <b style={{ color: '#FFC425' }}>Nº1</b>
+                <br />
+                DO BRASIL
+              </h4>
+            </div>
 
-        <img
-          src={pillBottle}
-          style={{ opacity: 0 }}
-          alt=""
-          className="pill-bottle-fourth"
-        />
+            <img
+              src={pillBottle}
+              style={{ opacity: 0 }}
+              alt=""
+              className="pill-bottle-fourth"
+            />
 
-        <div className="fourth-side-div">
-          <h4 className="fourth-number-one">
-            PARA <b style={{ color: '#FFC425' }}>Nº1</b>
-            <br />
-            DO ESPAÇO
-          </h4>
-        </div>
-      </div>
+            <div className="fourth-side-div">
+              <h4 className="fourth-number-one">
+                PARA <b style={{ color: '#FFC425' }}>Nº1</b>
+                <br />
+                DO ESPAÇO
+              </h4>
+            </div>
+          </div>
 
-      <div data-scroll-container ref={scrollRef}  >
-        <div className="fourth-scroll-content">
-          <div className="fourth-section-image-gallery" ref={galleryRef}>
-            <ScrollContainer vertical={false} onEndScroll={moveImages}
-              onScroll={skewImages} style={{ width: '100vw', height: '80vh' }}
-              className="drag-to-scroll"
-              hideScrollbars={false}
-            >
-              {gallery.map((image, index) => {
-                const values = gridValues[index % 2];
-                if (!values) return null;
+          <div data-scroll-container ref={scrollRef}  >
+            <div className="fourth-scroll-content">
+              <div className="fourth-section-image-gallery" ref={galleryRef}>
+                <ScrollContainer vertical={false} onEndScroll={moveImages}
+                  onScroll={skewImages} style={{ width: '100vw', height: '80vh', maxHeight: '600px' }}
+                  className="drag-to-scroll"
+                  hideScrollbars={false}
+                >
+                  {gallery.map((image, index) => {
+                    const values = gridValues[index % 2];
+                    if (!values) return null;
 
-                const [row, column, spanRow, spanColumn] = values;
-                return (
-                  <img
-                    src={image}
-                    alt="Galéria de imagens"
-                    draggable={false}
-                    style={{ gridArea: `${row} / ${column + (index * 10)} / span ${spanRow} / span ${spanColumn}` }}
-                    data-scroll
-                    className="fourth-image"
-                  />
-                )
-              })}
-            </ScrollContainer>
+                    const [row, column, spanRow, spanColumn] = values;
+                    return (
+                      <img
+                        src={image}
+                        alt="Galéria de imagens"
+                        draggable={false}
+                        style={{ gridArea: `${row} / ${column + (index * 10)} / span ${spanRow} / span ${spanColumn}` }}
+                        data-scroll
+                        className="fourth-image"
+                      />
+                    )
+                  })}
+                </ScrollContainer>
 
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+
+      {isMobile && (
+        <div className="fourth-content" style={{ marginTop: '50px' }}>
+          <div className="fourth-side-div" style={{ alignItems: 'flex-end' }}>
+            <h4 className="fourth-number-one">
+              DE <b style={{ color: '#FFC425' }}>Nº1</b>
+              <br />
+              DO BRASIL
+            </h4>
+          </div>
+
+          <div data-scroll-container ref={scrollRef}  >
+            <div className="fourth-scroll-content">
+              <div className="fourth-section-image-gallery" ref={galleryRef}>
+                <ScrollContainer vertical={false} onEndScroll={moveImages}
+                  onScroll={skewImages} style={{ width: '100vw' }}
+                  className="drag-to-scroll"
+                >
+                  {gallery.slice(5).map((image, index) => {
+                    const values = gridValues[index % 2];
+                    if (!values) return null;
+
+                    const [row, column, spanRow, spanColumn] = values;
+                    return (
+                      <img
+                        src={image}
+                        alt="Galéria de imagens"
+                        draggable={false}
+                        style={{ gridArea: `${row} / ${column + (index)} / span ${spanRow} / span ${spanColumn}` }}
+                        data-scroll
+                        className="fourth-image"
+                      />
+                    )
+                  })}
+                </ScrollContainer>
+
+              </div>
+            </div>
+          </div>
+
+          <div className="fourth-side-div">
+            <h4 className="fourth-number-one">
+              PARA <b style={{ color: '#FFC425' }}>Nº1</b>
+              <br />
+              DO ESPAÇO
+            </h4>
           </div>
         </div>
-      </div>
-
-
+      )}
     </div>
 
   )
