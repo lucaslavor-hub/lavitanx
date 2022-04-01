@@ -164,5 +164,6 @@
     @media (min-width: 600px) {
       #video_popup2 {
           display: none;
+          
         }
     }
