@@ -18,13 +18,18 @@
   z-index: 90;
 }
 
+.video-animations-one-div {
+  z-index: 90;
+  width: 100%;
+  height: 100%;
+}
+
 .video-animations-two{
   position: absolute;
   transform: rotate(7.03deg);
   margin-right: 52vw;
   margin-top: 19vw;
   z-index: 50;
-
 }
 
 .video-animations-three{

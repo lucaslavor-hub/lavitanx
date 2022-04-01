@@ -96,11 +96,13 @@ export function VideosAnimation({ someText }) {
       x:"4vw",
       rotation: 100,
     }); 
+
+
   }, []);
 
   return(
   <div ref={videosRef} className="videos-animations-container">
-      <div ref={divVideoOneRef}>
+      <div ref={divVideoOneRef}  className="video-animations-one-div">
       {isMobile ? 
             <img className="mobile-video video-animations-one" ref={videoOneRef} src={image1} />
          :

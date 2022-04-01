@@ -105,7 +105,7 @@ export function Stars() {
 
   return(
     <>
-      <div id='banner' style={{width:`${document.innerWidth}`, height: `${window.innerHeight}`}}>
+      <div id='banner' style={{width:0, height: 0}}>
         <div className='star' ></div>    
       </div>
     </>
