@@ -83,6 +83,9 @@
   text-align: center;
   letter-spacing: 0.28em;
   color: #FFFFFF;
+  height: 30vh;
+  margin-bottom: 30vh;
+  z-index: 15;
 }
 
 
@@ -102,7 +105,8 @@
 
 .drag-to-scroll {
   width: 100vw;
-  padding: 30vh 0 20vh 0;
+  padding: 60vh 0 20vh 0;
+  /* background-color: red; */
 }
 
 
@@ -112,7 +116,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 55vh;
 }
 
 .fourth-section-image-gallery {

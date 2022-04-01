@@ -59,14 +59,26 @@ export function FourthSection() {
   useEffect(() => {
     gsap.utils.toArray('.fourth-image').forEach((image) => {
       const x = (window.innerWidth / 2) - (image.x + (image.width / 2));
-      const y = (window.innerHeight / 2) - (image.y + (image.height / 2));
-      // console.log(y);
 
       if (image) {
-        gsap.from(image, { duration: 10, x: `+=${x}`, y: `+=${-400}`, scale: 0.3, imageRendering: false, delay: 8 })
+        gsap.from(image, {
+          duration: 3,
+          x: `+=${x}`,
+          y: `+=${-600}`,
+          scale: 0.3,
+          opacity: 0,
+          imageRendering: false,
+          lazy: true,
+          scrollTrigger: {
+            trigger: '.fourth-number-one',
+            start: "center center",
+            toggleActions: "play none none none",
+            onLeave: () => setTimeout(moveImages, 3400)
+          }
+        })
+
       }
     })
-    setTimeout(moveImages, 20000)
   }, []);
 
 
