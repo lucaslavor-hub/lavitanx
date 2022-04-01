@@ -177,6 +177,7 @@
     width: 90vw;
     align-items: center !important;
     justify-content: center;
+    margin-bottom: 20px;
   }
 
   .fourth-bold-text,
@@ -198,10 +199,19 @@
 
   .fourth-section-image-gallery {
     white-space: nowrap;
+    height: 35vh;
   }
 
-  .fourth-scroll-content {
-    height: 60vh;
+  .drag-to-scroll {
+    padding-top: 35vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+
+  .fourth-number-one {
+    height: 5vh;
+    margin-bottom: 0;
   }
 
 
