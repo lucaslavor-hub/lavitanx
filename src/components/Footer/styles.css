@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 :root {
-  --color-background: #030F2F;
+  --color-background: #030D29;
 }
 
 * {
@@ -53,7 +53,7 @@ padding-left: 0.1%;
 
 /* linha */
 .row2 {
-  background-color:#030F2F;
+  background-color:#030D29;
   text-align: center;
   margin-left: 0px;
   margin-right: 0px;
@@ -71,7 +71,7 @@ padding-left: 0.1%;
 
 
   .row2 {
-    background-color: #030F2F;
+    background-color: #030D29;
     text-align: center;
     margin-left: 0px;
     margin-right: 0px;
