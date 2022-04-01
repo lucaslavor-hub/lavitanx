@@ -70,7 +70,7 @@
   
   @media screen and (max-width: 600px) {
     #fullname {
-      width: 150%;
+      width: 157%;
     }
   }
   
@@ -102,6 +102,9 @@
   
     #email {
       width: 154px;
+    }
+    ._submit{
+      width: 155px;
     }
   }
   
