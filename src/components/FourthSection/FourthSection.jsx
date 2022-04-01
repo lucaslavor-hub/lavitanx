@@ -56,9 +56,10 @@ export function FourthSection() {
   const moveImages = () => {
     gsap.utils.toArray('.fourth-image').forEach((image, index) => {
       const evenIndex = index % 2 === 0;
-      const xAmount = evenIndex ? '-=60' : '+=60';
+      const xAmount = evenIndex ? '-=70' : '+=70';
 
-      gsap.to(image, { duration: 60, x: xAmount })
+      gsap.to(image, { duration: 60, x: xAmount, skewX: 0 })
+      gsap.to(image, { duration: 3, skewX: 0 })
     })
   }
 
@@ -68,9 +69,9 @@ export function FourthSection() {
       gsap.utils.toArray('.fourth-image').forEach((image, index) => {
         const evenIndex = index % 2 === 0;
         const xAmount = evenIndex ? '+=13' : '-=12';
-        const skewAmount = evenIndex ? '-=2deg' : '+2deg';
+        const skewAmount = evenIndex ? '-1deg' : '1deg';
 
-        gsap.to(image, { duration: 5, x: xAmount, skewX: skewAmount })
+        gsap.to(image, { duration: 2, x: xAmount, skewX: skewAmount })
         // gsap.to(image, { duration: 2, x: 0, skewX: 0, delay: 0.5 })
       })
       setTimeout(() => setAnimationHappening(false), 2000)
