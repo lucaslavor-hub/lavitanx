@@ -12,19 +12,20 @@
 
 .open-lid {
   /* width: 15vw; */
-  height: 10vh;
+  height: 13.15vh;
   z-index: 100;
 }
 
 .rest-of-bottle {
   /* width: 15vw; */
-  height: 40vh;
+  height: 50vh;
   z-index: 20;
 }
 
 .pill-astronaut {
-  width: 24vw;
+  width: 26vw;
   z-index: 15;
+  max-width: 400px;
 }
 
 .floating-pills {
@@ -32,9 +33,55 @@
   top: 10%;
   width: 60%;
   height: 52%;
+  /* background-color: red; */
 }
 
 .one-floating-pill {
   width: 5vw;
   position: absolute;
+}
+
+.small-fourth-orbit {
+  right: -3vw;
+  position: absolute;
+}
+
+.pill-shadow-left {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 25vh;
+  width: 25vw;
+}
+
+@media only screen and (max-width: 900px) {
+  .open-lid {
+    height: 10.5vh;
+  }
+
+  .rest-of-bottle {
+    height: 40vh;
+  }
+
+  .astronaut-in-bottle-section {
+    height: 100vh;
+  }
+
+  .pill-astronaut {
+    min-width: 300px;
+  }
+
+  .floating-pills {
+    width: 90%;
+  }
+
+  .one-floating-pill {
+    min-width: 40px;
+  }
+
+  .small-fourth-orbit,
+  .pill-shadow-left {
+    display: none;
+  }
+
 }
