@@ -89,7 +89,7 @@
     letter-spacing: 0.085em;
     
     color: #FFC425;
-    margin: 3%;
+    margin-left: 3%;
             } 
     
     
@@ -140,6 +140,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        margin-bottom: 3%;
       }
 
 
