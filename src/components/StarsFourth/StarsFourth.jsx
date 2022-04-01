@@ -19,8 +19,8 @@ export function StarsFourth() {
 
   const frag = document.createDocumentFragment();
 
-  const width = window.innerWidth;
-  const height = window.innerHeight;
+  const width = window.innerWidth * 5;
+  const height = window.innerHeight * 5;
   const appearMin = 0.3;
   const appearMax = 0.8;
 
@@ -108,7 +108,7 @@ export function StarsFourth() {
 
   return (
     <>
-      <div id='banner4' style={{ width: `${document.innerWidth}`, height: `${window.innerHeight}` }}>
+      <div id='banner4' >
         <div className='star4' ></div>
       </div>
     </>
