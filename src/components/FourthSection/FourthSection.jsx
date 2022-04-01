@@ -42,7 +42,7 @@ export function FourthSection() {
         scrollTrigger: {
           trigger: bottleRef.current,
           start: "top top",
-          end: "center +=500",
+          end: "center +=300",
           endTrigger: galleryRef.current,
           toggleActions: "restart none none none",
           pin: true,
@@ -107,7 +107,7 @@ export function FourthSection() {
         <Orbit2 size="14vw" rotationSpeed="14" text="K" filled />
       </div>
 
-      <img className="fourth-shadow-center" src={shadowCenter} alt=""></img>
+      <img className="fourth-shadow-center" src={shadowCenter} alt="" draggable={false}></img>
 
       <div className="fourth-content">
 
@@ -160,11 +160,11 @@ export function FourthSection() {
             </div>
           </div>
 
-          <div data-scroll-container ref={scrollRef}  >
+          <div data-scroll-container ref={scrollRef} >
             <div className="fourth-scroll-content">
               <div className="fourth-section-image-gallery" ref={galleryRef}>
                 <ScrollContainer vertical={false} onEndScroll={moveImages}
-                  onScroll={skewImages} style={{ width: '100vw', height: '80vh', maxHeight: '600px' }}
+                  onScroll={skewImages} style={{ width: '100vw', height: '80vh' }}
                   className="drag-to-scroll"
                   hideScrollbars={false}
                 >
