@@ -42,7 +42,7 @@ export function FourthSection() {
         scrollTrigger: {
           trigger: bottleRef.current,
           start: "top top",
-          end: "center +=300",
+          end: "center +=600",
           endTrigger: galleryRef.current,
           toggleActions: "restart none none none",
           pin: true,
@@ -52,19 +52,22 @@ export function FourthSection() {
         },
       });
     }
-    animateImages();
-  }, []);
+  }, [isMobile]);
 
-  const animateImages = () => {
+
+
+  useEffect(() => {
     gsap.utils.toArray('.fourth-image').forEach((image) => {
       const x = (window.innerWidth / 2) - (image.x + (image.width / 2));
-      const y = (window.innerHeight / 2) - (image.y + (image.height / 2)) - 300;
+      const y = (window.innerHeight / 2) - (image.y + (image.height / 2));
+      // console.log(y);
 
       if (image) {
-        gsap.from(image, { duration: 10, x: `+=${x}`, y: `+=${y}`, scale: 0.3, imageRendering: false, delay: 4 })
+        gsap.from(image, { duration: 10, x: `+=${x}`, y: `+=${-400}`, scale: 0.3, imageRendering: false, delay: 8 })
       }
     })
-  };
+    setTimeout(moveImages, 20000)
+  }, []);
 
 
   const moveImages = () => {
@@ -173,7 +176,7 @@ export function FourthSection() {
             <div className="fourth-scroll-content">
               <div className="fourth-section-image-gallery" ref={galleryRef}>
                 <ScrollContainer vertical={false} onEndScroll={moveImages}
-                  onScroll={skewImages} style={{ width: '100vw', height: '80vh' }}
+                  onScroll={skewImages}
                   className="drag-to-scroll"
                   hideScrollbars={false}
                 >
@@ -187,7 +190,7 @@ export function FourthSection() {
                         src={image}
                         alt="Galéria de imagens"
                         draggable={false}
-                        style={{ gridArea: `${row} / ${column + (index * 10)} / span ${spanRow} / span ${spanColumn}` }}
+                        style={{ gridArea: `${row} / ${column + (index * 14)} / span ${spanRow} / span ${spanColumn}` }}
                         data-scroll
                         className="fourth-image"
                       />
