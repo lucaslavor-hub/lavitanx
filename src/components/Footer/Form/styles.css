@@ -96,15 +96,18 @@
     color: #FFFFFF;
     border: none;
     padding-left: 10px;
+    margin-right: 18px;
   }
   
   @media screen and (max-width: 600px) {
   
     #email {
-      width: 154px;
+      width: 157%;
+      margin-right: 0px;
     }
     ._submit{
-      width: 155px;
+      width: 262%;
+      margin-top: 10px;
     }
   }
   
@@ -126,7 +129,7 @@
     /* identical to box height, or 20px */
     letter-spacing: 0.085em;
     color: #030F2F;
-    margin-left: 18px;
+
   
   
   }
