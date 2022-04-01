@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { LocomotiveScrollComponent, FirstSection, PreloadVideo, SecondSection, ThirdSection, FourthSection } from './components/index';
 import "./global.css";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger, scrollerProxy } from "gsap/all";
 import Cursor from "./components/CustomCursor/index"
 import Footer from "./components/Footer/index";
 import Csection from "./components/cSection/index";
@@ -13,6 +13,9 @@ function App() {
   ScrollTrigger.defaults({
     scroller: "#root"
   });
+
+  ScrollTrigger.scrollerProxy("#root", {	pinType: "fixed" });
+
 
   // useEffect(() => {
   //   const timer = setTimeout(() => {

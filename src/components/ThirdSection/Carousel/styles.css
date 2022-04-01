@@ -8,6 +8,7 @@
   justify-content: center;
   margin-top: -1.5vw;
   overflow: hidden;
+  pointer-events: none;
 }
 
 section:not(.first) {
