@@ -53,16 +53,15 @@ export function FourthSection() {
       });
     }
     animateImages();
-    setTimeout(moveImages, 10000)
   }, []);
 
   const animateImages = () => {
     gsap.utils.toArray('.fourth-image').forEach((image) => {
       const x = (window.innerWidth / 2) - (image.x + (image.width / 2));
-      const y = (window.innerHeight / 2) - (image.y + (image.height / 2)) - 500;
+      const y = (window.innerHeight / 2) - (image.y + (image.height / 2)) - 300;
 
       if (image) {
-        gsap.from(image, { duration: 10, x: `+=${x}`, y: `+=${y}`, scale: 0.3, imageRendering: false, delay: 2 })
+        gsap.from(image, { duration: 10, x: `+=${x}`, y: `+=${y}`, scale: 0.3, imageRendering: false, delay: 4 })
       }
     })
   };
