@@ -61,7 +61,7 @@
   
   @media screen and (max-width: 600px) {
     #fullname {
-      width: 330px;
+      width: 310px;
     }
   }
   
@@ -92,7 +92,7 @@
   @media screen and (max-width: 600px) {
   
     #email {
-      width: 150px;
+      width: 130px;
     }
   }
   
