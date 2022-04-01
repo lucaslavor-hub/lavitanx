@@ -85,14 +85,14 @@ export function FourthSection() {
       <h2 className="fourth-section-title">Lavitan X</h2>
       <h3 className="fourth-section-subtitle">BIO COMPLEX</h3>
 
-      {/* <StarsFourth /> */}
+      <StarsFourth />
 
       <div className="small-fourth-orbit">
         <Orbit2 size="14vw" rotationSpeed="10" text="D" />
       </div>
 
       <div className="filled-fourth-orbit">
-        <Orbit2 size="14vw" rotationSpeed="10" text="K" filled />
+        <Orbit2 size="14vw" rotationSpeed="14" text="K" filled />
       </div>
 
       <img className="fourth-shadow-center" src={shadowCenter} alt=""></img>
@@ -150,8 +150,9 @@ export function FourthSection() {
         <div className="fourth-scroll-content">
           <div className="fourth-section-image-gallery" ref={galleryRef}>
             <ScrollContainer vertical={false} onEndScroll={moveImages}
-              onScroll={skewImages} style={{ width: '100vw' }}
+              onScroll={skewImages} style={{ width: '100vw', height: '80vh' }}
               className="drag-to-scroll"
+              hideScrollbars={false}
             >
               {gallery.map((image, index) => {
                 const values = gridValues[index % 2];
