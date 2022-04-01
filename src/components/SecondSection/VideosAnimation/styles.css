@@ -12,6 +12,7 @@
 }
 
 .video-animations-one{
+  position: absolute;
   transform: rotate(4.06deg);
   margin-right: 10vw;
   margin-top: 10vw;
@@ -54,6 +55,7 @@
   flex-direction: column;
 }
 
+
 .videos-animations-container > .middle-text, .videos-animations-container > .bottom-text {
   font-family: 'Montserrat';
   font-style: normal;
@@ -63,7 +65,25 @@
 
   text-align: center;
   letter-spacing: 0.14em;
-  margin-top: 18vw;
+  margin-top: 30vw;
+
+
+  color: #FFFFFF;
+}
+.videos-animations-container > .middle-text {
+  margin-top: 35vw !important;
+}
+
+.video-description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1vw;
+  line-height: 125.9%;
+
+  text-align: center;
+  letter-spacing: 0.14em;
+
 
   color: #FFFFFF;
 }
@@ -133,5 +153,14 @@
   .videos-animations-container .bottom-text {
     margin-top: 85vw;
   }
+  .videos-animations-container > .middle-text {
+    margin-top: 65vw !important;
+  }
 
+  .video-animations-one{
+
+    margin-right: 50vw;
+    margin-top: 5vw;
+
+  }
 }

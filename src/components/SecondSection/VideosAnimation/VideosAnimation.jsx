@@ -27,6 +27,29 @@ export function VideosAnimation({ someText }) {
 
 
   useEffect(() => {
+    if (isMobile) {
+      gsap.to(divVideoOneRef.current, { 
+        scrollTrigger:  {
+          trigger: videosRef.current,
+          start: "top+=20% center",
+          end: "top+=120% center",
+          scrub: true,
+        },
+        y: "-34vw",
+        rotation: 100,
+      }); 
+    } else {
+      gsap.to(divVideoOneRef.current, { 
+        scrollTrigger:  {
+          trigger: videosRef.current,
+          start: "top center",
+          end: "top+=100% center",
+          scrub: true,
+        },
+        y: "-34vw",
+        rotation: 100,
+      }); 
+    }
     gsap.from(videoOneRef.current, { 
       scrollTrigger:  {
         trigger: videosRef.current,
@@ -39,16 +62,6 @@ export function VideosAnimation({ someText }) {
       opacity: 0,
     }); 
 
-    gsap.to(divVideoOneRef.current, { 
-      scrollTrigger:  {
-        trigger: videosRef.current,
-        start: "top center",
-        end: "top+=100% center",
-        scrub: true,
-      },
-      y: "-34vw",
-      rotation: 100,
-    }); 
 
     gsap.from(videoTwoRef.current, { 
       scrollTrigger:  {
@@ -126,15 +139,58 @@ export function VideosAnimation({ someText }) {
       ease: Power4.easeOut,
     });
 
+    let video1 = document.querySelector('.video-animations-one')
+    let video2 = document.querySelector('.video-animations-two')
+    let video3 = document.querySelector('.video-animations-three')
+
+    hoverVideo(video1, divVideoOneRef.current, 4.06, "10vw 10vw 0 0", videoOneRef.current)
+    hoverVideo(video2, divVideoTwoRef.current, 7.03, "19vw 52vw 0 0", videoTwoRef.current)
+    hoverVideo(video3, divVideoThreeRef.current, -15.3, "7vw 0 0 57vw", videoThreeRef.current)
   }, []);
+
+  function hoverVideo(video, current, rotation, marginBefore, currentVideo, marginAfter) {
+    video.addEventListener('mouseover', (e) => {
+      video.style.zIndex = "100";
+      gsap.to(current, { 
+        width: "64vw",
+        height: "36vw",
+        margin: "0",
+        rotation: 0,
+        opacity: 1,
+      }); 
+    })
+    video.addEventListener('mouseout', (e) => {
+      video.style.zIndex = "90";
+      gsap.to(current, { 
+        width: "32vw",
+        height: "18vw",
+        margin: marginBefore,
+        rotation: rotation,
+        opacity: 1,
+      }); 
+    })
+
+    video.addEventListener('mouseover', (e) => {
+      gsap.to(currentVideo, { 
+        width: "64vw",
+        height: "36vw",
+      }); 
+    })
+    video.addEventListener('mouseout', (e) => {
+      gsap.to(currentVideo, { 
+        width: "32vw",
+        height: "18vw",
+      }); 
+    })
+  }
 
   return(
   <div ref={videosRef} className="videos-animations-container">
-      <div ref={divVideoOneRef}  className="video-animations-one-div">
+      <div ref={divVideoOneRef}  className="video-animations-one">
       {isMobile ? 
             <img className="mobile-video video-animations-one" ref={videoOneRef} src={image1} />
          :
-        <video ref={videoOneRef} className="video-animations-one" preload="metadata" muted autoPlay loop> 
+        <video ref={videoOneRef}  preload="metadata" muted autoPlay loop> 
           <source src={video1} type="video/mp4"/>
         </video>
         }     
