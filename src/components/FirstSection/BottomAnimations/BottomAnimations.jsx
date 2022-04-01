@@ -7,7 +7,7 @@ import { OrbitText } from "../..";
 
 const rightOrbitStyles = {
   externalOrbitContainer: { 
-    right: "10vw",
+    right: "9vw",
   },
   spinText: {
     width: "28vw",
@@ -17,7 +17,7 @@ const rightOrbitStyles = {
 
 const leftOrbitStyles = {
   externalOrbitContainer: { 
-    left: "10vw",
+    left: "9vw",
   },
   spinText: {
     width: "35vw",
@@ -31,15 +31,21 @@ export function BottomAnimations({ startAnimation }) {
   const orbitsRef = useRef(null);
 
   useEffect(() => {
-    if (startAnimation && window.innerWidth >= 600) {
+    const innerWidth = window.innerWidth;
+    if (startAnimation && innerWidth >= 600 && innerWidth < 2000) {
       gsap.to(medicineRef.current, { y: "-47vw", opacity: 1, duration: 3});
       gsap.to(earthRef.current, { y: "-50vw", opacity: 1, duration: 3});
       gsap.to(".orbit-image",  { y: "-40vw", opacity: 1, duration: 3});
       gsap.to(".spin-text",  { y: "-40vw", opacity: 1, duration: 3});
     } else if (startAnimation && window.innerWidth < 600) {
       gsap.to(earthRef.current, { y: "-80vw", opacity: 1, duration: 3});
+    } else if (startAnimation && window.innerWidth >= 2000) {
+      gsap.to(earthRef.current, { y: "-100vh", opacity: 1, duration: 3});
+      gsap.to(".orbit-image",  { y: "-80vh", opacity: 1, duration: 3});
+      gsap.to(".spin-text",  { y: "-80vh", opacity: 1, duration: 3});
+      
     }
-  }, [startAnimation]);
+    }, [startAnimation]);
 
   return(
   <>
