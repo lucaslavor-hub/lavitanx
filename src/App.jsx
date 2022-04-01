@@ -36,8 +36,10 @@ function App() {
           <ThirdSection />
           <FourthSection />
           <Cursor />
+          <div className="group1">
           <Csection></Csection>
           <Footer> </Footer>
+          </div>
         </>
       }
       {/* </LocomotiveScrollComponent> */}
