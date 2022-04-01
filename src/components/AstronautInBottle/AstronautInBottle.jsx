@@ -54,12 +54,23 @@ export function AstronautInBottle() {
       }
     })
 
-    const containerHeight = 140; //vh page
-    const y = containerHeight - 50 - 13.15; //  container - bottle - lid
+    const y = () => {
+      if (window.innerWidth > 900) {
+        const containerHeight = 140; //vh page
+        const y = containerHeight - 50 - 13.15; //  container - bottle - lid
+
+        return y + 3.2 // lid /4
+      } else {
+        const containerHeight = 100;
+        const y = containerHeight - 40 - 10.5;
+
+        return y + 2.625
+      }
+    }
 
     gsap.to(lidRef.current, {
       duration: 4,
-      y: `+=${y + 3.2}vh`, // lid / 4
+      y: `+=${y()}vh`, // lid / 4
       scrollTrigger: {
         trigger: lidRef.current,
         start: "top top",
