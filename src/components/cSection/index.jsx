@@ -29,7 +29,7 @@ export function Csection (){
 
     {isOpen && <Popup
       content={<>
-<iframe id="video_popup" width="715" height="400"
+<iframe id="video_popup" width="715" height="auto"
 src="https://www.youtube.com/embed/563aZcYpg0s">
 </iframe>
       </>}

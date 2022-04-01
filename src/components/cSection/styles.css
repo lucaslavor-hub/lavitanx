@@ -100,7 +100,7 @@
         letter-spacing: 0.085em;
         color: #FFC425;
                 } 
-                @media (min-width: 600px) {
+        @media (min-width: 600px) {
                     .button1 {
                         font-size: 12px;
 
@@ -115,7 +115,7 @@
                         font-size: 12px;
                       }
                       .s11{
-                        display: table;
+                        display: none;
                       }
                   }
                 
@@ -147,3 +147,5 @@
         justify-content: center;
         align-items: center;
     }
+
+  
