@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import "./styles.css";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger, Power4 } from "gsap/all";
 import DNA from "../../../assets/DNA.png";
 import DNA2 from "../../../assets/DNA2.png";
 
@@ -150,6 +150,39 @@ export function SecondAnimationSection() {
       y:"-44vw",
       immediateRender: false,
     });  
+    
+
+    gsap.from(".text-animation-1", { 
+      scrollTrigger:  {
+        trigger: ".second-animation-pag",
+        toggleActions: "restart none reverse none",
+        start: "start+=200% start",
+        end: "start+=200% start",
+        markers: true,
+      },
+      y: 100,
+      opacity: 0,
+      duration: 3,
+      ease: Power4.easeOut,
+      // skewY: 7,
+      // stagger: {
+      //   amount: 0.3
+      // },
+      immediateRender: false,
+    }); 
+    gsap.from(".first-animation-titles-container", { 
+      scrollTrigger:  {
+        trigger: ".second-animation-pag",
+        toggleActions: "restart none reverse none",
+        start: "start+=200% start",
+        end: "start+=200% start",
+        markers: true,
+      },
+      height:0,
+      duration: 1.5,
+      immediateRender: false,
+    }); 
+
 
   }, []);
 
@@ -159,7 +192,7 @@ export function SecondAnimationSection() {
     <img ref={DNALeftBottom} className="DNA-left-bottom"  src={DNA} />
     <img ref={DNARight} className="DNA-right"  src={DNA2} />
     <div className="first-animation-titles-container2">
-      <p className="title-second-section-3">Previne o<br/>envelhecimento<br/> precoce</p>
+      <p className="title-second-section-3 text-animation-1">Previne o<br/>envelhecimento<br/> precoce</p>
     </div> 
   </section>
     

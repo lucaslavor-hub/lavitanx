@@ -24,17 +24,12 @@ export function SecondSection({ someText }) {
         trigger: ".text-animation",
         toggleActions: "restart none reverse none",
         start: "top+=4% bottom",
-        end: "top-1px bottom",
-        markers: true,
+        end: "top+=4% bottom",
       },
       y: 100,
       opacity: 0,
-      duration: 1.3,
+      duration: 1,
       ease: Power4.easeOut,
-      skewY: 7,
-      stagger: {
-        amount: 0.3
-      }
     }); 
 
 

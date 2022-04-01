@@ -110,7 +110,6 @@ export function VideosAnimation({ someText }) {
       opacity: 0,
       duration: 1.3,
       ease: Power4.easeInOut,
-      skewY: 7,
 
     });
 
@@ -118,14 +117,13 @@ export function VideosAnimation({ someText }) {
       scrollTrigger:  {
         trigger: ".bottom-text",
         toggleActions: "restart none reverse none",
-        start: "top-=210% bottom",
+        start: "top-=180% bottom",
         end: "top-=210% bottom",
       },
       y: 100,
       opacity: 0,
       duration: 1.3,
       ease: Power4.easeOut,
-      skewY: 7,
     });
 
   }, []);
