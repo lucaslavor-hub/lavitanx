@@ -65,13 +65,17 @@
 
   text-align: center;
   letter-spacing: 0.14em;
-  margin-top: 30vw;
 
 
   color: #FFFFFF;
 }
-.videos-animations-container > .middle-text {
-  margin-top: 35vw !important;
+.videos-animations-container .middle-text {
+  margin-top: 42vw;
+}
+
+.videos-animations-container > .bottom-text {
+  margin-top: 40vw;
+
 }
 
 .video-description {
@@ -113,10 +117,6 @@
   right: -7vw;
   margin-top: 50vw;
 
-}
-
-.videos-animations-container .bottom-text {
-  margin-top: 44vw;
 }
 
 

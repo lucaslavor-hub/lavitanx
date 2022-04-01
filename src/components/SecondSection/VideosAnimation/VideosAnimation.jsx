@@ -116,8 +116,8 @@ export function VideosAnimation({ someText }) {
       scrollTrigger:  {
         trigger: ".middle-text",
         toggleActions: "restart none reverse none",
-        start: "top-=210% bottom",
-        end: "top-1px bottom",
+        start: "top-=295% bottom",
+        end: "top-=270% bottom",
       },
       y: 100,
       opacity: 0,
@@ -150,6 +150,7 @@ export function VideosAnimation({ someText }) {
 
   function hoverVideo(video, current, rotation, marginBefore, currentVideo, marginAfter) {
     video.addEventListener('mouseover', (e) => {
+      // document.querySelector("#root").style.overflow = "hidden";
       video.style.zIndex = "100";
       gsap.to(current, { 
         width: "64vw",
@@ -160,6 +161,8 @@ export function VideosAnimation({ someText }) {
       }); 
     })
     video.addEventListener('mouseout', (e) => {
+      // document.querySelector("#root").style.overflow = "scroll";
+
       video.style.zIndex = "90";
       gsap.to(current, { 
         width: "32vw",
