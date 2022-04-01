@@ -75,7 +75,8 @@ export function FourthSection() {
             trigger: trigger,
             start: "center center",
             toggleActions: "play none none none",
-            onLeave: () => setTimeout(moveImages, 3400)
+            onLeave: () => !isMobile && setTimeout(moveImages, 3400),
+            onEnter: () => isMobile && setTimeout(moveImages, 3400),
           }
         })
 
@@ -92,11 +93,13 @@ export function FourthSection() {
         const xAmount = evenIndex ? '-=70' : '+=70';
         gsap.to(image, { duration: 60, x: xAmount, skewX: 0, imageRendering: false })
       } else {
-        const xAmount = evenIndex ? '-=40' : '+=40';
+        const xAmount = evenIndex ? '-=75' : '+=75';
         gsap.to(image, { duration: 60, x: xAmount, skewX: 0, imageRendering: false })
       }
 
       gsap.to(image, { duration: 3, skewX: 0, imageRendering: false })
+
+      if (isMobile) setTimeout(() => gsap.to(image, { duration: 15, x: 0, imageRendering: false }), 15000)
     })
   }
 
