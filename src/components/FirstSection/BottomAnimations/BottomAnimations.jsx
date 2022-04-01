@@ -32,13 +32,13 @@ export function BottomAnimations({ startAnimation }) {
 
   useEffect(() => {
     const innerWidth = window.innerWidth;
-    if (startAnimation && innerWidth >= 600 && innerWidth < 2000) {
+    if (startAnimation && innerWidth > 900 && innerWidth < 2000) {
       gsap.to(medicineRef.current, { y: "-47vw", opacity: 1, duration: 3});
       gsap.to(earthRef.current, { y: "-50vw", opacity: 1, duration: 3});
       gsap.to(".orbit-image",  { y: "-40vw", opacity: 1, duration: 3});
       gsap.to(".spin-text",  { y: "-40vw", opacity: 1, duration: 3});
-    } else if (startAnimation && window.innerWidth < 600) {
-      gsap.to(earthRef.current, { y: "-80vw", opacity: 1, duration: 3});
+    } else if (startAnimation && window.innerWidth <= 900) {
+      gsap.to(earthRef.current, { y: "-35vh", opacity: 1, duration: 3});
     } else if (startAnimation && window.innerWidth >= 2000) {
       gsap.to(earthRef.current, { y: "-100vh", opacity: 1, duration: 3});
       gsap.to(".orbit-image",  { y: "-80vh", opacity: 1, duration: 3});

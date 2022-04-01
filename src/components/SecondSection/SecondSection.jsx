@@ -11,7 +11,12 @@ export function SecondSection({ someText }) {
   const backgroundRef = useRef(null);
 
   useEffect(() => {
-    gsap.to(backgroundRef.current, { y: "-24vw", opacity: 1, duration: 3});
+    const innerWidth = window.innerWidth;
+    if (innerWidth > 900 ) {
+      gsap.to(backgroundRef.current, { y: "-24vw", opacity: 1, duration: 3});
+    } else{
+      gsap.to(backgroundRef.current, { y: "-30vw", opacity: 1, duration: 1});
+    }
 
   }, []);
   
