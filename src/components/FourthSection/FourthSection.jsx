@@ -8,6 +8,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/src/locomotive-scroll.scss";
 import shadowCenter from '../../assets/shadowCenter.svg'
 import { StarsFourth } from "../StarsFourth/StarsFourth";
+import ScrollContainer from 'react-indiana-drag-scroll'
 import { Orbit2 } from "../Orbit2/Orbit2";
 
 
@@ -38,7 +39,7 @@ export function FourthSection() {
       scrollTrigger: {
         trigger: bottleRef.current,
         start: "top top",
-        end: "center center-=100",
+        end: "center +=500",
         endTrigger: galleryRef.current,
         toggleActions: "restart none none none",
         pin: true,
@@ -47,18 +48,30 @@ export function FourthSection() {
         pinType: 'fixed',
       },
     });
-
+    moveImages();
   }, []);
+
+
+
+  const moveImages = () => {
+    gsap.utils.toArray('.fourth-image').forEach((image, index) => {
+      const evenIndex = index % 2 === 0;
+      const xAmount = evenIndex ? '-=60' : '+=60';
+
+      gsap.to(image, { duration: 60, x: xAmount })
+    })
+  }
 
   const skewImages = () => {
     if (!animationHappening) {
       setAnimationHappening(true);
       gsap.utils.toArray('.fourth-image').forEach((image, index) => {
         const evenIndex = index % 2 === 0;
-        const xAmount = evenIndex ? '-=25' : '+=10';
+        const xAmount = evenIndex ? '+=13' : '-=12';
+        const skewAmount = evenIndex ? '-=2deg' : '+2deg';
 
-        gsap.to(image, { duration: 0.25, x: xAmount, skewX: '-=7deg' })
-        gsap.to(image, { duration: 2, x: 0, skewX: 0, delay: 0.5 })
+        gsap.to(image, { duration: 5, x: xAmount, skewX: skewAmount })
+        // gsap.to(image, { duration: 2, x: 0, skewX: 0, delay: 0.5 })
       })
       setTimeout(() => setAnimationHappening(false), 2000)
     }
@@ -134,23 +147,28 @@ export function FourthSection() {
 
       <div data-scroll-container ref={scrollRef}  >
         <div className="fourth-scroll-content">
-          <div className="fourth-section-image-gallery" onScroll={skewImages} ref={galleryRef}>
-            {gallery.map((image, index) => {
-              const values = gridValues[index % 2];
-              if (!values) return null;
+          <div className="fourth-section-image-gallery" ref={galleryRef}>
+            <ScrollContainer vertical={false} onEndScroll={moveImages}
+              onScroll={skewImages} style={{ width: '100vw' }}
+              className="drag-to-scroll"
+            >
+              {gallery.map((image, index) => {
+                const values = gridValues[index % 2];
+                if (!values) return null;
 
-              const [row, column, spanRow, spanColumn] = values;
-              return (
-                <img
-                  src={image}
-                  alt="Galéria de imagens"
-                  draggable={false}
-                  style={{ gridArea: `${row} / ${column + (index * 10)} / span ${spanRow} / span ${spanColumn}` }}
-                  data-scroll
-                  className="fourth-image"
-                />
-              )
-            })}
+                const [row, column, spanRow, spanColumn] = values;
+                return (
+                  <img
+                    src={image}
+                    alt="Galéria de imagens"
+                    draggable={false}
+                    style={{ gridArea: `${row} / ${column + (index * 10)} / span ${spanRow} / span ${spanColumn}` }}
+                    data-scroll
+                    className="fourth-image"
+                  />
+                )
+              })}
+            </ScrollContainer>
 
           </div>
         </div>
