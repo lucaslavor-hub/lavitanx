@@ -129,3 +129,8 @@
         align-items: center;
       }
     
+      #video_popup{
+        overflow: hidden;
+        height: 400px;
+        border-radius: 10px;
+    }

@@ -5,11 +5,11 @@ import { ScrollTrigger, scrollerProxy } from "gsap/all";
 import Cursor from "./components/CustomCursor/index"
 import Footer from "./components/Footer/index";
 import Csection from "./components/cSection/index";
+import Popup from './components/Popup/index';
 import gsap from "gsap";
 
 
 function App() {
-  
   const [loading, setLoading] = useState(true);
   ScrollTrigger.defaults({
     scroller: "#root"
