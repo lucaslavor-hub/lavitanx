@@ -128,10 +128,6 @@ export function FourthSection() {
         <StarsFourth />
       )}
 
-      <div className="small-fourth-orbit">
-        <Orbit2 size="14vw" rotationSpeed="10" text="D" />
-      </div>
-
       <div className="filled-fourth-orbit">
         <Orbit2 size="14vw" rotationSpeed="14" text="K" filled />
       </div>

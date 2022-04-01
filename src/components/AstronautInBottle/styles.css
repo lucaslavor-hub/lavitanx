@@ -12,19 +12,20 @@
 
 .open-lid {
   /* width: 15vw; */
-  height: 10vh;
+  height: 13.15vh;
   z-index: 100;
 }
 
 .rest-of-bottle {
   /* width: 15vw; */
-  height: 40vh;
+  height: 50vh;
   z-index: 20;
 }
 
 .pill-astronaut {
-  width: 24vw;
+  width: 26vw;
   z-index: 15;
+  max-width: 400px;
 }
 
 .floating-pills {
@@ -32,9 +33,23 @@
   top: 10%;
   width: 60%;
   height: 52%;
+  /* background-color: red; */
 }
 
 .one-floating-pill {
   width: 5vw;
   position: absolute;
+}
+
+.small-fourth-orbit {
+  right: -3vw;
+  position: absolute;
+}
+
+.pill-shadow-left {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 25vh;
+  width: 25vw;
 }
