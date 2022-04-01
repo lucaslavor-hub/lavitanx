@@ -101,12 +101,12 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 900px) {
   .b12-orbit-container, .c-orbit-container, .moon-second-section{
     display: none;
   }
 
-  .videos-animations-container video{
+  .mobile-video {
     width: 55vw;
     height: 34vw;
   }
