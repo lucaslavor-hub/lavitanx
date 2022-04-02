@@ -29,7 +29,7 @@ export function AstronautInBottle() {
 
       if (image) {
         gsap.to(image, {
-          duration: 3.5,
+          duration: 3.0,
           x: `+=${x}`,
           y: `+=${y + 100}`,
           scale: 0.8,
@@ -43,7 +43,7 @@ export function AstronautInBottle() {
     })
 
     gsap.to(astronautRef.current, {
-      duration: 3.75,
+      duration: 3,
       scale: 0.8,
       y: `+= ${window.innerWidth > 1600 ? 600 : 400}`,
       scrollTrigger: {
@@ -64,7 +64,7 @@ export function AstronautInBottle() {
         const containerHeight = 100;
         const y = containerHeight - 40 - 10.5;
 
-        return y + 2.625
+        return y + 3.2
       }
     }
 
