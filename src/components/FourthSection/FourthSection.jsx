@@ -115,12 +115,11 @@ export function FourthSection() {
       })
       setTimeout(() => setAnimationHappening(false), 2000)
     }
+
   }
 
   return (
     <div className="background-fourth-section">
-
-
       <h2 className="fourth-section-title">Lavitan X</h2>
       <h3 className="fourth-section-subtitle">BIO COMPLEX</h3>
 
@@ -150,6 +149,10 @@ export function FourthSection() {
         />
 
         <div className="fourth-side-div">
+        <div className="wrapper_t">
+          <h2>teste<span></span></h2>
+        </div>
+
           <h4 className="fourth-normal-text" style={{ textAlign: 'left' }} >
             Vitaminas do Complexo B auxiliam na formação das <b>células vermelhas</b> do sangue
             e no processo de <b>divisão celular</b>
