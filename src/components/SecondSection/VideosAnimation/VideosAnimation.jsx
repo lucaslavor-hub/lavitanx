@@ -144,8 +144,8 @@ export function VideosAnimation({ someText }) {
     let video3 = document.querySelector('.video-animations-three')
 
     hoverVideo(video1, divVideoOneRef.current, 4.06, "10vw 10vw 0 0", videoOneRef.current)
-    hoverVideo(video2, divVideoTwoRef.current, 7.03, "19vw 52vw 0 0", videoTwoRef.current)
-    hoverVideo(video3, divVideoThreeRef.current, -15.3, "7vw 0 0 57vw", videoThreeRef.current)
+    hoverVideo(video2, divVideoTwoRef.current, 7.03, "19vw 0 0 0", videoTwoRef.current)
+    hoverVideo(video3, divVideoThreeRef.current, -15.3, "7vw 0 0 0", videoThreeRef.current)
   }, []);
 
   function hoverVideo(video, current, rotation, marginBefore, currentVideo, marginAfter) {

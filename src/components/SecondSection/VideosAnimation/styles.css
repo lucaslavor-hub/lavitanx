@@ -28,7 +28,8 @@
 .video-animations-two{
   position: absolute;
   transform: rotate(7.03deg);
-  margin-right: 52vw;
+  /* margin-right: 52vw; */
+  left:8vw;
   margin-top: 19vw;
   z-index: 50;
 }
@@ -36,7 +37,8 @@
 .video-animations-three{
   position: absolute;
   transform: rotate(-15.3deg);
-  margin-left: 57vw;
+  /* margin-left: 57vw; */
+  right:6vw;
   margin-top: 7vw;
   z-index: 50;
 }
@@ -137,13 +139,12 @@
   }
 
   .video-animations-two{
-    margin-right: 67vw;
     margin-top: 40vw;
-
+    left: -13vw;
   }
   
   .video-animations-three{
-    margin-left: 74vw;
+    right: -20vw;
   }
 
   .videos-animations-container > .middle-text, .videos-animations-container > .bottom-text {
