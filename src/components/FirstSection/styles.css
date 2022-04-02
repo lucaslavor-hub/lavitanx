@@ -81,4 +81,16 @@
     justify-content: center;
     width: 100vw;
   }
+
+  #lottie {
+    position: absolute;
+    z-index: 10;
+  }
+
+  .lottie {
+    z-index: 10;
+    width: 12vw;
+    height: 11vw;
+    margin: 11vw auto auto auto;
+  }
 }

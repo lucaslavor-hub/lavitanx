@@ -42,16 +42,16 @@ export function FirstSection({ someText }) {
       <div className="first-section-mobile">
         <div class="background-video">
          <video src={videoPreload} autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
-         <Player
-          ref={lottieRef} // set the ref to your class instance
-          autoplay
-          loop
-          controls
-          style={{zIndex:"111", color:"white"}}
-          // background="transparent"
-          src="https://assets3.lottiefiles.com/packages/lf20_klsab29v.json"
-          style={{ height: '309px', width: '309px' }}></Player>
-        {/* <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_klsab29v.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop controls autoplay></lottie-player> */}
+          <div className="lottie">
+            <Player
+              ref={lottieRef}
+              autoplay
+              loop
+              controls
+              src="https://assets3.lottiefiles.com/packages/lf20_klsab29v.json"
+              style={{ height: '11vw', width: '11vw' }}>
+            </Player>
+          </div>
         </div>
       </ div>}
       {/*<img src={video} className="background-video" /> */}

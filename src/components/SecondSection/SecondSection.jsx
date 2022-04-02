@@ -23,8 +23,8 @@ export function SecondSection({ someText }) {
       scrollTrigger:  {
         trigger: ".text-animation",
         toggleActions: "restart none reverse none",
-        start: "top+=4% bottom",
-        end: "top+=4% bottom",
+        start: "top-=10% bottom",
+        end: "top-=10% bottom",
       },
       y: 100,
       opacity: 0,
