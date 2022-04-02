@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { LocomotiveScrollComponent, FirstSection, PreloadVideo, SecondSection, ThirdSection, FourthSection, AstronautInBottle } from './components/index';
+import { LocomotiveScrollComponent, PreloadVideo, FirstSection, SecondSection, ThirdSection, FourthSection, AstronautInBottle } from './components/index';
 import "./global.css";
 import { ScrollTrigger, scrollerProxy } from "gsap/all";
 import Cursor from "./components/CustomCursor/index"
@@ -26,6 +26,7 @@ function App() {
         <PreloadVideo setLoading={setLoading} />
         :
         <>
+        
           <FirstSection />
           <SecondSection />
           <ThirdSection />
@@ -39,6 +40,7 @@ function App() {
         </>
       }
       {/* </LocomotiveScrollComponent> */}
+      
     </div>
   )
 }
