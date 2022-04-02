@@ -52,7 +52,7 @@ export function FirstSection({ someText }) {
               autoplay
               loop
               controls
-              src="https://assets3.lottiefiles.com/packages/lf20_klsab29v.json"
+              src="https://assets9.lottiefiles.com/packages/lf20_ox8pvjqh.json"
               style={{ height: '11vw', width: '11vw' }}>
             </Player>
           </div>
