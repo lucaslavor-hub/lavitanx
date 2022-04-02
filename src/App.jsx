@@ -16,19 +16,6 @@ function App() {
   });
 
 
-
-  useEffect(() => {
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".background-second-section",
-        start: "top 10%"
-      }
-    });
-    tl.from(".background-second-section h2", { y: 300, duration: 1.8, ease: "power4.out", delay: 0.9, skewY: 7, opacity: 0 });
-
-  }, []);
-
   ScrollTrigger.scrollerProxy("#root", { pinType: "fixed" });
 
 

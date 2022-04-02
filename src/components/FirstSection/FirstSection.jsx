@@ -15,6 +15,7 @@ export function FirstSection({ someText }) {
   const spheresRef = useRef(null);
   const logoRef = useRef(null);
   const lottieRef = useRef(null);
+  const mobileRef = useRef(null);
   const [startAnimation, setStartAnimation] = useState(false);
   const isMobile = window.innerWidth <= 900;
 
@@ -30,6 +31,9 @@ export function FirstSection({ someText }) {
       gsap.to(backgroundBlurRef.current, { opacity: 1, duration: 3});
       gsap.to(spheresRef.current, { x:"-2vw", y:"-2vw",opacity: 1, duration: 3});
       gsap.to(logoRef.current, { y:"11vw", duration: 3});
+      gsap.to(logoRef.current, { y:"11vw", duration: 3});
+      gsap.from(mobileRef.current, { opacity:0, duration: 4});
+
     }
   }, [startAnimation]);
 
@@ -40,18 +44,18 @@ export function FirstSection({ someText }) {
       <div ref={backgroundBlurRef} className="background-blur"/>
       {isMobile &&
       <div className="first-section-mobile">
-        <div class="background-video">
+        <div class="background-video" ref={mobileRef}>
          <video src={videoPreload} autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
-         <Player
-          ref={lottieRef} // set the ref to your class instance
-          autoplay
-          loop
-          controls
-          style={{zIndex:"111", color:"white"}}
-          // background="transparent"
-          src="https://assets3.lottiefiles.com/packages/lf20_klsab29v.json"
-          style={{ height: '309px', width: '309px' }}></Player>
-        {/* <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_klsab29v.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop controls autoplay></lottie-player> */}
+          <div className="lottie">
+            <Player
+              ref={lottieRef}
+              autoplay
+              loop
+              controls
+              src="https://assets9.lottiefiles.com/packages/lf20_ox8pvjqh.json"
+              style={{ height: '11vw', width: '11vw' }}>
+            </Player>
+          </div>
         </div>
       </ div>}
       {/*<img src={video} className="background-video" /> */}
