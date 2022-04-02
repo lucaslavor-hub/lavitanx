@@ -7,6 +7,7 @@ export function StarsFourth() {
   gsap.registerPlugin(RoughEase);
   let banner;
   let baseStar;
+  const bannerRef = useRef(null);
 
   useEffect(() => {
     // const timer = setTimeout(() => {
@@ -19,8 +20,6 @@ export function StarsFourth() {
 
   const frag = document.createDocumentFragment();
 
-  const width = window.innerWidth * 2;
-  const height = window.innerHeight * 2;
   const appearMin = 0.3;
   const appearMax = 0.8;
 
@@ -62,6 +61,9 @@ export function StarsFourth() {
   function createStar() {
     const star = baseStar.cloneNode(true);
     frag.appendChild(star);
+
+    const width = banner.clientWidth;
+    const height = banner.clientHeight;
 
     gsap.set(star, {
       rotation: random(360),
@@ -108,7 +110,7 @@ export function StarsFourth() {
 
   return (
     <>
-      <div id='banner4' >
+      <div id='banner4' ref={bannerRef} >
         <div className='star4' ></div>
       </div>
     </>
