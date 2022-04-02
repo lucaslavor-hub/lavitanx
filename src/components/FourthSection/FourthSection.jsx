@@ -10,7 +10,8 @@ import shadowCenter from '../../assets/shadowCenter.svg'
 import { StarsFourth } from "../StarsFourth/StarsFourth";
 import ScrollContainer from 'react-indiana-drag-scroll'
 import { Orbit2 } from "../Orbit2/Orbit2";
-
+import Typical from 'react-typical'
+import ReactRotatingText from 'react-rotating-text'
 
 
 export function FourthSection() {
@@ -115,7 +116,7 @@ export function FourthSection() {
       })
       setTimeout(() => setAnimationHappening(false), 2000)
     }
-
+    var ReactRotatingText = require('react-rotating-text');
   }
 
   return (
@@ -150,8 +151,10 @@ export function FourthSection() {
 
         <div className="fourth-side-div">
           <h4 className="fourth-normal-text" style={{ textAlign: 'left' }} >
-            Vitaminas do Complexo B auxiliam na formação das <b>células vermelhas</b> do sangue
-            e no processo de <b>divisão celular</b>
+
+ 
+          <ReactRotatingText items={['Vitaminas do Complexo B auxiliam na formação das células vermelhas do sangue e no processo de divisão celular', 'Cromo quelato auxilia no metabolismo mais rápido de proteínas, carboidratos e gorduras', 'O ferro auxilia no transporte do oxigênio no organismo','Vitamina k auxilia na coagulação do sangue']} />
+          
           </h4>
         </div>
 
