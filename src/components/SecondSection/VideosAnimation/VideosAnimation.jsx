@@ -78,7 +78,7 @@ export function VideosAnimation({ someText }) {
     gsap.to(divVideoTwoRef.current, { 
       scrollTrigger:  {
         trigger: divVideoThreeRef.current,
-        start: "top-=50% center",
+        start: "top-=10% center",
         end: "top+=400% center",
         scrub: true,
       },
@@ -102,7 +102,7 @@ export function VideosAnimation({ someText }) {
     gsap.to(divVideoThreeRef.current, { 
       scrollTrigger:  {
         trigger: divVideoThreeRef.current,
-        start: "top-=80% center",
+        start: "top-=10% center",
         end: "top+=300% center",
         scrub: true,
       },
