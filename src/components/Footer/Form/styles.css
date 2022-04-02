@@ -18,6 +18,7 @@
     align-items: center;
     display: flex;
     padding-top: 4vh;
+    z-index: 1;
     
   }
   
@@ -43,6 +44,7 @@
     /* identical to box height, or 20px */
     letter-spacing: 0.085em;
     color: #FFFFFF;
+    z-index: 1;
   }
   
   #fullname{
@@ -66,6 +68,7 @@
     color: #FFFFFF;
     border: none;
     padding-left: 10px;
+    z-index: 1;
   }
   
   @media screen and (max-width: 600px) {
@@ -97,6 +100,7 @@
     border: none;
     padding-left: 10px;
     margin-right: 18px;
+    z-index: 1;
   }
   
   @media screen and (max-width: 600px) {
@@ -129,7 +133,7 @@
     /* identical to box height, or 20px */
     letter-spacing: 0.085em;
     color: #030F2F;
-
+    z-index: 1;
   
   
   }
