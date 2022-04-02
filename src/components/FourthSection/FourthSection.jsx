@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import "./styles.css";
-import pillBottle from "../../assets/pillBottle.png";
+import pillBottle from "../../assets/pillBottle.svg";
 import { gallery, gridValues } from './galleryData'
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/src/locomotive-scroll.scss";
@@ -41,7 +41,7 @@ export function FourthSection() {
       gsap.to(bottleRef.current, {
         scrollTrigger: {
           trigger: bottleRef.current,
-          start: "top top",
+          start: "center center",
           end: "center +=600",
           endTrigger: galleryRef.current,
           toggleActions: "restart none none none",
@@ -58,7 +58,7 @@ export function FourthSection() {
 
   useEffect(() => {
     gsap.utils.toArray('.fourth-image').forEach((image) => {
-      const x = (image.parentNode.clientWidth / 2) - (image.offsetLeft + (image.width / 2));
+      const x = (window.innerWidth / 2) - (image.x + (image.width / 2));
 
       const trigger = isMobile ? '.pill-bottle-fourth' : '.fourth-number-one';
 
