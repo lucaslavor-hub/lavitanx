@@ -106,6 +106,7 @@
 .drag-to-scroll {
   width: 100vw;
   padding: 60vh 0 20vh 0;
+  white-space: nowrap;
   /* background-color: red; */
 }
 

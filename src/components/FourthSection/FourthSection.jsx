@@ -58,7 +58,7 @@ export function FourthSection() {
 
   useEffect(() => {
     gsap.utils.toArray('.fourth-image').forEach((image) => {
-      const x = (window.innerWidth / 2) - (image.x + (image.width / 2));
+      const x = (image.parentNode.clientWidth / 2) - (image.offsetLeft + (image.width / 2));
 
       const trigger = isMobile ? '.pill-bottle-fourth' : '.fourth-number-one';
 
