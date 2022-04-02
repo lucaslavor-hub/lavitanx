@@ -59,7 +59,7 @@
 
 @media only screen and (max-width: 900px) {
   .open-lid {
-    height: 10.5vh;
+    height: 8.6vh;
   }
 
   .rest-of-bottle {
@@ -71,7 +71,7 @@
   }
 
   .pill-astronaut {
-    max-height: 300px;
+    max-height: 220px;
   }
 
   .floating-pills {
