@@ -7,12 +7,14 @@ import "./styles.css";
 import { BottomAnimations } from "./BottomAnimations/BottomAnimations";
 import { Stars } from "..";
 import videoPreload from "../../assets/video.mp4";
+import { Player } from '@lottiefiles/react-lottie-player';
 
 
 export function FirstSection({ someText }) {
   const backgroundBlurRef = useRef(null);
   const spheresRef = useRef(null);
   const logoRef = useRef(null);
+  const lottieRef = useRef(null);
   const [startAnimation, setStartAnimation] = useState(false);
   const isMobile = window.innerWidth <= 900;
 
@@ -40,8 +42,16 @@ export function FirstSection({ someText }) {
       <div className="first-section-mobile">
         <div class="background-video">
          <video src={videoPreload} autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
-         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js%22%3E"></script>
-        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_klsab29v.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop controls autoplay></lottie-player>
+         <Player
+          ref={lottieRef} // set the ref to your class instance
+          autoplay
+          loop
+          controls
+          style={{zIndex:"111", color:"white"}}
+          // background="transparent"
+          src="https://assets3.lottiefiles.com/packages/lf20_klsab29v.json"
+          style={{ height: '309px', width: '309px' }}></Player>
+        {/* <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_klsab29v.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop controls autoplay></lottie-player> */}
         </div>
       </ div>}
       {/*<img src={video} className="background-video" /> */}
