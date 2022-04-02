@@ -149,10 +149,6 @@ export function FourthSection() {
         />
 
         <div className="fourth-side-div">
-        <div className="wrapper_t">
-          <h2>teste<span></span></h2>
-        </div>
-
           <h4 className="fourth-normal-text" style={{ textAlign: 'left' }} >
             Vitaminas do Complexo B auxiliam na formação das <b>células vermelhas</b> do sangue
             e no processo de <b>divisão celular</b>

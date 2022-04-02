@@ -1,32 +1,3 @@
-.wrapper_t{
-  transform: translate(-50%,-50%);
-
-}
-
-.wrapper_t span{
-  color:#fff;
-  font-size: 12vh;
-
-}
-
-span:before{
-
-  animation: animate infinite 8s;
-
-
-}
-
-@keyframes animate{
-  0%{
-    content: "test1";
-  }
-  20%{
-    content: "test2";
-  }
-  30%{
-    content: "test3";
-  }
-}
 .background-fourth-section {
   width: 100vw;
   background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 15vw, #030D29 36.98%);
