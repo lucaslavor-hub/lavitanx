@@ -15,6 +15,7 @@ export function FirstSection({ someText }) {
   const spheresRef = useRef(null);
   const logoRef = useRef(null);
   const lottieRef = useRef(null);
+  const mobileRef = useRef(null);
   const [startAnimation, setStartAnimation] = useState(false);
   const isMobile = window.innerWidth <= 900;
 
@@ -30,6 +31,9 @@ export function FirstSection({ someText }) {
       gsap.to(backgroundBlurRef.current, { opacity: 1, duration: 3});
       gsap.to(spheresRef.current, { x:"-2vw", y:"-2vw",opacity: 1, duration: 3});
       gsap.to(logoRef.current, { y:"11vw", duration: 3});
+      gsap.to(logoRef.current, { y:"11vw", duration: 3});
+      gsap.from(mobileRef.current, { opacity:0, duration: 4});
+
     }
   }, [startAnimation]);
 
@@ -40,7 +44,7 @@ export function FirstSection({ someText }) {
       <div ref={backgroundBlurRef} className="background-blur"/>
       {isMobile &&
       <div className="first-section-mobile">
-        <div class="background-video">
+        <div class="background-video" ref={mobileRef}>
          <video src={videoPreload} autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
           <div className="lottie">
             <Player
