@@ -46,7 +46,14 @@
     color: #FFFFFF;
     z-index: 1;
   }
-  
+
+  @media screen and (max-width: 600px) {
+    ._form-content{
+      display: inline;
+    }
+  }
+
+
   #fullname{
     width: 70vh;
     height: 57px;
