@@ -23,7 +23,9 @@
 }
 
 .pill-astronaut {
-  width: 26vw;
+  /* width: 23vw; */
+  height: 45vh;
+
   z-index: 15;
   max-width: 400px;
 }
@@ -39,6 +41,7 @@
 .one-floating-pill {
   width: 5vw;
   position: absolute;
+  max-width: 100px;
 }
 
 .small-fourth-orbit {
@@ -68,7 +71,7 @@
   }
 
   .pill-astronaut {
-    min-width: 300px;
+    max-height: 300px;
   }
 
   .floating-pills {

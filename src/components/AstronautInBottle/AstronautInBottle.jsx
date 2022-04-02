@@ -21,8 +21,8 @@ export function AstronautInBottle() {
 
   useEffect(() => {
     gsap.utils.toArray('.one-floating-pill').forEach((image, index) => {
-      const x = (window.innerWidth / 2) - (image.x + (image.width / 2));
 
+      const x = (image.parentNode.clientWidth / 2) - (image.offsetLeft + (image.width / 2));
 
       const positionInPixels = (pillsTopValues[index] / 100) * image.parentNode.clientHeight;
       const y = (image.parentNode.clientHeight - positionInPixels) - (image.height / 2);
@@ -35,7 +35,7 @@ export function AstronautInBottle() {
           scale: 0.8,
           scrollTrigger: {
             trigger: lidRef.current,
-            start: "top top",
+            start: "bottom top",
             toggleActions: "play none reverse none",
           }
         })
@@ -43,12 +43,12 @@ export function AstronautInBottle() {
     })
 
     gsap.to(astronautRef.current, {
-      duration: 4,
+      duration: 3.75,
       scale: 0.8,
       y: `+= ${window.innerWidth > 1600 ? 600 : 400}`,
       scrollTrigger: {
         trigger: lidRef.current,
-        start: "top top",
+        start: "bottom top",
         toggleActions: "play none reverse none",
 
       }
@@ -69,11 +69,11 @@ export function AstronautInBottle() {
     }
 
     gsap.to(lidRef.current, {
-      duration: 4,
-      y: `+=${y()}vh`, // lid / 4
+      duration: 3.75,
+      y: `+=${y()}vh`,
       scrollTrigger: {
         trigger: lidRef.current,
-        start: "top top",
+        start: "bottom top",
         toggleActions: "play none reverse none",
       }
     })
