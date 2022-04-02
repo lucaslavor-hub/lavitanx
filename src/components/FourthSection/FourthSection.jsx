@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import "./styles.css";
-import pillBottle from "../../assets/pillBottle.svg";
+import pillBottle from "../../assets/pillBottle.png";
 import { gallery, gridValues } from './galleryData'
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/src/locomotive-scroll.scss";
