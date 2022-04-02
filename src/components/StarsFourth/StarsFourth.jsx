@@ -19,8 +19,8 @@ export function StarsFourth() {
 
   const frag = document.createDocumentFragment();
 
-  const width = window.innerWidth * 5;
-  const height = window.innerHeight * 5;
+  const width = window.innerWidth * 2;
+  const height = window.innerHeight * 2;
   const appearMin = 0.3;
   const appearMax = 0.8;
 
