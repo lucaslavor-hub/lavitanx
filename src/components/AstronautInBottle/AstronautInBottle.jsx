@@ -59,7 +59,7 @@ export function AstronautInBottle() {
         const containerHeight = 140; //vh page
         const y = containerHeight - 50 - 13.15; //  container - bottle - lid
 
-        return y + 3.2 // lid /4
+        return y + 4 // lid /4
       } else {
         const containerHeight = 100;
         const y = containerHeight - 40 - 10.5;
