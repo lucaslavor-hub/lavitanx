@@ -33,10 +33,9 @@ function App() {
           <AstronautInBottle />
           <FourthSection />
           <Cursor />
-          <div className="group1">
             <Csection></Csection>
             <Footer> </Footer>
-          </div>
+
         </>
       }
       {/* </LocomotiveScrollComponent> */}
