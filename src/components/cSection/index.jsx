@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./styles.css";
 import caixa from "../../assets/imagemlavitanx.png"
 import logo22 from "../../assets/logo_22.png"
-import Popup from '../../components/Popup/index';
+import Popup from '../Popup/index';
 import video from "../../assets/video.mp4";
 
 export function Csection (){

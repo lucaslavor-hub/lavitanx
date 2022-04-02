@@ -18,7 +18,6 @@ function App() {
 
 
   useEffect(() => {
-    //timeline
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -32,17 +31,11 @@ function App() {
 
   ScrollTrigger.scrollerProxy("#root", { pinType: "fixed" });
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setLoading(false);
-  //   }, 1000);
-  //   return () => clearTimeout(timer);
-  // }, []);
 
   return (
     <div>
       {/* <LocomotiveScrollComponent> */}
-      {loading ?
+      {loading && window.innerWidth > 900?
         <PreloadVideo setLoading={setLoading} />
         :
         <>

@@ -4,7 +4,7 @@ import { Power4, ScrollTrigger } from "gsap/all";
 import "./styles.css";
 import shadowRight from "../../assets/ShadowRight2.svg";
 import shadowLeft from "../../assets/ShadowLeft2.svg";
-import { Orbit } from "../";
+import { Orbit } from "..";
 import { StarsSecond } from "../StarsSecond/StarsSecond";
 import { VideosAnimation } from "./VideosAnimation/VideosAnimation";
 
