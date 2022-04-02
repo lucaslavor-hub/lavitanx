@@ -13,7 +13,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow: hidden;
 }
 
@@ -32,11 +33,17 @@ body {
   background: var(--color-background);
 }
 
-.group1{
-  background-image: url("./assets/group1_f.png"); /* The image used */
-  background-color: #030D29; /* Used if the image is unavailable */
-  height: 1000px; /* You must set a specified height */
-  background-position: -42vh -90vh; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 200vh; /* Resize the background image to cover the entire container */
+.group1 {
+  background-image: url("./assets/group1_f.png");
+  /* The image used */
+  background-color: #030D29;
+  /* Used if the image is unavailable */
+  height: 1000px;
+  /* You must set a specified height */
+  background-position: -42vh -90vh;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: 200vh;
+  /* Resize the background image to cover the entire container */
 }
