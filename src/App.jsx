@@ -22,11 +22,11 @@ function App() {
   return (
     <div>
       {/* <LocomotiveScrollComponent> */}
-      {loading && window.innerWidth > 900?
+      {/*loading && window.innerWidth > 900?
         <PreloadVideo setLoading={setLoading} />
-        :
+        :*/}
         <>
-        
+
           <FirstSection />
           <SecondSection />
           <ThirdSection />
@@ -38,7 +38,6 @@ function App() {
             <Footer> </Footer>
           </div>
         </>
-      }
       {/* </LocomotiveScrollComponent> */}
       
     </div>
