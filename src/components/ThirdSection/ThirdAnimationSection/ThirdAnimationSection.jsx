@@ -255,23 +255,9 @@ export function ThirdAnimationSection() {
         start: "start+=400% start",
         end: "start+=400% start",
       },
-      y: 100,
+      fontSize: 100,
       opacity: 0,
-      duration: 3,
-      ease: Power4.easeOut,
-      immediateRender: false,
-    }); 
-
-    gsap.from(".first-animation-titles-container3", { 
-      scrollTrigger:  {
-        trigger: containerRef.current,
-        toggleActions: "restart none reverse none",
-        start: "start+=400% start",
-        end: "start+=400% start",
-      },
-      duration: 1.5,
-      height: 0,
-      immediateRender: false,
+      duration: 1,
     }); 
   }, []);
 

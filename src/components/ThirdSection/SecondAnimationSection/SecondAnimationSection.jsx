@@ -159,26 +159,9 @@ export function SecondAnimationSection() {
         start: "start+=200% start",
         end: "start+=200% start",
       },
-      y: 100,
+      fontSize: 100,
       opacity: 0,
-      duration: 3,
-      ease: Power4.easeOut,
-      // skewY: 7,
-      // stagger: {
-      //   amount: 0.3
-      // },
-      immediateRender: false,
-    }); 
-    gsap.from(".first-animation-titles-container", { 
-      scrollTrigger:  {
-        trigger: ".second-animation-pag",
-        toggleActions: "restart none reverse none",
-        start: "start+=200% start",
-        end: "start+=200% start",
-      },
-      height:0,
-      duration: 1.5,
-      immediateRender: false,
+      duration: 1,
     }); 
 
 

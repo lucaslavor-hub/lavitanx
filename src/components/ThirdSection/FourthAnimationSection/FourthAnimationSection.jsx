@@ -162,29 +162,10 @@ export function FourthAnimationSection() {
         start: "start+=600% start",
         end: "start+=600% start",
       },
-      y: 100,
       opacity: 0,
-      duration: 3,
-      ease: Power4.easeOut,
-      // skewY: 7,
-      // stagger: {
-      //   amount: 0.3
-      // },
-      immediateRender: false,
+      fontSize: 100,
+      duration: 1,
     }); 
-
-    gsap.from(".first-animation-titles-container4", { 
-      scrollTrigger:  {
-        trigger: ".fourth-animation-pag",
-        toggleActions: "restart none reverse none",
-        start: "start+=600% start",
-        end: "start+=600% start",
-      },
-      height:0,
-      duration: 1.5,
-      immediateRender: false,
-    }); 
-
   }, []);
 
   return(

@@ -11,6 +11,56 @@
 }
 
 
+@keyframes blinking{
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+span {
+  display: inline !important;
+}
+
+/* .s1 {
+  animation: blinking 1.5s infinite;
+} */
+/* .s2 {
+  animation: blinking 1.5s infinite;
+}
+.s3 {
+  animation: blinking 1.5s infinite;
+}
+.s4 {
+  animation: blinking 1.5s infinite;
+}
+.s5 {
+  animation: blinking 1.5s infinite;
+}
+.s6 {
+  animation: blinking 1.5s infinite;
+}
+.s7 {
+  animation: blinking 1.5s infinite;
+}
+.s8 {
+  animation: blinking 1.5s infinite;
+}
+.s9 {
+  animation: blinking 1.5s infinite;
+}
+.s10 {
+  animation: blinking 1.5s infinite;
+}
+.s11 {
+  animation: blinking 1.5s infinite;
+} */
+
+
+
+
+
 .longevity-title {
   font-family: 'Audiowide';
   font-style: normal;
@@ -18,6 +68,8 @@
   font-size: 5vw;
   text-align: center;
   letter-spacing: 0.335em;
+  width: 100vw;
+
 
   background: linear-gradient(92.12deg, #FFFFFF 18.52%, rgba(255, 255, 255, 0.51) 26.1%, #FFFFFF 39.08%, #FFFFFF 62.07%, rgba(255, 255, 255, 0.47) 71.78%, #FFFFFF 85.73%);
   -webkit-background-clip: text;
