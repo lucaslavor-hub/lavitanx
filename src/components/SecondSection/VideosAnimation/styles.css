@@ -7,6 +7,21 @@
   filter: grayscale(100%);
 }
 
+.video-animations-one, .video-animations-two, .video-animations-three {
+  width: 32vw;
+}
+
+.video-description {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+text-align: right;
+letter-spacing: 0.14em;
+color: #FFFFFF;
+}
+
 .videos-animations-container video:hover{
   filter: grayscale(100%);
 }
