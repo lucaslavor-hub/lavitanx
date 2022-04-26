@@ -126,12 +126,14 @@ export function VideosAnimation({ someText }) {
 
     });
 
+
     gsap.from(".bottom-text", { 
       scrollTrigger:  {
-        trigger: ".bottom-text",
+        trigger: ".white-wave-top",
         toggleActions: "restart none reverse none",
-        start: "top-=200% bottom",
-        end: "top-=210% bottom",
+        start: "top center",
+        end: "top center+=10%",
+        markers: true
       },
       y: 100,
       opacity: 0,
