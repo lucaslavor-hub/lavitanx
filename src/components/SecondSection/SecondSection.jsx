@@ -32,14 +32,26 @@ export function SecondSection({ someText }) {
       ease: Power4.easeOut,
     }); 
 
-    var tl = gsap.timeline({repeat: -1, repeatDelay: 0.1});
-    tl.to(".s1", {opacity: 1, duration: 0.1})
-    tl.to(".s1", {opacity: 0.9, duration: 0.1});
-    tl.to(".s1", {opacity: 1, duration: 0.1})
-
-
+    timelineGsap(".s1", 2)
+    timelineGsap(".s2", 5)
+    timelineGsap(".s3", 3)
+    timelineGsap(".s4", 3.5)
+    timelineGsap(".s5", 9.5)
+    timelineGsap(".s6", 2.5)
+    timelineGsap(".s7", 4)
+    timelineGsap(".s8", 6)
+    timelineGsap(".s9", 7)
+    timelineGsap(".s10", 8)
+    timelineGsap(".s11", 9)
 
   }, []);
+
+  function timelineGsap(target, delay){
+    var tl = gsap.timeline({repeat: -1, repeatDelay: 0.1});
+    tl.to(target, {opacity: 1, duration: 0.1, delay:delay})
+    tl.to(target, {opacity: 0.9, duration: 0.1});
+    tl.to(target, {opacity: 1, duration: 0.1})
+  }
   
   return(
   <div ref={backgroundRef} className="background-second-section">

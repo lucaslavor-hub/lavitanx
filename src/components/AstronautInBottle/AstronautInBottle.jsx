@@ -29,27 +29,31 @@ export function AstronautInBottle() {
 
       if (image) {
         gsap.to(image, {
-          duration: 3.0,
-          x: `+=${x}`,
-          y: `+=${y + 100}`,
-          scale: 0.8,
           scrollTrigger: {
             trigger: lidRef.current,
             start: "bottom top",
-            toggleActions: "play none reverse none",
-          }
+            end: `bottom+=${window.innerHeight/2} top`,
+            scrub: true,
+            toggleActions: "restart none reverse none",
+          },
+          // duration: 3.0,
+          x: `+=${x}`,
+          y: `+=${y + 100}`,
+          scale: 0.8,
         })
       }
     })
 
     gsap.to(astronautRef.current, {
-      duration: 3,
+      // duration: 3,
       scale: 0.8,
       y: `+= ${window.innerWidth > 1600 ? 600 : 400}`,
       scrollTrigger: {
         trigger: lidRef.current,
         start: "bottom top",
-        toggleActions: "play none reverse none",
+        end: `bottom+=${window.innerHeight/2} top`,
+        scrub: true,
+        toggleActions: "restart none reverse none",
 
       }
     })
@@ -69,12 +73,14 @@ export function AstronautInBottle() {
     }
 
     gsap.to(lidRef.current, {
-      duration: 3.75,
+      // duration: 3.75,
       y: `+=${y()}vh`,
       scrollTrigger: {
         trigger: lidRef.current,
         start: "bottom top",
-        toggleActions: "play none reverse none",
+        end: `bottom+=${window.innerHeight/2} top`,
+        scrub: true,
+        toggleActions: "restart none reverse none",
       }
     })
   }, []);

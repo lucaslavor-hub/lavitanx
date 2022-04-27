@@ -25,7 +25,6 @@ export function Carousel() {
         end: '+=200%',
         onToggle: self => self.isActive && setSection(section),
         toggleActions: "restart none reverse none",
-        // markers: true
       });
     });
 

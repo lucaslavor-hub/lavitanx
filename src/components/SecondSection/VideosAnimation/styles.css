@@ -13,13 +13,13 @@
 
 .video-description {
   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-text-align: right;
-letter-spacing: 0.14em;
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: 0.14em;
+  color: #FFFFFF;
 }
 
 .videos-animations-container video:hover{

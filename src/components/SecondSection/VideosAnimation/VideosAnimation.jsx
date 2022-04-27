@@ -133,7 +133,6 @@ export function VideosAnimation({ someText }) {
         toggleActions: "restart none reverse none",
         start: "top center",
         end: "top center+=10%",
-        markers: true
       },
       y: 100,
       opacity: 0,
@@ -193,8 +192,8 @@ export function VideosAnimation({ someText }) {
   <div ref={videosRef} className="videos-animations-container">
       <div ref={divVideoOneRef}  className="video-animations-one">
       {isMobile ? 
-            <img className="mobile-video video-animations-one" ref={videoOneRef} src={image1} />
-         :
+        <img className="mobile-video video-animations-one" ref={videoOneRef} src={image1} />
+        :
         <video ref={videoOneRef}  preload="metadata" muted autoPlay loop> 
           <source src={video1} type="video/mp4"/>
         </video>

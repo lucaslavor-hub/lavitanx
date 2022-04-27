@@ -73,7 +73,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: calc(20px + 0.5vw);
+  font-size: calc(20px + 0.4vw);
   text-align: right;
   letter-spacing: 0.14em;
   color: #FFFFFF;
@@ -83,7 +83,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: calc(12px + 0.5vw);
+  font-size: calc(12px + 0.4vw);
   text-align: right;
   color: #FFFFFF;
   letter-spacing: 0.14em;

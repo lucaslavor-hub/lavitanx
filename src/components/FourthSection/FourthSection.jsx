@@ -13,6 +13,13 @@ import { Orbit2 } from "../Orbit2/Orbit2";
 import Typical from 'react-typical'
 import ReactRotatingText from 'react-rotating-text'
 
+const maintext = "Vitaminas do Complexo B auxiliam na formação das células vermelhas do sangue e no processo de divisão celular\
+\
+Cromo quelato auxilia no metabolismo mais rápido de proteínas, carboidratos e gorduras\
+\
+O ferro auxilia no transporte do oxigênio no organismo\
+\
+Vitamina k auxilia na coagulação do sangue"
 
 export function FourthSection() {
   const bottleRef = useRef(null);
@@ -44,7 +51,6 @@ export function FourthSection() {
         start: "top bottom",
         end: "bottom bottom",
         onEnter: () => setTyperTriggerTrue(),
-        markers: true
       },
     });
 
@@ -178,15 +184,19 @@ export function FourthSection() {
 
  
           { typerTrigger && 
-            ( typingEnded == 5? 
-            <>
-              <span>Vitaminas do Complexo B auxiliam na formação das células vermelhas do sangue e no processo de divisão celular</span> 
-              {/* <span>Cromo quelato auxilia no metabolismo mais rápido de proteínas, carboidratos e gorduras</span>
-              <span>O ferro auxilia no transporte do oxigênio no organismo</span>
-              <span>Vitamina k auxilia na coagulação do sangue</span> */}
-            </>
-            :
-             <ReactRotatingText className="write-words" items={['Vitaminas do Complexo B auxiliam na formação das células vermelhas do sangue e no processo de divisão celular', 'Cromo quelato auxilia no metabolismo mais rápido de proteínas, carboidratos e gorduras', 'O ferro auxilia no transporte do oxigênio no organismo','Vitamina k auxilia na coagulação do sangue']} onTypingEnd={() => setTypingEnded(typingEnded+1)} />)
+            (<>
+              { typingEnded > 0 && <><span>Vitaminas do Complexo B auxiliam na formação das células vermelhas do sangue e no processo de divisão celular</span> 
+              <br/><br/></>}
+              { typingEnded > 1 && <><span>Cromo quelato auxilia no metabolismo mais rápido de proteínas, carboidratos e gorduras</span>
+              <br/><br/></>}
+              { typingEnded > 2 && <><span>O ferro auxilia no transporte do oxigênio no organismo</span>
+              <br/><br/></>}
+              { typingEnded > 3 && <span>Vitamina k auxilia na coagulação do sangue</span> }
+             { typingEnded == 0 && <ReactRotatingText className="write-words" items={["Vitaminas do Complexo B auxiliam na formação das células vermelhas do sangue e no processo de divisão celular"]} onTypingEnd={() => setTypingEnded(typingEnded+1)} />}
+             { typingEnded == 1 && <ReactRotatingText className="write-words" items={["Cromo quelato auxilia no metabolismo mais rápido de proteínas, carboidratos e gorduras"]} onTypingEnd={() => setTypingEnded(typingEnded+1)} />}
+             { typingEnded == 2 && <ReactRotatingText className="write-words" items={["O ferro auxilia no transporte do oxigênio no organismo"]} onTypingEnd={() => setTypingEnded(typingEnded+1)} />}
+             { typingEnded == 3 && <ReactRotatingText className="write-words" items={["Vitamina k auxilia na coagulação do sangue"]} onTypingEnd={() => setTypingEnded(typingEnded+1)} />}         
+            </>)
           }
           </h4>
         </div>
