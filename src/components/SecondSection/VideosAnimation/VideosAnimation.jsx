@@ -144,12 +144,12 @@ export function VideosAnimation({ someText }) {
     let video2 = document.querySelector('.video-animations-two')
     let video3 = document.querySelector('.video-animations-three')
 
-    hoverVideo(video1, divVideoOneRef.current, 4.06, "10vw 10vw 0 0", videoOneRef.current)
-    hoverVideo(video2, divVideoTwoRef.current, 7.03, "19vw 0 0 0", videoTwoRef.current)
-    hoverVideo(video3, divVideoThreeRef.current, -15.3, "7vw 0 0 0", videoThreeRef.current)
+    hoverVideo(video1, divVideoOneRef.current, 4.06, "10vw 10vw 0 0", videoOneRef.current, "32vw", "18vw")
+    hoverVideo(video2, divVideoTwoRef.current, 7.03, "19vw 0 0 0", videoTwoRef.current, "38.4vw", "21.6vw")
+    hoverVideo(video3, divVideoThreeRef.current, -15.3, "7vw 0 0 0", videoThreeRef.current, "29vw", "16.3vw")
   }, []);
 
-  function hoverVideo(video, current, rotation, marginBefore, currentVideo, marginAfter) {
+  function hoverVideo(video, current, rotation, marginBefore, currentVideo, width, height) {
     video.addEventListener('mouseover', (e) => {
       // document.querySelector("#root").style.overflow = "hidden";
       video.style.zIndex = "100";
@@ -166,8 +166,8 @@ export function VideosAnimation({ someText }) {
 
       video.style.zIndex = "90";
       gsap.to(current, { 
-        width: "32vw",
-        height: "18vw",
+        width: width,
+        height: height,
         margin: marginBefore,
         rotation: rotation,
         opacity: 1,
@@ -182,8 +182,8 @@ export function VideosAnimation({ someText }) {
     })
     video.addEventListener('mouseout', (e) => {
       gsap.to(currentVideo, { 
-        width: "32vw",
-        height: "18vw",
+        width: width,
+        height: height,
       }); 
     })
   }
@@ -194,7 +194,7 @@ export function VideosAnimation({ someText }) {
       {isMobile ? 
         <img className="mobile-video video-animations-one" ref={videoOneRef} src={image1} />
         :
-        <video ref={videoOneRef}  preload="metadata" muted autoPlay loop> 
+        <video className="video-one-size" ref={videoOneRef}  preload="metadata" muted autoPlay loop> 
           <source src={video1} type="video/mp4"/>
         </video>
         }     
@@ -209,7 +209,7 @@ export function VideosAnimation({ someText }) {
          {isMobile ? 
             <img className="mobile-video" ref={videoTwoRef} src={image2} />
             :
-            <video ref={videoTwoRef} preload="metadata" muted autoPlay loop>
+            <video className="video-two-size" ref={videoTwoRef} preload="metadata" muted autoPlay loop>
               <source src={video2} type="video/mp4"/>
             </video>
           }
@@ -219,7 +219,7 @@ export function VideosAnimation({ someText }) {
         {isMobile ? 
             <img className="mobile-video" ref={videoThreeRef} src={image3} />
             :
-          <video ref={videoThreeRef} preload="metadata" muted autoPlay loop>
+          <video className="video-three-size" ref={videoThreeRef} preload="metadata" muted autoPlay loop>
             <source src={video3} type="video/mp4"/>
           </video>
         } 

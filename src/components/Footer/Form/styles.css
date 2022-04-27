@@ -1,5 +1,3 @@
-
-
 .form{
     width: 100%;
     flex-wrap: wrap;
@@ -19,128 +17,119 @@
     display: flex;
     padding-top: 4vh;
     z-index: 1;
-    
-  }
+}
   
-    /*Mobile*/
-  
-    @media screen and (max-width: 600px) {
-      .form {
-        margin: 0px;
-      }
-    }
-  
-  ._form-content{
-    margin: 0 auto;
-    max-width: 540px;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 124.52%;
-    /* identical to box height, or 20px */
-    letter-spacing: 0.085em;
-    color: #FFFFFF;
-    z-index: 1;
-  }
-
-  @media screen and (max-width: 600px) {
-    ._form-content{
-      display: inline;
-    }
-  }
+._form-content{
+  margin: 0 auto;
+  max-width: 540px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124.52%;
+  /* identical to box height, or 20px */
+  letter-spacing: 0.085em;
+  color: #FFFFFF;
+  z-index: 1;
+}
 
 
-  #fullname{
-    width: 70vh;
-    height: 57px;
-    left: 658px;
-    top: 8026.01px;
-    margin-bottom: 10px;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(13px);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 10px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2vh;
-    line-height: 124.52%;
-    /* identical to box height, or 20px */
-    letter-spacing: 0.085em;
-    color: #FFFFFF;
-    border: none;
-    padding-left: 10px;
-    z-index: 1;
+#fullname{
+  width: 70vh;
+  height: 57px;
+  left: 658px;
+  top: 8026.01px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(13px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vh;
+  line-height: 124.52%;
+  /* identical to box height, or 20px */
+  letter-spacing: 0.085em;
+  color: #FFFFFF;
+  border: none;
+  padding-left: 10px;
+  z-index: 1;
+}
+
+
+
+#email{
+
+  width: 47vh;
+  height: 57px;
+  top: 8100.01px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(13px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vh;
+  line-height: 124.52%;
+  /* identical to box height, or 20px */
+  letter-spacing: 0.085em;
+  color: #FFFFFF;
+  border: none;
+  padding-left: 10px;
+  margin-right: 18px;
+  z-index: 1;
+}
+
+._submit{
+  width: 20vh;
+  height: 56px;
+  background: #FFC425;
+  box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(13px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vh;
+  line-height: 124.52%;
+  border: none;
+  /* identical to box height, or 20px */
+  letter-spacing: 0.085em;
+  color: #030F2F;
+  z-index: 1;
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+  #fullname {
+    width: 40vh;
   }
-  
-  @media screen and (max-width: 600px) {
-    #fullname {
-      width: 40vh;
-    }
+
+  #email {
+    width: 40vh;
+    margin-right: 0px;
   }
-  
-  
-  
-  #email{
-  
-    width: 47vh;
-    height: 57px;
-    top: 8100.01px;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(13px);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 10px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2vh;
-    line-height: 124.52%;
-    /* identical to box height, or 20px */
-    letter-spacing: 0.085em;
-    color: #FFFFFF;
-    border: none;
-    padding-left: 10px;
-    margin-right: 18px;
-    z-index: 1;
-  }
-  
-  @media screen and (max-width: 600px) {
-  
-    #email {
-      width: 40vh;
-      margin-right: 0px;
-    }
-    ._submit{
-      width: 40vh;
-      margin-top: 10px;
-    }
-  }
-  
-  
+
   ._submit{
-    width: 20vh;
-    height: 56px;
-    background: #FFC425;
-    box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(13px);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 10px;
-    font-family: 'Audiowide';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2vh;
-    line-height: 124.52%;
-    border: none;
-    /* identical to box height, or 20px */
-    letter-spacing: 0.085em;
-    color: #030F2F;
-    z-index: 1;
-  
-  
+    width: 40vh;
+    margin-top: 10px;
   }
+
+  ._form-content{
+    display: inline;
+  }
+
+  .form {
+    margin: 0px;
+  }
+}

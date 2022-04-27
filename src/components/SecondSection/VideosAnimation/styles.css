@@ -1,14 +1,35 @@
 .videos-animations-container video{
   box-shadow: 7px 57px 30px rgba(0, 0, 0, 0.25);
-  width: 32vw;
-  height: 18vw;
   object-fit: cover;
   overflow: hidden;
   filter: grayscale(100%);
 }
 
-.video-animations-one, .video-animations-two, .video-animations-three {
+.video-animations-one {
   width: 32vw;
+}
+
+.video-animations-two {
+  width: 38.4vw;
+}
+
+.video-animations-three {
+  width:29vw;
+}
+
+.video-one-size {
+  width: 32vw;
+  height: 18vw;
+}
+
+.video-three-size {
+  width: 29vw;
+  height: 16.3vw;
+}
+
+.video-two-size {
+  width: 38.4vw ;
+  height: 21.6vw ;
 }
 
 .video-description {
