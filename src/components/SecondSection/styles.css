@@ -58,7 +58,11 @@ span {
 } */
 
 
-
+.pill-container {
+  position: absolute;
+  left: 6vw;
+  margin-top: 35vw;
+}
 
 
 .longevity-title {

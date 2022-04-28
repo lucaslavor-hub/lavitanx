@@ -8,3 +8,4 @@ export { SecondSection } from './SecondSection/SecondSection';
 export { ThirdSection } from './ThirdSection/ThirdSection';
 export { FourthSection } from './FourthSection/FourthSection';
 export { AstronautInBottle } from './AstronautInBottle/AstronautInBottle'
+export { AnimatedPill } from './AnimatedPill/AnimatedPill';
