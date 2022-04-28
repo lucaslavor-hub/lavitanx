@@ -5,10 +5,11 @@ import "./styles.css";
 export function AnimatedPill({ imgSrc, width }) {
   const imgRef = useRef(null);
 
-  const randomX = random(1, 100);
-  const randomY = random(1, 100);
+  const randomX = random(3, 4);
+  const randomY = random(3, 4);
   const randomDelay = random(0, 10);
-  const randomTime = random(3, 50);
+  const durationTime = random(10, 15);
+
   const randomTime2 = random(5, 100);
   const randomAngle = random(-10, 100);
   useEffect(() => {
@@ -27,7 +28,7 @@ export function AnimatedPill({ imgSrc, width }) {
       
     gsap.to(target, {
       rotation: randomAngle(direction),
-      // delay: randomDelay(),
+      delay: randomDelay(),
       ease: Sine.easeInOut,
       onComplete: rotate,
       onCompleteParams: [target, direction * -1],
@@ -38,22 +39,22 @@ export function AnimatedPill({ imgSrc, width }) {
   function moveX(target, direction) {
     
     gsap.to(target, {
-      x: randomX(direction),
+      x: `${randomX(direction)}vw`,
       ease: Sine.easeInOut,
       onComplete: moveX,
       onCompleteParams: [target, direction * -1],
-      duration: randomTime()
+      duration: randomX() * 3
     });
   }
 
   function moveY(target, direction) {
     
     gsap.to(target, {
-      y: randomY(direction),
+      y: `${randomY(direction)}vw`,
       ease: Sine.easeInOut,
       onComplete: moveY,
       onCompleteParams: [target, direction * -1],
-      duration: randomTime()
+      duration: randomY() * 3
     });
   }
 

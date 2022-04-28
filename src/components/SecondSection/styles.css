@@ -64,6 +64,17 @@ span {
   margin-top: 35vw;
 }
 
+.second-pill-container {
+  position: absolute;
+  left: 14vw;
+  margin-top: 135vw;
+}
+
+.third-pill-container {
+  position: absolute;
+  right: 5vw;
+  margin-top: 70vw;
+}
 
 .longevity-title {
   font-family: 'Audiowide';

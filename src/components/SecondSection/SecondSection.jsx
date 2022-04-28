@@ -7,7 +7,9 @@ import shadowLeft from "../../assets/ShadowLeft2.svg";
 import { Orbit } from "..";
 import { StarsSecond } from "../StarsSecond/StarsSecond";
 import { VideosAnimation } from "./VideosAnimation/VideosAnimation";
-import pill from '../../assets/pills/pill_6.png';
+import pill6 from '../../assets/pills/pill_5.png';
+import pill7 from '../../assets/pills/pill_1.png';
+import pill9 from '../../assets/pills/pill_9.png';
 import { AnimatedPill } from "..";
 
 export function SecondSection({ someText }) {
@@ -62,7 +64,13 @@ export function SecondSection({ someText }) {
       </div>
       <StarsSecond/>
       <div className="pill-container">
-        <AnimatedPill width="5vw" imgSrc={pill} />
+        <AnimatedPill width="4vw" imgSrc={pill6} />
+      </div>
+      <div className="second-pill-container">
+        <AnimatedPill width="5vw" imgSrc={pill7} />
+      </div>
+      <div className="third-pill-container">
+        <AnimatedPill width="4vw" imgSrc={pill9} />
       </div>
       <h2 className="longevity-title text-animation">
         <span className="s1">L</span>
