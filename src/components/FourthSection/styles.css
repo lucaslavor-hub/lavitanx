@@ -172,12 +172,14 @@
   position: absolute;
   right: 9vw;
   margin-top: 55vw;
+  width: 5vw;
 }
 
 .pill-container-fourth-section-two{
   position: absolute;
   left: 9vw;
   margin-top: 65vw;
+  width: 5vw;
 }
 
 @media only screen and (max-width: 900px) {
@@ -234,6 +236,19 @@
     height: 5vh;
     margin-bottom: 0;
   }
+
+
+.pill-container-fourth-section{
+  right: 7vw;
+  margin-top: 145vw;
+  width: 7vw;
+}
+
+.pill-container-fourth-section-two{
+  left: 9vw;
+  margin-top: 265vw;
+  width: 7vw;
+}
 
 
 }

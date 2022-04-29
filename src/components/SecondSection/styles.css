@@ -62,18 +62,22 @@ span {
   position: absolute;
   left: 6vw;
   margin-top: 35vw;
+  width: 4vw;
 }
 
 .second-pill-container {
   position: absolute;
   left: 14vw;
   margin-top: 135vw;
+  width: 5vw;
+
 }
 
 .third-pill-container {
   position: absolute;
   right: 5vw;
   margin-top: 70vw;
+  width: 4vw;
 }
 
 .longevity-title {
@@ -154,5 +158,17 @@ span {
     background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 20vw, #030D29 56.98%);
     height: 220vw;
   }
-  
+
+  .second-pill-container {
+    left: 12vw;
+    margin-top: 160vw;
+    width: 40px;
+  }
+
+  .third-pill-container {
+    position: absolute;
+    right: 7vw;
+    margin-top: 70vw;
+    width: 40px;
+  }
 }

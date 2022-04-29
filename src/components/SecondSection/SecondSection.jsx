@@ -12,6 +12,8 @@ import pill7 from '../../assets/pills/pill_1.png';
 import pill9 from '../../assets/pills/pill_9.png';
 import { AnimatedPill } from "..";
 
+const isMobile = window.innerWidth <= 900;
+
 export function SecondSection({ someText }) {
   const backgroundRef = useRef(null);
 
@@ -63,14 +65,14 @@ export function SecondSection({ someText }) {
         <Orbit size="14vw" rotationSpeed="10" />
       </div>
       <StarsSecond/>
-      <div className="pill-container">
-        <AnimatedPill width="4vw" imgSrc={pill6} />
-      </div>
+      {!isMobile && <div className="pill-container">
+        <AnimatedPill width="100%" imgSrc={pill6} />
+      </div>}
       <div className="second-pill-container">
-        <AnimatedPill width="5vw" imgSrc={pill7} />
+        <AnimatedPill width="100%" imgSrc={pill7} />
       </div>
       <div className="third-pill-container">
-        <AnimatedPill width="4vw" imgSrc={pill9} />
+        <AnimatedPill width="100%" imgSrc={pill9} />
       </div>
       <h2 className="longevity-title text-animation">
         <span className="s1">L</span>

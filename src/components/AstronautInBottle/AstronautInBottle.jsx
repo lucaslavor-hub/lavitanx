@@ -10,6 +10,7 @@ import pill9 from '../../assets/pills/pill_9.png';
 import { AnimatedPill } from "..";
 import { pillsArray } from "../../assets/pills";
 
+const isMobile = window.innerWidth <= 900;
 
 const pillsTopValues = [50, 33, 10, 2, 4, 5, 22, 50, 70, 50, 26, 64, 79, 25, 70, 40, 28, 73];
 const pillsLeftValues = [20, 20, 18, 33, 50, 68, 75, 60, 65, 30, 64, 45, 46, 46, 54, 70, 33, 33];
@@ -93,6 +94,7 @@ export function AstronautInBottle() {
       <div className="small-fourth-orbit">
         <Orbit2 size="14vw" rotationSpeed="10" text="D" />
       </div>
+      {!isMobile && <>
       <div className="pill-container-astrounaut">
         <AnimatedPill width="5vw" imgSrc={pill9} />
       </div>
@@ -102,7 +104,8 @@ export function AstronautInBottle() {
 
       <div className="pill-container-astrounaut-three">
         <AnimatedPill width="5vw" imgSrc={pill9} />
-      </div>
+      </div></>
+      }
 
       <img className="pill-shadow-left" src={shadow} alt="" draggable={false}></img>
       <img className="open-lid" src={bottleLid} alt="Tampa Lavitan X" ref={lidRef} />

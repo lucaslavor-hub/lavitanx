@@ -264,10 +264,10 @@ export function FourthSection() {
         </>
       )}
       <div className="pill-container-fourth-section">
-        <AnimatedPill width="5vw" imgSrc={pill9} />
+        <AnimatedPill width="100%" imgSrc={pill9} />
       </div>
       <div className="pill-container-fourth-section-two">
-        <AnimatedPill width="5vw" imgSrc={pill9} />
+        <AnimatedPill width="100%" imgSrc={pill9} />
       </div>
       {isMobile && (
         <div className="fourth-content" style={{ marginTop: '50px' }}>
