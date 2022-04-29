@@ -162,13 +162,13 @@ span {
   .second-pill-container {
     left: 12vw;
     margin-top: 160vw;
-    width: 40px;
+    width: 7vw;
   }
 
   .third-pill-container {
     position: absolute;
     right: 7vw;
     margin-top: 70vw;
-    width: 40px;
+    width: 7vw;
   }
 }
