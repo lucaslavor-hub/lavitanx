@@ -168,7 +168,17 @@
   position: absolute;
 }
 
+.pill-container-fourth-section{
+  position: absolute;
+  right: 9vw;
+  margin-top: 55vw;
+}
 
+.pill-container-fourth-section-two{
+  position: absolute;
+  left: 9vw;
+  margin-top: 65vw;
+}
 
 @media only screen and (max-width: 900px) {
 

@@ -12,6 +12,8 @@ import ScrollContainer from 'react-indiana-drag-scroll'
 import { Orbit2 } from "../Orbit2/Orbit2";
 import Typical from 'react-typical'
 import ReactRotatingText from 'react-rotating-text'
+import pill9 from '../../assets/pills/pill_9.png';
+import { AnimatedPill } from "..";
 
 const maintext = "Vitaminas do Complexo B auxiliam na formação das células vermelhas do sangue e no processo de divisão celular\
 \
@@ -261,7 +263,12 @@ export function FourthSection() {
           </div>
         </>
       )}
-
+      <div className="pill-container-fourth-section">
+        <AnimatedPill width="5vw" imgSrc={pill9} />
+      </div>
+      <div className="pill-container-fourth-section-two">
+        <AnimatedPill width="5vw" imgSrc={pill9} />
+      </div>
       {isMobile && (
         <div className="fourth-content" style={{ marginTop: '50px' }}>
           <div className="fourth-side-div" style={{ alignItems: 'flex-end' }}>
@@ -300,7 +307,6 @@ export function FourthSection() {
               </div>
             </div>
           </div>
-
           <div className="fourth-side-div">
             <h4 className="fourth-number-one">
               PARA <b style={{ color: '#FFC425' }}>Nº1</b>

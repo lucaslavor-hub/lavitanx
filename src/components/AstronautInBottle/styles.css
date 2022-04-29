@@ -57,6 +57,23 @@
   width: 25vw;
 }
 
+.pill-container-astrounaut {
+  position: absolute;
+  left: 1vw;
+  margin-top: -15vw;
+}
+
+.pill-container-astrounaut-two{
+  position: absolute;
+  right: 5vw;
+  margin-top: 55vw;
+}
+
+.pill-container-astrounaut-three{
+  position: absolute;
+  left: 5vw;
+  margin-top: 85vw;
+}
 @media only screen and (max-width: 900px) {
   .open-lid {
     height: 8.6vh;

@@ -6,7 +6,8 @@ import bottleLid from "../../assets/bottle_lid.png";
 import astronaut from "../../assets/pill_spacesuit.png";
 import shadow from "../../assets/pill-shadow-section.svg";
 import { Orbit2 } from "../Orbit2/Orbit2";
-
+import pill9 from '../../assets/pills/pill_9.png';
+import { AnimatedPill } from "..";
 import { pillsArray } from "../../assets/pills";
 
 
@@ -92,9 +93,18 @@ export function AstronautInBottle() {
       <div className="small-fourth-orbit">
         <Orbit2 size="14vw" rotationSpeed="10" text="D" />
       </div>
+      <div className="pill-container-astrounaut">
+        <AnimatedPill width="5vw" imgSrc={pill9} />
+      </div>
+      <div className="pill-container-astrounaut-two">
+        <AnimatedPill width="5vw" imgSrc={pill9} />
+      </div>
+
+      <div className="pill-container-astrounaut-three">
+        <AnimatedPill width="5vw" imgSrc={pill9} />
+      </div>
 
       <img className="pill-shadow-left" src={shadow} alt="" draggable={false}></img>
-
       <img className="open-lid" src={bottleLid} alt="Tampa Lavitan X" ref={lidRef} />
       <img className="pill-astronaut" src={astronaut} alt="Astronauta" ref={astronautRef} />
       <img className="rest-of-bottle" src={pillBottle} alt="Lavitan X" ref={bottleRef} />
