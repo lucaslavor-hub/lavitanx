@@ -1,22 +1,22 @@
 .form{
-    width: 100%;
-    flex-wrap: wrap;
-    margin: 10px auto;
-    display:flex;
-    max-width: 600px;
-    text-align: center;
-    margin-left: 8%;
-    text-align: center;
-    /* vertical-align: middle; */
-    /* height: 100%; */
-    /* width: 100%; */
-    /* padding-right: 2%; */
-    flex-direction: column;
-    padding-top: 5vh;
-    align-items: center;
-    display: flex;
-    padding-top: 4vh;
-    z-index: 1;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  display:flex;
+  max-width: 600px;
+  text-align: center;
+  margin-left: 8%;
+  text-align: center;
+  /* vertical-align: middle; */
+  /* height: 100%; */
+  /* width: 100%; */
+  /* padding-right: 2%; */
+  flex-direction: column;
+  padding-top: 5vh;
+  align-items: center;
+  display: flex;
+  padding-top: 4vh;
+  z-index: 1;
 }
   
 ._form-content{
