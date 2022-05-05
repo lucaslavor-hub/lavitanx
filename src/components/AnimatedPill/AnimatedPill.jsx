@@ -8,7 +8,7 @@ export function AnimatedPill({ imgSrc, width }) {
   const randomX = random(3, 4);
   const randomY = random(3, 4);
   const randomDelay = random(0, 10);
-  const durationTime = random(10, 15);
+  const durationTime = random(3, 6);
 
   const randomTime2 = random(5, 100);
   const randomAngle = random(-10, 100);
@@ -19,7 +19,7 @@ export function AnimatedPill({ imgSrc, width }) {
         rotation: randomAngle(-1)
       });
 
-      moveX(imgRef.current, 1);
+      // moveX(imgRef.current, 1);
       moveY(imgRef.current, -1);
       rotate(imgRef.current, 1);
   }, []);

@@ -33,8 +33,10 @@ function App() {
           <AstronautInBottle />
           <FourthSection />
           <Cursor />
-          <Csection></Csection>
-            <Footer> </Footer>
+          <div className='fix-size'>
+            <Csection></Csection>
+          </div>
+          <Footer></Footer>
         </>
       {/* </LocomotiveScrollComponent> */}
       

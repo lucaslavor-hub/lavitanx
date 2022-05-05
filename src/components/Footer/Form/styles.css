@@ -119,16 +119,25 @@
 @media screen and (max-width: 600px) {
   #fullname {
     width: 40vh;
+    font-size: 4vw;
+    padding: 3vw 3vw;
+    border-radius: 2vw;
   }
 
   #email {
     width: 40vh;
-    margin-right: 0px;
+    font-size: 4vw;
+    padding: 3vw 3vw;
+    border-radius: 2vw;
+    margin-bottom: 10px;
+
   }
 
   ._submit{
     width: 40vh;
-    margin-top: 10px;
+    font-size: 4vw;
+    padding: 3vw 3vw;
+    border-radius: 2vw;
   }
 
   ._form-content{
@@ -137,5 +146,11 @@
 
   .form {
     margin: 0px;
+  }
+
+  .bottom-buttons {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

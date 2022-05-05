@@ -9,6 +9,8 @@
 .c-section {
   position: relative;
   height: 30vw;
+  display: flex;
+  justify-content: center;
 }
 
 .lavitan-box-container {
@@ -19,7 +21,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 88vw;
+  width: 60vw;
 }
     
 .logo_f{
@@ -157,21 +159,52 @@
 
 
 @media screen and (max-width: 600px) {
+  .imagem {
+    width: 200vw;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    position: relative;
+  }
+  .lavitan-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button {
+    padding: 2vw 3vw;
+  }
+
+  .wrapper {
+    margin-top: -20vw;
+  }
+
+  .image-buttons-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .button1 {
-    font-size: 12px;
-    margin-left: 0px;
+    font-size: 5vw;
+    margin-bottom: 2vw;
+    width: 70vw;
   }
 
   .button2 {
-    font-size: 12px;
+    font-size: 5vw;
+    width: 70vw;
+
   }
 
   .button3 {
-    font-size: 12px;
+    font-size: 5vw;
+    width: 70vw;
+
   }
 
   .s11{
     display: inline-block;
+    margin-bottom: 2vw;
   }
 
   #video_popup {
@@ -179,19 +212,13 @@
   }
 
   .imagem22{
-    margin-left: 5%;
+    width: 50vw;
   }
+  
 }
 
 @media (min-width: 600px) {
   #video_popup2 {
     display: none;
-  }
-}
-
-
-@media screen and (max-width: 600px) {
-  .imagem{
-    margin-left: 17%;
   }
 }
