@@ -6,15 +6,17 @@ export function Footer (){
 
   return(
     <div className="row2">
-      <div className="col2 col-2">
-        <div className="text-newsletter">
-          <h2 className="text1">INSCREVA-SE EM NOSSA <span className="news">NEWSLETTER</span></h2>
-          <span className="text2">Fique por dentro das novidades da CIMED</span>
+      <div className="first-section-row2">
+        <div className="col2 col-2">
+          <div className="text-newsletter">
+            <h2 className="text1">INSCREVA-SE EM NOSSA <span className="news">NEWSLETTER</span></h2>
+            <span className="text2">Fique por dentro das novidades da CIMED</span>
+          </div>
         </div>
-      </div>
-      <div className="col2 col-2">
-        <div className="form">
-          <Form></Form>
+        <div className="col2 col-2">
+          <div className="form">
+            <Form></Form>
+          </div>
         </div>
       </div>
       <div className="coluna">

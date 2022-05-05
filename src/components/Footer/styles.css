@@ -16,6 +16,13 @@ a { font-family: 'Montserrat';
 padding-left: 0.1%;
 }
 
+.first-section-row2 {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  /* justify-self: center; */
+}
+
 /* linha */
 .row2 {
   background-color:transparent;
@@ -66,7 +73,7 @@ padding-left: 0.1%;
     font-family: 'Audiowide';
     font-style: normal;
     font-weight: 400;
-    font-size: 4.3vh;
+    font-size: 2vw;
     line-height: 140%;
     letter-spacing: 0.14em;
     color: #FFFFFF;
@@ -83,7 +90,7 @@ padding-left: 0.1%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 2vh;
+    font-size: 1vw;
     line-height: 140%;
     letter-spacing: 0.14em;
     margin-top:-187.5%;
@@ -93,21 +100,22 @@ padding-left: 0.1%;
 }
 
 .form{
-  width: 100%;
+  /* width: 100%; */
   flex-wrap: wrap;
-  margin: 10px auto;
+  /* margin: 10px auto; */
   display:flex;
   max-width: 600px;
   text-align: center;
-  margin: 40px;
   
 }
-
+.coluna {
+  margin-top: 5vw;
+}
 .text-newsletter{
   width: 100%;
   flex-wrap: wrap;
   display:flex;
-  max-width: 600px;
+  /* max-width: 600px; */
   text-align: left;
 }
 
@@ -185,6 +193,9 @@ padding-left: 0.1%;
 @media screen and (max-width: 600px) {
   .text1 {
     font-size: 19px;
+  }
+  .first-section-row2 {
+    flex-direction: column;
   }
 }
 
