@@ -20,16 +20,16 @@ export function Form (){
             </div>
           </div>
           <div className="bottom-buttons">
-          <div className="_form_element _x50559507 _inline-style ">
-            <div className="_field-wrapper">
-              <input type="text" id="email" name="email" placeholder="Email" required />
+            <div className="_form_element _x50559507 _inline-style ">
+              <div className="_field-wrapper">
+                <input type="text" id="email" name="email" placeholder="Email" required />
+              </div>
             </div>
-          </div>
-          <div className="_button-wrapper _inline-style">
-            <button id="_form_7_submit" className="_submit" type="submit">
-            Inscreva-se
-            </button>
-          </div>
+            <div className="_button-wrapper _inline-style">
+              <button id="_form_7_submit" className="_submit" type="submit">
+              Inscreva-se
+              </button>
+            </div>
           </div>
           <div className="_clear-element">
           </div>
