@@ -5,6 +5,22 @@
   filter: blur(91px);
   border-radius: 1050px;
 }
+
+.c-section {
+  position: relative;
+  height: 30vw;
+}
+
+.lavitan-box-container {
+  width: 30vw;
+}
+
+.image-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 88vw;
+}
     
 .logo_f{
   text-align: center;
@@ -16,37 +32,38 @@
     
 .wrapper{
   text-align: center;
-  /* vertical-align: middle; */
-  /* height: 100%; */
-  /* width: 100%; */
-  /* padding-right: 2%; */
   flex-direction: column;
-  padding-top: 5vh;
   align-items: center;
   display: flex;
-  padding-top: 10vh;
 }
 
     
-.imagem22{
-  width: 27vh;
+.imagem22 {
+  width: 18vw;
   padding-bottom: 20px;
   margin-left: 5%;
 }
 
+.imagem {
+  width: 100vw;
+  margin-top: -58vw;
+  left: -18vw;
+  position: absolute;
+  z-index: 100;
+}
+
 .button {
-    width: 130px;
-    height: 47px;
-    box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(13px);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 10px;
-    cursor: pointer;
-    text-align: center;
-  }
+  padding: 1vw 1.3vw;
+  box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(13px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
       
-.button1 {   width: 120px;
-  height: 50px;
+.button1 {   
+
   background: #FFC425;
   box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(13px);
@@ -55,17 +72,14 @@
   font-family: 'Audiowide';
   font-style: normal;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 1vw;
   line-height: 124.52%;
   /* identical to box height, or 20px */
   letter-spacing: 0.085em;
   color: #030F2F;
-  margin-left: 18px;
 } 
     
 .button2 {
-  width: 200px;
-  height: 50px;
   
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
@@ -76,20 +90,19 @@
   font-family: 'Audiowide';
   font-style: normal;
   font-weight: 400;
-  font-size: 2vh;
+  font-size:1vw;
   line-height: 124.52%;
   /* identical to box height, or 20px */
   
   letter-spacing: 0.085em;
   
   color: #FFC425;
-  margin-left: 3%;
+  margin-left: 0.8vw;
 } 
     
     
 .button3 {
-  width: 200px;
-  height: 50px;
+
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(13px);
@@ -98,14 +111,21 @@
   font-family: 'Audiowide';
   font-style: normal;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 1vw;
   line-height: 124.52%;
   /* identical to box height, or 20px */
   letter-spacing: 0.085em;
   color: #FFC425;
+  display: flex;
+  align-items: center;
 } 
 
-.s11{
+.play-icon {
+  width: 1.1vw;
+  margin-right: 0.7vw;
+}
+
+.s11 {
   display: flex;
   text-align: center;
   align-content: center;
@@ -118,7 +138,7 @@
 }
 
 
-#iconsv{
+#iconsv {
   text-align: center;
   flex-direction: row;
   justify-content: center;
@@ -141,7 +161,7 @@
     font-size: 12px;
     margin-left: 0px;
   }
-  
+
   .button2 {
     font-size: 12px;
   }
@@ -166,5 +186,12 @@
 @media (min-width: 600px) {
   #video_popup2 {
     display: none;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .imagem{
+    margin-left: 17%;
   }
 }

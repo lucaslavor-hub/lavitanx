@@ -15,22 +15,21 @@ export function Form (){
         <input type="hidden" name="or" defaultValue="694f86de68067c9d1f85bd67652152da" />
         <div className="_form-content">
           <div className="_form_element _x64191235 _inline-style ">
-
             <div className="_field-wrapper">
               <input type="text" id="fullname" name="fullname" placeholder="Nome" required />
             </div>
           </div>
+          <div className="bottom-buttons">
           <div className="_form_element _x50559507 _inline-style ">
-
             <div className="_field-wrapper">
               <input type="text" id="email" name="email" placeholder="Email" required />
             </div>
-        
           </div>
           <div className="_button-wrapper _inline-style">
             <button id="_form_7_submit" className="_submit" type="submit">
             Inscreva-se
             </button>
+          </div>
           </div>
           <div className="_clear-element">
           </div>

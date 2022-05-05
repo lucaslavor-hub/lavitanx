@@ -34,7 +34,7 @@ body {
 }
 
 .group1 {
-  background-image: url("./assets/group1_f.png");
+  /* background-image: url("./assets/group1_f.png"); */
   /* The image used */
   background-color: #030D29;
   /* Used if the image is unavailable */

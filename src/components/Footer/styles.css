@@ -115,12 +115,6 @@ padding-left: 0.1%;
   text-align: center;
 }
 
-.imagem{
-  width: 70%;
-  align-items: right;
-  text-align: right;
-  margin-left: 10%;
-}
 
 .logof{
   width: 10vw;
@@ -219,11 +213,5 @@ padding-left: 0.1%;
     width: 34vw;
     padding-top: 10%;
   
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .imagem{
-    margin-left: 17%;
   }
 }
