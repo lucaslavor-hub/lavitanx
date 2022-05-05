@@ -194,10 +194,10 @@ export function FourthSection() {
               { typingEnded > 2 && <><span>O ferro auxilia no transporte do oxigênio no organismo</span>
               <br/><br/></>}
               { typingEnded > 3 && <span>Vitamina k auxilia na coagulação do sangue</span> }
-             { typingEnded == 0 && <ReactRotatingText className="write-words" items={["Vitaminas do Complexo B auxiliam na formação das células vermelhas do sangue e no processo de divisão celular"]} onTypingEnd={() => setTypingEnded(typingEnded+1)} />}
-             { typingEnded == 1 && <ReactRotatingText className="write-words" items={["Cromo quelato auxilia no metabolismo mais rápido de proteínas, carboidratos e gorduras"]} onTypingEnd={() => setTypingEnded(typingEnded+1)} />}
-             { typingEnded == 2 && <ReactRotatingText className="write-words" items={["O ferro auxilia no transporte do oxigênio no organismo"]} onTypingEnd={() => setTypingEnded(typingEnded+1)} />}
-             { typingEnded == 3 && <ReactRotatingText className="write-words" items={["Vitamina k auxilia na coagulação do sangue"]} onTypingEnd={() => setTypingEnded(typingEnded+1)} />}         
+             { typingEnded == 0 && <ReactRotatingText className="write-words" typingInterval="30" items={["Vitaminas do Complexo B auxiliam na formação das células vermelhas do sangue e no processo de divisão celular"]} onTypingEnd={() => setTypingEnded(typingEnded+1)} />}
+             { typingEnded == 1 && <ReactRotatingText className="write-words" typingInterval="30" items={["Cromo quelato auxilia no metabolismo mais rápido de proteínas, carboidratos e gorduras"]} onTypingEnd={() => setTypingEnded(typingEnded+1)} />}
+             { typingEnded == 2 && <ReactRotatingText className="write-words" typingInterval="30" items={["O ferro auxilia no transporte do oxigênio no organismo"]} onTypingEnd={() => setTypingEnded(typingEnded+1)} />}
+             { typingEnded == 3 && <ReactRotatingText className="write-words" typingInterval="30" items={["Vitamina k auxilia na coagulação do sangue"]} onTypingEnd={() => setTypingEnded(typingEnded+1)} />}         
             </>)
           }
           </h4>
