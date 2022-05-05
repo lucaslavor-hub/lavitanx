@@ -163,8 +163,9 @@ export function FourthAnimationSection() {
         end: "start+=600% start",
       },
       opacity: 0,
-      fontSize: 100,
       duration: 1,
+      fontSize: "10vw",
+      lineHeight: "10vw",
     }); 
   }, []);
 

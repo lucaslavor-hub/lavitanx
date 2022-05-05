@@ -20,7 +20,9 @@
   overflow: hidden;
 
 }
-
+.text-animation-2 {
+  width: 100vw ;
+}
 .title-second-section-3 {
   font-family: 'Montserrat';
   font-style: normal;
@@ -90,7 +92,6 @@
   .title-second-section-3 {
     font-size: 4vw !important;
     line-height: 6vw !important;
-
   }
 
   .first-animation-titles-container3 {

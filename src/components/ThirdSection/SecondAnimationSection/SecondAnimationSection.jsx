@@ -157,9 +157,11 @@ export function SecondAnimationSection() {
         trigger: ".second-animation-pag",
         toggleActions: "restart none reverse none",
         start: "start+=200% start",
-        end: "start+=200% start",
+        end: "start+=400% start",
+        // scrub: true,
       },
-      fontSize: 100,
+      fontSize: "10vw",
+      lineHeight: "10vw",
       opacity: 0,
       duration: 1,
     }); 

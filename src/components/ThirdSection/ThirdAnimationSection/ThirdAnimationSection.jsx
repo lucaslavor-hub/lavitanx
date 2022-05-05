@@ -255,7 +255,9 @@ export function ThirdAnimationSection() {
         start: "start+=400% start",
         end: "start+=400% start",
       },
-      fontSize: 100,
+      fontSize: "10vw",
+      lineHeight: "10vw",
+      width: "300vw",
       opacity: 0,
       duration: 1,
     }); 
