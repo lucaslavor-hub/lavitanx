@@ -120,6 +120,7 @@
   color: #FFC425;
   display: flex;
   align-items: center;
+  justify-content: center;
 } 
 
 .play-icon {

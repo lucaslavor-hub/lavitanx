@@ -5,6 +5,8 @@ import logo22 from "../../assets/logo_22.png"
 import Popup from '../Popup/index';
 import video from "../../assets/video.mp4";
 import play from "../../assets/playIcon.svg";
+import { StarsCsection } from '../StarsCsection/StarsCsection';
+const isMobile = window.innerWidth <= 600;
 
 export function Csection () {
 
@@ -15,6 +17,7 @@ export function Csection () {
 
     return(
       <div className="c-section">
+        <StarsCsection></StarsCsection>
         <div className="image-buttons-container" >
             <div className="lavitan-box-container">
              <img className="imagem" src={caixa} alt="Logo"/>
@@ -31,7 +34,7 @@ export function Csection () {
                 </a>
               </div>
               <div>
-                <button onClick={togglePopup} class="button button3"> <img src={play} className="play-icon"/>Vídeo Informativo</button>
+                <button onClick={togglePopup} class="button button3"> {!isMobile && <img src={play} className="play-icon"/>} Vídeo Informativo</button>
               </div>
             </div>
           <div>

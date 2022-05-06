@@ -10,6 +10,9 @@
   flex-direction: column;
 }
 
+.longevity-letter {
+  height: 3.4vw;
+}
 
 @keyframes blinking{
   60% {
@@ -87,7 +90,9 @@ span {
   font-size: 5vw;
   text-align: center;
   letter-spacing: 0.335em;
-  width: 100vw;
+  width:58vw;
+  display: flex;
+  justify-content: space-between;
 
 
   background: linear-gradient(92.12deg, #FFFFFF 18.52%, rgba(255, 255, 255, 0.51) 26.1%, #FFFFFF 39.08%, #FFFFFF 62.07%, rgba(255, 255, 255, 0.47) 71.78%, #FFFFFF 85.73%);
@@ -98,7 +103,6 @@ span {
   margin-top: 4vw;
 
 }
-
 .longevity-subtitle {
   font-family: 'Montserrat';
   font-style: normal;
@@ -148,10 +152,14 @@ span {
   .shadow-right, .shadow-left, .longevity-subtitle{
     display: none;
   }
+  .longevity-letter {
+    height: 4.8vw;
+  }
 
   .longevity-title {
     font-size: 6.7vw;
     margin-top: 42vw;
+    width: 78vw;
   }
 
   .background-second-section {
