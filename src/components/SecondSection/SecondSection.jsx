@@ -68,7 +68,7 @@ export function SecondSection({ someText }) {
     var tl = gsap.timeline({repeat: -1, repeatDelay: 0.1});
     tl.to(target, {opacity: 1, duration: 0.1, delay:delay})
     tl.to(target, {opacity: 0.3, duration: 0.1, ease:Power0.easeOut});
-    tl.to(target, {opacity: 1, duration: 0.1})
+    tl.to(target, {opacity: 1, duration: 0.3})
   }
   
   return(
