@@ -198,7 +198,7 @@ export function VideosAnimation({ someText }) {
           <source src={video1} type="video/mp4"/>
         </video>
         }     
-        {!isMobile && <p className="video-description">Sed at risus neque. Cras sit amet ligula ut justo commodo porta id ut enim. </p>}
+        {!isMobile && <p className="video-description">Envelhecimento saudável</p>}
       </div>
 
       <img src={Moon} className="moon-second-section"/>
@@ -213,7 +213,7 @@ export function VideosAnimation({ someText }) {
               <source src={video2} type="video/mp4"/>
             </video>
           }
-          {!isMobile && <p className="video-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>}
+          {!isMobile && <p className="video-description">Evitar danos ao DNA</p>}
           </div>
         <div ref={divVideoThreeRef} className="video-animations-three" >
         {isMobile ? 
@@ -223,7 +223,7 @@ export function VideosAnimation({ someText }) {
             <source src={video3} type="video/mp4"/>
           </video>
         } 
-        {!isMobile && <p className="video-description"> Nulla est lectus, mollis sit amet vehicula id, volutpat eget mauris. </p>}
+        {!isMobile && <p className="video-description"> Regular os radicais livres </p>}
         </div>
       </div>
       <p className="bottom-text">e tudo começa de dentro para fora</p>
