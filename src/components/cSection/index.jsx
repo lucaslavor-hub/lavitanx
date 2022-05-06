@@ -22,7 +22,7 @@ export function Csection () {
             <div className="lavitan-box-container">
              <img className="imagem" src={caixa} alt="Logo"/>
             </div>
-          <div className="col2 col-2" id="coluna1">
+          <div className="col2 col-2 z-index-col" id="coluna1">
             <div className="wrapper">
               <div><img className="imagem22" src={logo22} alt="Logo"/></div>
               <div className="s11">

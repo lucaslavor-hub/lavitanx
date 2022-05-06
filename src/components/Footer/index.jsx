@@ -13,7 +13,7 @@ export function Footer (){
             <span className="text2">Fique por dentro das novidades da CIMED</span>
           </div>
         </div>
-        <div className="col2 col-2">
+        <div className="col2 col-2  z-index-col2">
           <div className="form">
             <Form></Form>
           </div>

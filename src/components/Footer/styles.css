@@ -67,6 +67,9 @@ padding-left: 0.1%;
   align-items: center;
 }
 
+.z-index-col2{
+  z-index: 100;
+}
 
   /* SE INSCREVA À NOSSA NEWSLETTER */
   .text1{

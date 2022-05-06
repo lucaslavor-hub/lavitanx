@@ -23,6 +23,10 @@
   justify-content: space-between;
   width: 60vw;
 }
+
+.z-index-col {
+  z-index: 101;
+}
     
 .logo_f{
   text-align: center;
