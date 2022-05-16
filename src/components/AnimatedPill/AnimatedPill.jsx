@@ -5,8 +5,8 @@ import "./styles.css";
 export function AnimatedPill({ imgSrc, width }) {
   const imgRef = useRef(null);
 
-  const randomX = random(3, 4);
-  const randomY = random(3, 4);
+  const randomX = random(1, 1);
+  const randomY = random(1, 1);
   const randomDelay = random(0, 10);
   const durationTime = random(1, 100);
 
@@ -43,7 +43,7 @@ export function AnimatedPill({ imgSrc, width }) {
       ease: Sine.easeInOut,
       onComplete: moveX,
       onCompleteParams: [target, direction * -1],
-      duration: randomX() * 2
+      duration: 2.3
     });
   }
 
@@ -54,7 +54,7 @@ export function AnimatedPill({ imgSrc, width }) {
       ease: Sine.easeInOut,
       onComplete: moveY,
       onCompleteParams: [target, direction * -1],
-      duration: randomY() * 2
+      duration:  2.3
     });
   }
 

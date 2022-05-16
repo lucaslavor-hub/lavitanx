@@ -18,6 +18,11 @@ function App() {
 
   ScrollTrigger.scrollerProxy("#root", { pinType: "fixed" });
 
+  useEffect(() => {
+    let teste = document.getElementById('main-loader');
+    teste.style.display= "none"
+
+  }, []);
 
   return (
     <div>

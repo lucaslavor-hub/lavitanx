@@ -16,11 +16,13 @@
 
 .background-fourth-section {
   width: 100vw;
-  background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 15vw, #030D29 36.98%);
+  /* background: linear-gradient(180deg, rgba(3, 15, 47, 0) 0%, #030D29 15vw, #030D29 36.98%); */
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
+  z-index: 101;
+
 }
 
 .fourth-section-title {
