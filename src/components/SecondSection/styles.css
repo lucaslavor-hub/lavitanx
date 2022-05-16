@@ -22,9 +22,9 @@
     opacity: 1;
   }
 }
-span {
+/* span {
   display: inline !important;
-}
+} */
 
 /* .s1 {
   animation: blinking 1.5s infinite;
@@ -179,4 +179,39 @@ span {
     margin-top: 70vw;
     width: 7vw;
   }
+}
+
+:root {  
+  /* Set neon color */
+  --neon-text-color: #ffffffff;
+}
+
+.letter1 {
+  /* padding: 4rem 6rem 5.5rem; */
+  animation: flicker 10s infinite alternate;     
+}
+
+.letter1:focus {
+  outline: none;
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.02vw -0.02vw 0.1vw #fff,
+            0.02vw 0.02vw 0.1vw #fff,
+            0 0 2vw var(--neon-text-color),
+            0 0 1.5vw var(--neon-text-color),
+            0 0 2.5vw var(--neon-text-color),
+            0 0 3vw var(--neon-text-color),
+            0 0 4vw var(--neon-text-color);     
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
 }
