@@ -52,21 +52,14 @@
   background-clip: text;
   text-fill-color: transparent;
   margin-top: 4vw;
+
+  animation: shine 3s infinite linear;
   animation-fill-mode: forwards;
   -webkit-text-size-adjust: none;
   white-space: nowrap
-}
-@media only screen and (min-width: 901px) {
-  .longevity-title {
-    animation: shine 3s infinite linear;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .longevity-title {
-    animation: shine-mobile 3s infinite linear;
-  }
-}
 
+
+}
 .longevity-subtitle {
   font-family: 'Montserrat';
   font-style: normal;
@@ -145,7 +138,12 @@
   }
 }
 
-@keyframes shine {
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes shine{
   0% {
     background-position: 0
   }
@@ -154,17 +152,5 @@
   } */
   100% {
     background-position: 60vw
-  }
-}
-
-@keyframes shine-mobile {
-  0% {
-    background-position: 0
-  }
-  /* 80% {
-    background-position: 40vw
-  } */
-  100% {
-    background-position: 79vw
   }
 }
