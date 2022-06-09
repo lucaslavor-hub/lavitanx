@@ -60,27 +60,6 @@ export function FourthSection() {
   }, []);
 
   useEffect(() => {
-    const video = document.querySelector('.fourth-image')
-    const infos = {height: video.height, width:video.width, zIndex: video.zIndex}
-      video.addEventListener('mouseover', (e) => {
-        console.log(infos)
-        video.style.zIndex = "1000";
-        gsap.to('.fourth-image', { 
-          width: "64vw",
-          height: "36vw",
-
-        }); 
-      })
-      video.addEventListener('mouseout', (e) => {  
-        video.style.zIndex = infos.zIndex;
-        gsap.to('.fourth-image', { 
-          width: infos.width,
-          height: infos.height,
-        }); 
-      })
-  }, []);
-
-  useEffect(() => {
     if (!isMobile) {
       gsap.to(bottleRef.current, {
         scrollTrigger: {
