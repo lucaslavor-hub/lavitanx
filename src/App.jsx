@@ -19,8 +19,10 @@ function App() {
   ScrollTrigger.scrollerProxy("#root", { pinType: "fixed" });
 
   useEffect(() => {
-    let teste = document.getElementById('main-loader');
-    teste.style.display= "none"
+    let hideLoader = document.getElementById('main-loader');
+    let hideLoaderText = document.getElementById('loading-text');
+    hideLoader.style.display= "none"
+    hideLoaderText.style.display= "none"
 
   }, []);
 

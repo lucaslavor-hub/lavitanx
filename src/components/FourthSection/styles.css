@@ -92,6 +92,10 @@
   max-width: 600px;
 }
 
+.fourth-normal-text-right {
+  height: 270px;
+}
+
 .fourth-number-one {
   font-family: 'Audiowide';
   font-style: normal;
@@ -105,6 +109,13 @@
   z-index: 15;
 }
 
+.fourth-side-div-right{
+  padding-left:5vw !important;
+}
+.fourth-side-div-left {
+  padding-right: 5vw !important;
+}
+
 
 .fourth-side-div {
   display: flex;
@@ -113,6 +124,8 @@
   justify-content: center;
   gap: 2.5vh;
   align-items: flex-start;
+  padding: 0 2vw;
+
 }
 
 .fourth-content {
@@ -126,8 +139,6 @@
   white-space: nowrap;
   margin-bottom: -20vh;
 }
-
-
 
 .fourth-scroll-content {
   display: flex;
@@ -190,6 +201,9 @@
   .filled-fourth-orbit,
   .fourth-shadow-center {
     display: none;
+  }
+  .fourth-normal-text-right {
+    height: auto;
   }
 
   .fourth-content {

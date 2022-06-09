@@ -138,3 +138,15 @@ animation-delay: 0.5s;
 transform-origin: center;
 transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+.loading-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1vw;
+  
+  text-align: center;
+  letter-spacing: 0.14em;
+  color: #FFFFFF;
+  margin-top: 56vh;
+}

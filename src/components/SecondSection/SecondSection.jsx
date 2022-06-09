@@ -10,18 +10,6 @@ import { VideosAnimation } from "./VideosAnimation/VideosAnimation";
 import pill6 from '../../assets/pills/pill_5.png';
 import pill7 from '../../assets/pills/pill_1.png';
 import pill9 from '../../assets/pills/pill_9.png';
-import L from '../../assets/longevidade/L.svg';
-import O from '../../assets/longevidade/O.svg';
-import N from '../../assets/longevidade/N.svg';
-import G from '../../assets/longevidade/G.svg';
-import E from '../../assets/longevidade/E.svg';
-import V from '../../assets/longevidade/V.svg';
-import I from '../../assets/longevidade/I.svg';
-import D from '../../assets/longevidade/D.svg';
-import A from '../../assets/longevidade/A.svg';
-import D2 from '../../assets/longevidade/D2.svg';
-import E2 from '../../assets/longevidade/E2.svg';
-
 import { AnimatedPill } from "..";
 
 const isMobile = window.innerWidth <= 900;
@@ -37,18 +25,18 @@ export function SecondSection({ someText }) {
       gsap.to(backgroundRef.current, { y: "-30vw", opacity: 1, duration: 1});
     }
 
-    gsap.from(".text-animation", { 
-      scrollTrigger:  {
-        trigger: ".text-animation",
-        toggleActions: "restart none reverse none",
-        start: "top-=10% bottom",
-        end: "top-=10% bottom",
-      },
-      y: 100,
-      opacity: 0,
-      duration: 1,
-      ease: Power4.easeOut,
-    }); 
+    // gsap.from(".text-animation", { 
+    //   scrollTrigger:  {
+    //     trigger: ".text-animation",
+    //     toggleActions: "restart none reverse none",
+    //     start: "top-=10% bottom",
+    //     end: "top-=10% bottom",
+    //   },
+    //   y: 100,
+    //   opacity: 0,
+    //   duration: 1,
+    //   ease: Power4.easeOut,
+    // }); 
   }, []);
 
   

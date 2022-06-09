@@ -59,6 +59,26 @@ export function FourthSection() {
    
   }, []);
 
+  useEffect(() => {
+    const video = document.querySelector('.fourth-image')
+    const infos = {height: video.height, width:video.width, zIndex: video.zIndex}
+      video.addEventListener('mouseover', (e) => {
+        console.log(infos)
+        video.style.zIndex = "1000";
+        gsap.to('.fourth-image', { 
+          width: "64vw",
+          height: "36vw",
+
+        }); 
+      })
+      video.addEventListener('mouseout', (e) => {  
+        video.style.zIndex = infos.zIndex;
+        gsap.to('.fourth-image', { 
+          width: infos.width,
+          height: infos.height,
+        }); 
+      })
+  }, []);
 
   useEffect(() => {
     if (!isMobile) {
@@ -66,7 +86,7 @@ export function FourthSection() {
         scrollTrigger: {
           trigger: bottleRef.current,
           start: "center center",
-          end: "center +=600",
+          end: "center +=1300",
           endTrigger: galleryRef.current,
           toggleActions: "restart none none none",
           pin: true,
@@ -182,7 +202,7 @@ export function FourthSection() {
         />
 
         <div className="fourth-side-div">
-          <h4 className="fourth-normal-text" style={{ textAlign: 'left' }} >
+          <h4 className="fourth-normal-text fourth-normal-text-right" style={{ textAlign: 'left' }} >
 
  
           { typerTrigger && 
@@ -208,7 +228,7 @@ export function FourthSection() {
       {!isMobile && (
         <>
           <div className="fourth-content" style={{ marginTop: '50px' }}>
-            <div className="fourth-side-div" style={{ alignItems: 'flex-end' }}>
+            <div className="fourth-side-div fourth-side-div-left" style={{ alignItems: 'flex-end' }}>
               <h4 className="fourth-number-one">
                 DE <b style={{ color: '#FFC425' }}>Nº1</b>
                 <br />
@@ -224,7 +244,7 @@ export function FourthSection() {
             />
 
             <div className="fourth-side-div">
-              <h4 className="fourth-number-one">
+              <h4 className="fourth-number-one fourth-side-div-right">
                 PARA <b style={{ color: '#FFC425' }}>Nº1</b>
                 <br />
                 DO ESPAÇO
