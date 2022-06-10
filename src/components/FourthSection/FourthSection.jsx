@@ -73,7 +73,6 @@ export function FourthSection() {
           scrub: 1,
           pinSpacing: false,
           pinType: 'fixed',
-          markers: true,
         },
       });
     }
