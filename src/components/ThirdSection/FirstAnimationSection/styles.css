@@ -66,8 +66,17 @@
 
 }
 
+.lottie-first {
+  margin: 80vh auto auto auto;
+}
+
 
 @media only screen and (max-width: 900px) {
+
+  .lottie-first #lottie {
+    width: 18vw !important;
+    height: 18vw !important;
+  }
 
   .yellow-sphere-right {
     right:-15vw;

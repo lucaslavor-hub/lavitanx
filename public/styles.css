@@ -155,3 +155,9 @@ transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
   color: #FFFFFF;
   margin-top: 56vh;
 }
+
+@media only screen and (max-width: 900px) {
+  .loading-text {
+    font-size: 3vw;
+  }
+}

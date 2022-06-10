@@ -4,8 +4,11 @@ import "./styles.css";
 import { ScrollTrigger, MotionPathPlugin } from "gsap/all";
 import yellowSphereLeft from "../../../assets/yellowSphereLeft.svg";
 import yellowSphereRight from "../../../assets/yellowSphereRight.svg";
+import lottie from "../../../assets/scroll-down.json";
+import { Player } from '@lottiefiles/react-lottie-player';
 
 export function FirstAnimationSection() {
+  const lottieRef = useRef(null);
 
   gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
@@ -58,6 +61,16 @@ export function FirstAnimationSection() {
       <p className="pre-title-section-3">Benefícios do</p> 
       <p className="title-section-3">MULTIVITAMÍNICO<br/> ANTIOXIDANTE</p>
     </div> 
+    <div className="lottie-first">
+      <Player
+        ref={lottieRef}
+        autoplay
+        loop
+        controls
+        src={lottie}
+        style={{ height: '6vw', width: '6vw'}}>
+      </Player>
+    </div>
   </section>
     
   )
