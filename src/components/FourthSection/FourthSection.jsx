@@ -27,6 +27,7 @@ export function FourthSection() {
   const bottleRef = useRef(null);
   const scrollRef = useRef(null);
   const galleryRef = useRef(null);
+  const endPillTrigger = useRef(null);
   const [typingEnded, setTypingEnded] = useState(0)
   const [typerTrigger, setTyperTrigger] = useState(false)
 
@@ -65,13 +66,14 @@ export function FourthSection() {
         scrollTrigger: {
           trigger: bottleRef.current,
           start: "center center",
-          end: "center +=1300",
-          endTrigger: galleryRef.current,
+          end: "top center-=100",
+          endTrigger: endPillTrigger.current,
           toggleActions: "restart none none none",
           pin: true,
           scrub: 1,
           pinSpacing: false,
           pinType: 'fixed',
+          markers: true,
         },
       });
     }
@@ -223,7 +225,7 @@ export function FourthSection() {
             />
 
             <div className="fourth-side-div">
-              <h4 className="fourth-number-one fourth-side-div-right">
+              <h4 ref={endPillTrigger} className="fourth-number-one fourth-side-div-right">
                 PARA <b style={{ color: '#FFC425' }}>Nº1</b>
                 <br />
                 DO ESPAÇO
