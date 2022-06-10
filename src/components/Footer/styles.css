@@ -184,6 +184,19 @@ padding-left: 0.1%;
   .col2 {
     margin-right: 0%; 
   }
+
+  .first-section-row2 {
+    width: 100%;
+  }
+
+  .col2.col-2.adjust-size{
+    width: 90%;
+
+  }
+
+  .z-index-col2 {
+    width: 100%;
+  }
 }
 
 /* tres colunas */

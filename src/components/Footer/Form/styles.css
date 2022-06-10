@@ -117,23 +117,40 @@
 
 @media screen and (max-width: 600px) {
   #fullname {
-    width: 40vh;
+    width: 100%;
     font-size: 4vw;
     padding: 3vw 3vw;
     border-radius: 2vw;
   }
 
+  ._field-wrapper {
+    width: 100%;
+  }
+
+  ._form_element._x50559507._inline-style {
+    width: 100%;
+  }
+
   #email {
-    width: 40vh;
+    width: 100%;
     font-size: 4vw;
     padding: 3vw 3vw;
     border-radius: 2vw;
     margin-bottom: 10px;
 
   }
+  .outside-form-div {
+    width: 100%;
+  }
+  ._form._form_7._inline-form._inline-style._dark {
+    width: 100%;
+  }
+  .row2 {
+    padding: 0% 10% 0% 10%;
+  }
 
   ._submit{
-    width: 40vh;
+    width: 100%;
     font-size: 4vw;
     padding: 3vw 3vw;
     border-radius: 2vw;

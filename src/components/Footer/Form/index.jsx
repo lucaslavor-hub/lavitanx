@@ -3,7 +3,7 @@ import "./styles.css";
 export function Form (){
 
   return(
-    <div style={{textAlign: 'center'}}>
+    <div className="outside-form-div" style={{textAlign: 'center'}}>
       <form method="POST"  action="https://ecommercecimed.activehosted.com/proc.php" target="_blank" id="_form7" className="_form _form_7 _inline-form _inline-style _dark" noValidate>
         <input type="hidden" name="u" defaultValue={7} />
         <input type="hidden" name="f" defaultValue={7} />
