@@ -155,10 +155,10 @@ export function SecondAnimationSection() {
     gsap.from(".text-animation-1", { 
       scrollTrigger:  {
         trigger: ".second-animation-pag",
-        toggleActions: "restart none reverse none",
+        toggleActions: "restart none none none",
         start: "start+=200% start",
         end: "start+=400% start",
-        // scrub: true,
+        //scrub: true,
       },
       fontSize: "10vw",
       lineHeight: "10vw",
